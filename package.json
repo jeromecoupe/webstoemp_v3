@@ -1,0 +1,47 @@
+{
+  "name": "webstoemp_v3",
+  "version": "1.0.0",
+  "description": "version 3 of webstoemp",
+  "scripts": {
+    "clean": "rimraf \"./dist\"",
+    "server": "npx @11ty/eleventy --serve --quiet",
+    "css:dev": "sass --style=expanded --embed-source-map --source-map-urls=absolute \"./src/assets/scss/main.scss\" \"./dist/assets/css/main.css\"",
+    "css:prod": "sass --style=compressed --no-source-map \"./src/assets/scss/main.scss\" \"./dist/assets/css/main.css\"",
+    "postcss:prod": "postcss \"./dist/assets/css/main.css\" --replace --no-map --use=autoprefixer cssnano",
+    "js:dev": "esbuild --bundle --sourcemap=inline \"./src/assets/js/main.js\" --outfile=\"./dist/assets/js/main.bundle.js\"",
+    "js:prod": "esbuild --bundle --minify \"./src/assets/js/main.js\" --outfile=\"./dist/assets/js/main.bundle.js\"",
+    "eleventy": "npx @11ty/eleventy --quiet",
+    "watch:css": "onchange \"./src/assets/scss/**/*\" -- npm run css:dev",
+    "watch:js": "onchange \"./src/assets/js/**/*\" -- npm run js:dev",
+    "dev": "npm-run-all --parallel server watch:*",
+    "build": "npm-run-all clean --parallel eleventy css:prod js:prod"
+  },
+  "browserslist": [
+    "> 1%",
+    "not IE 11",
+    "not dead"
+  ],
+  "keywords": [
+    "webstoemp",
+    "jérôme",
+    "coupé",
+    "eleventy",
+    "blog",
+    "11ty"
+  ],
+  "author": "Jérôme Coupé",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "esbuild": "^0.17.19",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "rimraf": "^5.0.0",
+    "sass": "^1.62.1"
+  }
+}
