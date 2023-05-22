@@ -7,5 +7,9 @@ body {
   padding: 0;
   background-color: var(--color-background);
   color: var(--color-text);
-  font-size: calc(18 / 16 * 1rem);
+  font-size: 1rem;
+
+  @include breakpoint(large) {
+    font-size: calc(18 / 16 * 1rem);
+  }
 }
