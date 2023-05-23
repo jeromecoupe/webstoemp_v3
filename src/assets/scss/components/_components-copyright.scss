@@ -1,9 +1,8 @@
 // ==========================================
-// margins
+// copyright
 // ==========================================
 
-*,
-*::before,
-*::after {
-  margin-top: 0;
+.c-copyright {
+  margin: 0;
+  font-size: calc(14 / 16 * 1rem);
 }

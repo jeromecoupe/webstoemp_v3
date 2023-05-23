@@ -8,7 +8,7 @@
 .h4,
 .h5,
 .h6 {
-  font-weight: 450;
+  font-weight: 420;
   font-family: var(--fontstack-alt);
   line-height: 1.32;
   color: var(--color-titles);
@@ -38,4 +38,17 @@
 .h6 {
   font-size: calc(18 / 16 * 1rem);
   line-height: 1.44;
+}
+
+// ==========================================
+// small titles
+// ==========================================
+
+.c-smalltitle {
+  font-weight: 420;
+  font-family: var(--fontstack-alt);
+  line-height: 1.32;
+  color: var(--color-titles);
+  margin-bottom: 0.72em;
+  font-size: 1rem;
 }

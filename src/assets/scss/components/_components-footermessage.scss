@@ -1,0 +1,25 @@
+// ==========================================
+// footer message
+// ==========================================
+
+.c-footermessage {
+  display: block;
+}
+
+.c-footermessage__ask {
+  margin: 0;
+
+  font-weight: 450;
+  font-size: calc(23 / 16 * 1rem);
+  font-family: var(--fontstack-alt);
+  color: var(--color-titles);
+}
+
+.c-footermessage__say {
+  margin: 0;
+
+  font-weight: 380;
+  font-size: calc(23 / 16 * 1rem);
+  font-family: var(--fontstack-main);
+  color: var(--color-links);
+}

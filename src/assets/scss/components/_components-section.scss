@@ -4,4 +4,12 @@
 
 .c-section {
   margin-block: calc(30 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    margin-block: calc(36 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    margin-block: calc(45 / 16 * 1rem);
+  }
 }

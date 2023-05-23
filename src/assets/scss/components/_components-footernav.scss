@@ -1,0 +1,29 @@
+// ==========================================
+// footer nav
+// ==========================================
+
+.c-footernav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: calc(3 / 16 * 1rem);
+}
+
+.c-footernav__link {
+  display: inline-block;
+
+  font-size: 1rem;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--color-text-light);
+  }
+}

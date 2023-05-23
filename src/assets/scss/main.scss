@@ -1,6 +1,7 @@
 // settings
 @import "settings/_settings-typography.scss";
 @import "settings/_settings-colors.scss";
+@import "settings/_settings-grid.scss";
 
 // mixins
 @import "mixins/_mixins-mediaqueries.scss";
@@ -18,5 +19,10 @@
 // components
 @import "components/_components-titles.scss";
 @import "components/_components-wysiwyg.scss";
+@import "components/_components-section.scss";
+@import "components/_components-footer.scss";
+@import "components/_components-footermessage.scss";
+@import "components/_components-footernav.scss";
+@import "components/_components-copyright.scss";
 
 // utilities
