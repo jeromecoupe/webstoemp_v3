@@ -1,0 +1,88 @@
+// ==========================================
+// header
+// ==========================================
+
+.c-siteheader {
+  padding-block: calc(30 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-block: calc(42 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    padding-block: calc(48 / 16 * 1rem);
+  }
+}
+
+.c-siteheader__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include breakpoint(large) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: calc(18 / 16 * 1rem);
+  }
+}
+
+// ------------------------------------------
+// logo
+// ------------------------------------------
+
+.c-siteheader__logo {
+  margin: 0 auto 0 0;
+
+  @include breakpoint(large) {
+    margin: 0;
+  }
+}
+
+.c-siteheader__logo svg {
+  display: block;
+}
+
+// ------------------------------------------
+// location
+// ------------------------------------------
+
+.c-siteheader__location {
+  font-size: 1rem;
+  color: var(--color-text-highlight);
+  text-align: end;
+  margin: 0;
+}
+
+// ------------------------------------------
+// halmburger
+// ------------------------------------------
+
+.c-siteheader__hamburger {
+  margin: 0;
+}
+
+.c-siteheader__hamburger svg {
+  display: block;
+}
+
+// ------------------------------------------
+// toggle visibility
+// ------------------------------------------
+
+.c-siteheader__nav,
+.c-siteheader__location {
+  display: none;
+
+  @include breakpoint(large) {
+    display: block;
+  }
+}
+
+.c-siteheader__hamburger {
+  display: block;
+
+  @include breakpoint(large) {
+    display: none;
+  }
+}

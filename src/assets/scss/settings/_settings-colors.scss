@@ -18,12 +18,16 @@
 
   --color-white: #ffffff;
 
+  // incident variables
+  --color-accent: var(--color-brand);
+  --color-accent-bright: var(--color-brand-bright);
+  --color-accent-dark: var(--color-brand-dark);
+
   --color-background: var(--color-gray1);
+
   --color-text: var(--color-gray6);
   --color-text-offset: var(--color-gray5);
-  --color-text-light: var(--color-gray7);
+  --color-text-highlight: var(--color-white);
 
   --color-titles: var(--color-white);
-
-  --color-links: var(--color-brand-bright);
 }

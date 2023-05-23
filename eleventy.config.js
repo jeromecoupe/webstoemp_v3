@@ -22,8 +22,8 @@ module.exports = function (eleventyConfig) {
       data: "_data",
       includes: "_includes",
     },
-    templateFormats: ["njk", "md", "html"],
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
+    templateFormats: ["liquid", "md", "html"],
+    htmlTemplateEngine: "liquid",
+    markdownTemplateEngine: "liquid",
   };
 };

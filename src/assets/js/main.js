@@ -1,2 +1,2 @@
-import { logme as logger } from "./modules/test.js";
-logger("Hello World");
+import { init as nav } from "./modules/navigation.js";
+nav();

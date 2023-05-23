@@ -1,0 +1,29 @@
+<header class="c-siteheader">
+  <div class="c-siteheader__inner  l-container">
+    <p class="c-siteheader__logo">
+      <a href="/">{% render "svg/logo.svg" %}</a>
+    </p>
+    <div class="c-siteheader__nav">
+      <nav>
+        <ul class="c-mainnav">
+          <li class="c-mainnav__item">
+            <a class="c-mainnav__link  is-active" href="#">Work</a>
+          </li>
+          <li class="c-mainnav__item">
+            <a class="c-mainnav__link" href="#">Blog</a>
+          </li>
+          <li class="c-mainnav__item">
+            <a class="c-mainnav__link" href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <p class="c-siteheader__location">Brussels, Belgium</p>
+
+    <p class="c-siteheader__hamburger">
+      <a href="#footernav" class="js-mobilemenu-trigger">{% render "svg/icon-hamburger.svg" %}</a>
+    </p>
+
+    {% render "partials/mobilemenu.liquid" %}
+  </div>
+</header>

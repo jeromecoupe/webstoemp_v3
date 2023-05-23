@@ -3,13 +3,17 @@
 // ==========================================
 
 .c-section {
-  margin-block: calc(30 / 16 * 1rem);
+  padding-block: calc(24 / 16 * 1rem);
 
   @include breakpoint(medium) {
-    margin-block: calc(36 / 16 * 1rem);
+    padding-block: calc(36 / 16 * 1rem);
   }
 
   @include breakpoint(large) {
-    margin-block: calc(45 / 16 * 1rem);
+    padding-block: calc(42 / 16 * 1rem);
   }
+}
+
+.c-section__block + .c-section__block {
+  padding-block-start: calc(30 / 16 * 1rem);
 }

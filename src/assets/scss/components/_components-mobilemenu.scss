@@ -1,0 +1,49 @@
+// ==========================================
+// mobile menu
+// ==========================================
+
+.c-mobilemenu {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background);
+
+  padding-block: calc(30 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-block: calc(42 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    display: none;
+  }
+}
+
+.c-mobilemenu.is-active {
+  display: block;
+  animation: appear 0.2s ease-out both;
+}
+
+.c-mobilemenu__actions {
+  text-align: end;
+}
+
+.c-mobilemenu__content {
+  margin-top: 24vh;
+}
+
+.c-mobilemenu__close {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  & > svg {
+    display: block;
+  }
+}

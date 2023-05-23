@@ -1,0 +1,43 @@
+// ==========================================
+// mobile nav
+// ==========================================
+
+.c-mobilenav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: calc(6 / 16 * 1rem);
+}
+
+.c-mobilenav__item {
+  animation-delay: calc(0.2s + (var(--delay) * 0.05s));
+  animation-name: slideFromLeft;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.c-mobilenav__link {
+  display: block;
+  padding-block: calc(6 / 16 * 1rem);
+  font-weight: 400;
+  font-size: calc(31 / 16 * 1rem);
+  line-height: 1;
+  font-family: var(--fontstack-alt);
+  color: var(--color-text-highlight);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.c-mobilenav__link.is-active {
+  color: var(--color-accent);
+}
