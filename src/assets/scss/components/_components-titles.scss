@@ -2,42 +2,55 @@
 // titles
 // ==========================================
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-weight: 420;
+.c-h1,
+.c-h2,
+.c-h3,
+.c-h4,
+.c-h5,
+.c-h6 {
+  font-weight: 400;
   font-family: var(--fontstack-alt);
   line-height: 1.32;
   color: var(--color-titles);
   margin-bottom: 0.72em;
 }
 
-.h1 {
+.c-h1 {
   font-size: clamp(32 / 16 * 1rem, 1rem + 3vw, 36 / 16 * 1rem);
 }
 
-.h2 {
+.c-h2 {
   font-size: clamp(29 / 16 * 1rem, 1rem + 2.5vw, 32 / 16 * 1rem);
 }
 
-.h3 {
+.c-h3 {
   font-size: clamp(26 / 16 * 1rem, 1rem + 2.5vw, 29 / 16 * 1rem);
 }
 
-.h4 {
+.c-h4 {
   font-size: calc(23 / 16 * 1rem);
 }
 
-.h5 {
+.c-h5 {
   font-size: calc(20 / 16 * 1rem);
 }
 
-.h6 {
+.c-h6 {
   font-size: calc(18 / 16 * 1rem);
   line-height: 1.44;
+}
+
+// ==========================================
+// big title (home)
+// ==========================================
+
+.c-bigtitle {
+  font-weight: 400;
+  font-family: var(--fontstack-alt);
+  line-height: 1.32;
+  color: var(--color-titles);
+  margin-bottom: 0.5em;
+  font-size: clamp(36 / 16 * 1rem, 1rem + 3vw, 54 / 16 * 1rem);
 }
 
 // ==========================================
@@ -45,10 +58,10 @@
 // ==========================================
 
 .c-smalltitle {
-  font-weight: 420;
+  font-weight: 500;
   font-family: var(--fontstack-alt);
   line-height: 1.32;
   color: var(--color-titles);
-  margin-bottom: 0.72em;
+  margin-bottom: 0.84em;
   font-size: 1rem;
 }

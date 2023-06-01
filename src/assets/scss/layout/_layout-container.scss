@@ -8,6 +8,6 @@
   max-width: 1380px;
 
   @include breakpoint(medium) {
-    padding-inline: calc(30 / 16 * 1rem);
+    padding-inline: calc(36 / 16 * 1rem);
   }
 }

@@ -8,8 +8,10 @@
   <script type="module" src="/assets/js/main.bundle.js"></script>
 </head>
 <body>
-  {% render "partials/header.liquid" %}
-  {% block content %}{% endblock %}
-  {% render "partials/footer.liquid" %}
+  {% include "partials/header.njk" %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% include "partials/footer.njk" %}
 </body>
 </html>

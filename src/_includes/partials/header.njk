@@ -1,7 +1,7 @@
 <header class="c-siteheader">
   <div class="c-siteheader__inner  l-container">
     <p class="c-siteheader__logo">
-      <a href="/">{% render "svg/logo.svg" %}</a>
+      <a href="/">{% include "svg/logo.svg" %}</a>
     </p>
     <div class="c-siteheader__nav">
       <nav>
@@ -21,9 +21,9 @@
     <p class="c-siteheader__location">Brussels, Belgium</p>
 
     <p class="c-siteheader__hamburger">
-      <a href="#footernav" class="js-mobilemenu-trigger">{% render "svg/icon-hamburger.svg" %}</a>
+      <a href="#footernav" class="js-mobilemenu-trigger">{% include "svg/icon-hamburger.svg" %}</a>
     </p>
 
-    {% render "partials/mobilemenu.liquid" %}
+    {% include "partials/mobilemenu.njk" %}
   </div>
 </header>

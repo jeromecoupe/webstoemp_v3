@@ -22,8 +22,11 @@
   text-decoration: none;
   transition: color 0.2s ease-out;
 
-  &:hover {
-    text-decoration: none;
-    color: var(--color-text-light);
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+    text-decoration-color: inherit;
+    text-decoration-thickness: 1px;
   }
 }

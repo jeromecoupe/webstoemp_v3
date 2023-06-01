@@ -8,39 +8,57 @@
   position: fixed;
   top: 0;
   left: 0;
+
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   background-color: var(--color-background);
 
   padding-block: calc(30 / 16 * 1rem);
-
-  @include breakpoint(medium) {
-    padding-block: calc(42 / 16 * 1rem);
-  }
-
-  @include breakpoint(large) {
-    display: none;
-  }
 }
 
 .c-mobilemenu.is-active {
   display: block;
   animation: appear 0.2s ease-out both;
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.c-mobilemenu__inner {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .c-mobilemenu__actions {
-  text-align: end;
+  flex: 0 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .c-mobilemenu__content {
-  margin-top: 24vh;
+  flex: 1 1 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .c-mobilemenu__close {
   display: inline-block;
   padding: 0;
+  margin: 0;
   border: none;
   cursor: pointer;
+  line-height: 1;
   background-color: transparent;
 
   & > svg {

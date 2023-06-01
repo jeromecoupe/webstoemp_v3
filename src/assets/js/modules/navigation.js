@@ -7,7 +7,7 @@ function init() {
     trigger.addEventListener(
       "click",
       (event) => {
-        event.preventDefault;
+        event.preventDefault();
         mobileMenu.classList.toggle(activeClass);
       },
       false

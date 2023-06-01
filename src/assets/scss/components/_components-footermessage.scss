@@ -6,11 +6,20 @@
   display: block;
 }
 
+.c-footermessage__ask,
+.c-footermessage__say {
+  font-size: calc(23 / 16 * 1rem);
+  line-height: 1.2;
+
+  @include breakpoint(xlarge) {
+    font-size: calc(26 / 16 * 1rem);
+  }
+}
+
 .c-footermessage__ask {
-  margin: 0;
+  margin: 0 0 calc(3 / 16 * 1rem);
 
   font-weight: 450;
-  font-size: calc(23 / 16 * 1rem);
   font-family: var(--fontstack-alt);
   color: var(--color-titles);
 }
@@ -18,8 +27,7 @@
 .c-footermessage__say {
   margin: 0;
 
-  font-weight: 380;
-  font-size: calc(23 / 16 * 1rem);
+  font-weight: 400;
   font-family: var(--fontstack-main);
-  color: var(--color-links);
+  color: var(--color-accent);
 }

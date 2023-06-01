@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: calc(6 / 16 * 1rem);
+  gap: calc(12 / 16 * 1rem);
 }
 
 .c-mobilenav__item {
@@ -29,7 +29,7 @@
   font-size: calc(31 / 16 * 1rem);
   line-height: 1;
   font-family: var(--fontstack-alt);
-  color: var(--color-text-highlight);
+  color: var(--color-titles);
   text-decoration: none;
 
   &:hover,

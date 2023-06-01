@@ -1,0 +1,85 @@
+---
+permalink: /index.html
+---
+
+{% extends "layouts/base.njk" %}
+
+{% from "components/blog-card.njk" import blogCard %}
+
+{% block content %}
+    <div class="c-section">
+      <div class="l-container">
+
+        <h1 class="c-bigtitle">
+          Design
+          <span class="c-amperstand">&amp;</span>
+          Code
+        </h1>
+        <div class="c-pageintro">
+          <p>Welcome to the online home of Jérôme Coupé, web designer, developer and teacher from Brussels. Like all great dishes, I believe websites are made of a few simple, carefully chosen and well prepared ingredients.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="c-section">
+      <div class="l-container">
+
+        <div class="c-home-main">
+          <div class="c-home-main__images">
+            <p>
+              <img
+                src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?&fit=crop&w=600&h=800"
+                class="o-fluidimage"
+                alt="">
+            </p>
+            <p>
+              <img
+                src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?&fit=crop&w=600&h=600"
+                class="o-fluidimage"
+                alt="">
+            </p>
+          </div>
+          <div class="c-home-main__text">
+            <div>
+              <h2 class="c-h2">Meet the cook</h2>
+              <p>When I am not busy designing and coding up a website or twisting young minds at school, chances are I am drinking a few Belgian craft beers with friends somewhere in Brussels.</p>
+              <p>
+                <a class="c-ctalink" href="#">Get in touch</a>
+              </p>
+            </div>
+
+            <div>
+              <h2 class="c-h2">On the menu</h2>
+              <p>Although I work on web apps too, I confess to have a soft spot for building publication platforms and content-oriented websites.</p>
+              <p>
+                <a class="c-ctalink" href="#">Selected projects</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="c-section">
+      <div class="l-container">
+        <h2 class="c-h2">Blogposts</h2>
+
+        {% set items = collections.blogposts | limit(4) %}
+        {% for item in items %}
+          {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
+            <li>
+              {{ blogCard({
+                title: item.data.title,
+                url: item.url,
+                image: item.data.image,
+                date: item.date
+              }) }}
+            </li>
+          {% if loop.last %}</ul>{% endif %}
+        {% endfor %}
+
+      </div>
+    </div>
+{% endblock %}

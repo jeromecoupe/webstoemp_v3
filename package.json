@@ -5,6 +5,7 @@
   "scripts": {
     "clean": "rimraf \"./dist\"",
     "server": "npx @11ty/eleventy --serve --quiet",
+    "images": "node \"./build_tasks/generate-images.js\"",
     "css:dev": "sass --style=expanded --embed-source-map --source-map-urls=absolute \"./src/assets/scss/main.scss\" \"./dist/assets/css/main.css\"",
     "css:prod": "sass --style=compressed --no-source-map \"./src/assets/scss/main.scss\" \"./dist/assets/css/main.css\"",
     "postcss:prod": "postcss \"./dist/assets/css/main.css\" --replace --no-map --use=autoprefixer cssnano",
@@ -14,7 +15,7 @@
     "watch:css": "onchange \"./src/assets/scss/**/*\" -- npm run css:dev",
     "watch:js": "onchange \"./src/assets/js/**/*\" -- npm run js:dev",
     "dev": "npm-run-all --parallel server watch:*",
-    "build": "npm-run-all clean --parallel eleventy css:prod js:prod"
+    "build": "npm-run-all clean --parallel eleventy images css:prod js:prod"
   },
   "browserslist": [
     "> 1%",
@@ -43,5 +44,8 @@
     "postcss-cli": "^10.1.0",
     "rimraf": "^5.0.0",
     "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "sharp": "^0.32.1"
   }
 }

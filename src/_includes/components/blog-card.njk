@@ -1,0 +1,28 @@
+{% macro blogCard(params) %}
+
+  {% set img = "/assets/img/blogposts/800x600/" ~ params.image %}
+
+  <article class="c-blogcard">
+    {% if params.image %}
+      <p class="c-blogcard_-media">
+        <a href="{{ params.url }}">
+          <img
+            src="{{ img }}"
+            class="o-fluidimage"
+            loading="lazy"
+            decoding="async"
+            alt="">
+        </a>
+      </p>
+    {% endif %}
+    <div class="c-blogcard__body">
+      <h3 class="c-blogcard__title">
+        <a href="{{ params.url }}">{{ params.title }}</a>
+      </h3>
+      <p class="c-blogcard__date">
+        <time datetime="{{ params.date | dateISO }}">{{ params.date | dateFull }}</time>
+      </p>
+    </div>
+  </article>
+
+{% endmacro %}
