@@ -3,8 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>This is a test</title>
+  <title>{{ metaTitle }}</title>
+  <meta name="author" content="{{ site.author }}">
+  <meta name="description" content="{{ metaDescription }}">
+  <meta name="generator" content="{{ eleventy.generator }}">
+
+  {# Preload #}
+  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/publicsans-variable.woff2">
+  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/publicsans-variableitalic.woff2">
+  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/sentient-variable.woff2">
+  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/sentient-variableitalic.woff2">
+
+  {# Rel me #}
+  <link rel="me" href="{{ site.social.mastodon }}">
+
+  {# Open Graph #}
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{ site.url ~ page.url }}" />
+  <meta property="og:title" content="{{ metaTitle }}" />
+  <meta property="og:image" content="{{ metaImage }}" />
+  <meta property="og:description" content="{{ metaDescription }}" />
+
+  {# Feed #}
+  <link rel="alternate" href="/feed.xml" title="Webstoemp blog feed, by Jérôme Coupé" type="application/atom+xml">
+
+  {# CSS #}
   <link rel="stylesheet" href="/assets/css/main.css">
+
+  {# JS #}
   <script type="module" src="/assets/js/main.bundle.js"></script>
 </head>
 <body>

@@ -6,6 +6,11 @@ permalink: /index.html
 
 {% from "components/blog-card.njk" import blogCard %}
 
+{% set metaTitle = "Webstoemp" %}
+{% set metaDescription = "Webstoemp is the portfolio and blog of Jérôme Coupé, belgian designer, developer and teacher based in Brussels." %}
+{% set metaImage = "" %}
+{% set activeSection = "home" %}
+
 {% block content %}
     <div class="c-section">
       <div class="l-container">
@@ -26,18 +31,18 @@ permalink: /index.html
 
         <div class="c-home-main">
           <div class="c-home-main__images">
-            <p>
-              <img
-                src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?&fit=crop&w=600&h=800"
-                class="o-fluidimage"
-                alt="">
-            </p>
-            <p>
-              <img
-                src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?&fit=crop&w=600&h=600"
-                class="o-fluidimage"
-                alt="">
-            </p>
+            <img
+              src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?&fit=crop&w=600&h=800"
+              class="o-fluidimage"
+              width="600"
+              height="800"
+              alt="Laptop with stickers">
+            <img
+              src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?&fit=crop&w=600&h=600"
+              class="o-fluidimage"
+              width="600"
+              height="600"
+              alt="Red dutch oven">
           </div>
           <div class="c-home-main__text">
             <div>

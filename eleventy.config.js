@@ -27,7 +27,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.watchIgnores.add("src/assets/**/*");
 
   // copy
-  eleventyConfig.addPassthroughCopy({ "./src/static": "./dist" });
+  eleventyConfig.setServerPassthroughCopyBehavior("copy");
+  eleventyConfig.addPassthroughCopy({ "./src/static/**/*": "./" });
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/assets/img");
 

@@ -43,6 +43,11 @@
   }
 }
 
+.c-siteheader__logo > a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .c-siteheader__logo svg {
   display: block;
 }
