@@ -14,7 +14,7 @@
   }
 
   @include breakpoint(xlarge) {
-    padding-block: calc(54 / 16 * 1rem);
+    padding-block-start: calc(54 / 16 * 1rem);
   }
 }
 

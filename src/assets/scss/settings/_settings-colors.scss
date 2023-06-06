@@ -4,8 +4,8 @@
 
 :root {
   --color-brand: #ffd600;
-  --color-brand-bright: #ffcc00;
-  --color-brand-dark: #e0bc00;
+  --color-brand-warm: #ffc800;
+  --color-brand-dark: #ccab07;
 
   --color-gray1: #0c0a01;
   --color-gray2: #38362f;
@@ -20,14 +20,14 @@
 
   // incident variables
   --color-accent: var(--color-brand);
-  --color-accent-bright: var(--color-brand-bright);
+  --color-accent-warm: var(--color-brand-warm);
   --color-accent-dark: var(--color-brand-dark);
 
   --color-background: var(--color-gray1);
 
   --color-text: var(--color-gray6);
   --color-text-offset: var(--color-gray5);
-  --color-text-highlight: var(--color-gray7);
+  --color-text-light: var(--color-gray7);
 
   --color-titles: var(--color-white);
 }
