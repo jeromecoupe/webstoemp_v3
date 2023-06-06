@@ -24,7 +24,7 @@
   justify-content: flex-start;
   align-items: center;
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     gap: calc(18 / 16 * 1rem);
@@ -38,7 +38,7 @@
 .c-siteheader__logo {
   margin: 0 auto 0 0;
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     margin: 0;
   }
 }
@@ -85,7 +85,7 @@
 .c-siteheader__location {
   display: none;
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     display: block;
   }
 }
@@ -93,7 +93,7 @@
 .c-siteheader__hamburger {
   display: block;
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     display: none;
   }
 }

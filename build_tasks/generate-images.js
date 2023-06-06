@@ -9,17 +9,6 @@ const config = {
 
 const transforms = [
   {
-    // webp for blogposts
-    src: "./src/assets/img/blogposts/",
-    dist: "./dist/assets/img/blogposts/",
-    formats: ["webp"],
-    options: {
-      width: 1024,
-      height: 576,
-      fit: "cover",
-    },
-  },
-  {
     // 1024x576 thumbnails for blogposts
     src: "./src/assets/img/blogposts/",
     dist: "./dist/assets/img/blogposts/1024x576/",

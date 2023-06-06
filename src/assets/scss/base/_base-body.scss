@@ -13,3 +13,7 @@ body {
     font-size: calc(18 / 16 * 1rem);
   }
 }
+
+body.has-menu {
+  overflow-y: hidden;
+}

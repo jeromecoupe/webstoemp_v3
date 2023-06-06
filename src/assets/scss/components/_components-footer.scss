@@ -29,12 +29,12 @@
 
   @include breakpoint(medium) {
     padding-block-start: calc(60 / 16 * 1rem);
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr) minmax(0, 2fr);
+    grid-template-columns: minmax(0, 4fr) minmax(0, 3fr) minmax(0, 3fr);
   }
 
   @include breakpoint(large) {
     padding-block-start: calc(90 / 16 * 1rem);
-    grid-template-columns: minmax(0, 6fr) minmax(0, 3fr) minmax(0, 3fr);
+    grid-template-columns: (minmax(0, 6fr)) minmax(0, 3fr) minmax(0, 3fr);
   }
 }
 

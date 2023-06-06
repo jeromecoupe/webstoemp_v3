@@ -8,8 +8,12 @@
 
 .c-footermessage__ask,
 .c-footermessage__say {
-  font-size: calc(23 / 16 * 1rem);
+  font-size: calc(20 / 16 * 1rem);
   line-height: 1.2;
+
+  @include breakpoint(large) {
+    font-size: calc(23 / 16 * 1rem);
+  }
 
   @include breakpoint(xlarge) {
     font-size: calc(26 / 16 * 1rem);
@@ -27,7 +31,7 @@
 .c-footermessage__say {
   margin: 0;
 
-  font-weight: 400;
+  font-weight: 300;
   font-family: var(--fontstack-main);
   color: var(--color-accent);
 }

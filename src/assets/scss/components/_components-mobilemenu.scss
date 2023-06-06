@@ -8,6 +8,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
 
   box-sizing: border-box;
   width: 100%;
@@ -15,13 +16,17 @@
   background-color: var(--color-background);
 
   padding-block: calc(30 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-block: calc(42 / 16 * 1rem);
+  }
 }
 
 .c-mobilemenu.is-active {
   display: block;
   animation: appear 0.2s ease-out both;
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     display: none;
   }
 }
