@@ -23,7 +23,7 @@ const transforms = [
     // 1024x576 thumbnails for blogposts
     src: "./src/assets/img/blogposts/",
     dist: "./dist/assets/img/blogposts/1024x576/",
-    formats: ["jpg", "webp"],
+    formats: ["jpg"],
     options: {
       width: 1024,
       height: 576,
@@ -34,10 +34,21 @@ const transforms = [
     // 800x600 thumbnails for blogposts
     src: "./src/assets/img/blogposts/",
     dist: "./dist/assets/img/blogposts/800x600/",
-    formats: ["jpg", "webp"],
+    formats: ["jpg"],
     options: {
       width: 800,
       height: 600,
+      fit: "cover",
+    },
+  },
+  {
+    // 600x450 thumbnails for blogposts
+    src: "./src/assets/img/blogposts/",
+    dist: "./dist/assets/img/blogposts/600x450/",
+    formats: ["jpg"],
+    options: {
+      width: 600,
+      height: 450,
       fit: "cover",
     },
   },
