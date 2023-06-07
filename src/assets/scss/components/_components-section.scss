@@ -20,4 +20,8 @@
 
 .c-section__block + .c-section__block {
   padding-block-start: calc(30 / 16 * 1rem);
+
+  @include breakpoint(large) {
+    padding-block-start: calc(60 / 16 * 1rem);
+  }
 }

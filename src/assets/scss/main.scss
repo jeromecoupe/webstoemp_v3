@@ -28,11 +28,11 @@
 @import "components/_components-titles.scss";
 @import "components/_components-wysiwyg.scss";
 @import "components/_components-section.scss";
-@import "components/_components-header.scss";
+@import "components/_components-siteheader.scss";
 @import "components/_components-mainnav.scss";
 @import "components/_components-mobilemenu.scss";
 @import "components/_components-mobilenav.scss";
-@import "components/_components-footer.scss";
+@import "components/_components-sitefooter.scss";
 @import "components/_components-footermessage.scss";
 @import "components/_components-footernav.scss";
 @import "components/_components-copyright.scss";
@@ -40,6 +40,7 @@
 @import "components/_components-pageintro.scss";
 @import "components/_components-ctalink.scss";
 @import "components/_components-blogcard.scss";
+@import "components/_components-pagecontent.scss";
 
 // vendor
 @import "vendor/_vendor-prism.scss";

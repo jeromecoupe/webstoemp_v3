@@ -1,0 +1,15 @@
+// ==========================================
+// page content
+// ==========================================
+
+.c-pagecontent {
+  padding-block: calc(30 / 16 * 1rem);
+
+  @include breakpoint(large) {
+    padding-block: calc(42 / 16 * 1rem);
+  }
+}
+
+.c-pagecontent--inverse {
+  background-color: var(--color-background-inverse);
+}

@@ -4,19 +4,7 @@
       <a href="/" title="Home">{% include "svg/logo.svg" %}</a>
     </p>
     <div class="c-siteheader__nav">
-      <nav>
-        <ul class="c-mainnav">
-          <li class="c-mainnav__item">
-            <a class="c-mainnav__link  is-active" href="#">Work</a>
-          </li>
-          <li class="c-mainnav__item">
-            <a class="c-mainnav__link" href="#">Blog</a>
-          </li>
-          <li class="c-mainnav__item">
-            <a class="c-mainnav__link" href="#">About</a>
-          </li>
-        </ul>
-      </nav>
+      {% include "partials/mainnav.njk" %}
     </div>
     <p class="c-siteheader__location">Brussels, Belgium</p>
 

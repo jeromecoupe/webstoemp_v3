@@ -6,7 +6,7 @@ module.exports = {
   baseUrl: "/",
   author: "Jerôme Coupé",
   email: "jerome.coupe@webstoemp.com",
-  social: {
+  me: {
     mastodon: "https://mastodon.social/@jeromecoupe",
   },
   buildTime: new Date(),
