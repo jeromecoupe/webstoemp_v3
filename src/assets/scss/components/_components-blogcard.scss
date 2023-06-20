@@ -38,12 +38,12 @@
   font-size: calc(20 / 16 * 1rem);
   line-height: 1.44;
   font-family: var(--fontstack-alt);
+  margin-block-end: calc(6 / 16 * 1rem);
 }
 
 .c-blogcard__title a {
   color: var(--color-text-highlight);
   text-decoration: none;
-  margin-block-end: calc(6 / 16 * 1rem);
   transition: color 0.2s ease-out;
 
   &:hover,
