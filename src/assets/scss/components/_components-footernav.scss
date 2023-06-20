@@ -11,11 +11,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  gap: calc(3 / 16 * 1rem);
 }
 
 .c-footernav__link {
   display: inline-block;
+  padding-block: calc(3 / 16 * 1rem);
 
   font-size: 1rem;
   color: var(--color-gray5);

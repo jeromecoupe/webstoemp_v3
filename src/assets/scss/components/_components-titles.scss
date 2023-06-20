@@ -58,14 +58,10 @@
 // ==========================================
 
 .c-footertitle {
-  font-weight: 500;
+  font-weight: 450;
   font-family: var(--fontstack-alt);
   line-height: 1.32;
   color: var(--color-white);
   margin-bottom: 0.84em;
-  font-size: 1rem;
-
-  @include breakpoint(medium) {
-    font-size: calc(18 / 16 * 1rem);
-  }
+  font-size: calc(18 / 16 * 1rem);
 }

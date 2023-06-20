@@ -23,7 +23,7 @@
   overflow: hidden;
 }
 
-.c-blogcard__media img {
+.c-blogcard__img {
   transform: scale(1);
   transition: transform 0.2s ease-out;
 
@@ -35,20 +35,19 @@
 
 .c-blogcard__title {
   font-weight: 450;
-  font-size: calc(18 / 16 * 1rem);
+  font-size: calc(20 / 16 * 1rem);
   line-height: 1.44;
   font-family: var(--fontstack-alt);
+}
+
+.c-blogcard__title a {
   color: var(--color-text-highlight);
   text-decoration: none;
   margin-block-end: calc(6 / 16 * 1rem);
   transition: color 0.2s ease-out;
 
-  @include breakpoint(large) {
-    font-size: calc(20 / 16 * 1rem);
-  }
-
-  a:hover &,
-  a:focus & {
+  &:hover,
+  &:focus {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.18em;
