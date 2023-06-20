@@ -9,7 +9,7 @@
       </div>
       <div class="c-sitefooter__nav">
         <nav>
-          <h2 class="c-smalltitle">Navigation</h2>
+          <h2 class="c-footertitle">Navigation</h2>
           {% for item in mainnav %}
             {% if loop.first %}<ul class="c-footernav">{% endif %}
               
@@ -27,11 +27,11 @@
       </div>
       <div class="c-sitefooter__social">
         <nav>
-          <h2 class="c-smalltitle">Elsewhere</h2>
-          {% for item in elsewhere %}
-            <ul class="c-footernav">
+          <h2 class="c-footertitle">Elsewhere</h2>
+          {% for item in social %}
+            {% if loop.first %}<ul class="c-footernav">{% endif %}
               <li class="c-footernav__item"><a class="c-footernav__link" href="{{ item.url }}">{{ item.label }}</a></li>
-            </ul>
+            {% if loop.last %}</ul>{% endif %}
           {% endfor %}
         </nav>
       </div>

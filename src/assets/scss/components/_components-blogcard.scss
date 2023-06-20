@@ -2,66 +2,58 @@
 // blog card
 // ==========================================
 
-@keyframes hue-rotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-
-  50% {
-    filter: hue-rotate(180deg);
-  }
-
-  100% {
-    filter: hue-rotate(0deg);
-  }
+.c-blogcard {
+  margin-block-end: 1rem;
 }
 
-.c-blogcard {
-  & > *:last-child {
-    margin-block-end: 0;
+.c-blogcard__link {
+  display: block;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 }
 
 .c-blogcard__media {
-  margin-block-end: calc(24 / 16 * 1rem);
+  margin-block-end: calc(18 / 16 * 1rem);
   display: block;
   position: relative;
   overflow: hidden;
 }
 
 .c-blogcard__media img {
+  transform: scale(1);
   transition: transform 0.2s ease-out;
-}
 
-.c-blogcard__media > a:hover img {
-  transform: scale(1.018);
+  a:hover &,
+  a:focus & {
+    transform: scale(1.018);
+  }
 }
 
 .c-blogcard__title {
   font-weight: 450;
   font-size: calc(18 / 16 * 1rem);
-  line-height: 1.38;
+  line-height: 1.44;
   font-family: var(--fontstack-alt);
-  color: var(--color-titles);
+  color: var(--color-text-highlight);
+  text-decoration: none;
   margin-block-end: calc(6 / 16 * 1rem);
+  transition: color 0.2s ease-out;
 
   @include breakpoint(large) {
     font-size: calc(20 / 16 * 1rem);
   }
-}
 
-.c-blogcard__title > a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.2s ease-out;
-}
-
-.c-blogcard__title > a:hover,
-.c-blogcard__title > a:focus {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-  text-decoration-color: var(--color-accent);
+  a:hover &,
+  a:focus & {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+    text-decoration-color: var(--color-accent);
+  }
 }
 
 .c-blogcard__date {

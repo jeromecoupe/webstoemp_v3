@@ -25,11 +25,11 @@
 .c-mobilenav__link {
   display: block;
   padding-block: calc(6 / 16 * 1rem);
-  font-weight: 400;
+  font-weight: 350;
   font-size: calc(31 / 16 * 1rem);
   line-height: 1;
   font-family: var(--fontstack-alt);
-  color: var(--color-titles);
+  color: var(--color-text-highlight);
   text-decoration: none;
 
   &:hover,

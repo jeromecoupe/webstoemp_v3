@@ -1,9 +1,5 @@
 module.exports = [
   {
-    label: "RSS feed",
-    url: "/feed.xml",
-  },
-  {
     label: "Github",
     url: "https://github.com/jeromecoupe",
   },

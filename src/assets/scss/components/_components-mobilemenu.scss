@@ -3,6 +3,10 @@
 // ==========================================
 
 .c-mobilemenu {
+  --color-background: var(--color-gray1);
+  --color-text-highlight: var(--color-white);
+  --color-text: var(--color-white);
+
   display: none;
 
   position: fixed;

@@ -5,9 +5,17 @@
 .l-container {
   margin-inline: auto;
   padding-inline: calc(18 / 16 * 1rem);
-  max-width: 1380px;
+  max-width: var(--container-width);
 
   @include breakpoint(medium) {
+    padding-inline: calc(24 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    padding-inline: calc(36 / 16 * 1rem);
+  }
+
+  @include breakpoint(xlarge) {
     padding-inline: calc(36 / 16 * 1rem);
   }
 }

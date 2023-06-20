@@ -18,16 +18,31 @@
 
   --color-white: #ffffff;
 
-  // incident variables
+  // default theme
   --color-accent: var(--color-brand);
   --color-accent-warm: var(--color-brand-warm);
   --color-accent-dark: var(--color-brand-dark);
 
   --color-background: var(--color-gray1);
 
-  --color-text: var(--color-gray6);
+  --color-text: var(--color-white);
+  --color-text-highlight: var(--color-white);
   --color-text-offset: var(--color-gray5);
-  --color-text-light: var(--color-gray7);
 
-  --color-titles: var(--color-white);
+  --color-border: rgba(255, 255, 255, 0.18);
+}
+
+// light theme
+[data-theme="light"] {
+  --color-accent: var(--color-brand);
+  --color-accent-warm: var(--color-brand-warm);
+  --color-accent-dark: var(--color-brand-dark);
+
+  --color-background: var(--color-white);
+
+  --color-text: var(--color-gray3);
+  --color-text-highlight: var(--color-gray1);
+  --color-text-offset: var(--color-gray4);
+
+  --color-border: rgba(0, 0, 0, 0.12);
 }

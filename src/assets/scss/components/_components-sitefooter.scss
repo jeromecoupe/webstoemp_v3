@@ -3,11 +3,11 @@
 // ==========================================
 
 .c-sitefooter {
-  display: block;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-gray1);
 }
 
 .c-sitefooter__main {
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
   padding-block-start: calc(42 / 16 * 1rem);
   padding-block-end: calc(24 / 16 * 1rem);
 
@@ -17,12 +17,17 @@
 
   @include breakpoint(medium) {
     padding-block-start: calc(60 / 16 * 1rem);
-    grid-template-columns: minmax(0, 4fr) minmax(0, 3fr) minmax(0, 3fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @include breakpoint(large) {
     padding-block-start: calc(90 / 16 * 1rem);
-    grid-template-columns: (minmax(0, 6fr)) minmax(0, 3fr) minmax(0, 3fr);
+  }
+}
+
+.c-sitefooter__message {
+  @include breakpoint(medium) {
+    grid-column: 1 / span 2;
   }
 }
 

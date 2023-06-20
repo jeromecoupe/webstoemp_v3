@@ -1,9 +1,7 @@
 // ==========================================
-// copyright
+// container
 // ==========================================
 
-.c-copyright {
-  margin: 0;
-  font-size: 1rem;
-  color: var(--color-gray5);
+:root {
+  --container-width: 1500px;
 }

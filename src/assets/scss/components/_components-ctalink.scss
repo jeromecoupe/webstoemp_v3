@@ -9,6 +9,8 @@
   text-decoration: none;
   font-weight: 450;
   border-block-end: 2px solid var(--color-accent);
+
+  transition: border-color 0.2s ease-out;
 }
 
 .c-ctalink:hover,

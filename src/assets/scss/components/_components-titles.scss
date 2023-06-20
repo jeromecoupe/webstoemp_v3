@@ -11,7 +11,7 @@
   font-weight: 450;
   font-family: var(--fontstack-alt);
   line-height: 1.32;
-  color: var(--color-titles);
+  color: var(--color-text-highlight);
   margin-bottom: 0.72em;
 }
 
@@ -48,20 +48,24 @@
   font-weight: 400;
   font-family: var(--fontstack-alt);
   line-height: 1.32;
-  color: var(--color-titles);
+  color: var(--color-text-highlight);
   margin-bottom: 0.5em;
   font-size: clamp(36 / 16 * 1rem, 1rem + 3vw, 54 / 16 * 1rem);
 }
 
 // ==========================================
-// small titles
+// footer titles
 // ==========================================
 
-.c-smalltitle {
+.c-footertitle {
   font-weight: 500;
   font-family: var(--fontstack-alt);
   line-height: 1.32;
-  color: var(--color-titles);
+  color: var(--color-white);
   margin-bottom: 0.84em;
   font-size: 1rem;
+
+  @include breakpoint(medium) {
+    font-size: calc(18 / 16 * 1rem);
+  }
 }

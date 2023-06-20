@@ -1,0 +1,26 @@
+// ==========================================
+// manifesto
+// ==========================================
+
+.c-manifesto {
+  display: block;
+}
+
+.c-manifesto__title {
+  font-weight: 500;
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--color-text-offset);
+}
+
+.c-manifesto__text {
+  line-height: 1.36;
+  font-weight: 360;
+  font-size: clamp(29/16 * 1rem, 1rem + 2vw, 42/16 * 1rem);
+  font-family: var(--fontstack-alt);
+  max-width: 35ch;
+  margin-block-end: 0;
+
+  & > span {
+    font-style: italic;
+  }
+}
