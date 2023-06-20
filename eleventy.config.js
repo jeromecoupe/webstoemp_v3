@@ -7,6 +7,7 @@ const blogposts = require("./src/_11ty/collections/blogposts.js");
 // filters
 const dates = require("./src/_11ty/filters/dates.js");
 const limit = require("./src/_11ty/filters/limit.js");
+const swapExt = require("./src/_11ty/filters/swap-extension.js");
 
 module.exports = function (eleventyConfig) {
   // collections
@@ -18,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("dateFormat", dates.dateFormat);
   eleventyConfig.addFilter("dateFeed", dates.dateFeed);
   eleventyConfig.addFilter("limit", limit);
+  eleventyConfig.addFilter("swapExt", swapExt);
 
   // plugins
   eleventyConfig.addPlugin(syntaxHighlight);
