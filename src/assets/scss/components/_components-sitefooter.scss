@@ -3,13 +3,13 @@
 // ==========================================
 
 .c-sitefooter {
-  border-top: 1px solid var(--color-border);
   background-color: var(--color-gray1);
 }
 
 .c-sitefooter__main {
+  border-top: 1px solid var(--color-border);
   padding-block-start: calc(42 / 16 * 1rem);
-  padding-block-end: calc(24 / 16 * 1rem);
+  padding-block-end: calc(18 / 16 * 1rem);
 
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -17,6 +17,7 @@
 
   @include breakpoint(medium) {
     padding-block-start: calc(60 / 16 * 1rem);
+    padding-block-end: calc(36 / 16 * 1rem);
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -32,5 +33,6 @@
 }
 
 .c-sitefooter__end {
-  padding-block: calc(18 / 16 * 1rem);
+  // border-top: 1px solid var(--color-border);
+  padding-block: calc(16 / 16 * 1rem);
 }

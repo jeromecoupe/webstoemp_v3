@@ -3,28 +3,21 @@
 // ==========================================
 
 .c-homebanner {
-  display: block;
-
-  @include breakpoint(large) {
-    margin-inline: calc(18 / 16 * 1rem);
-  }
+  background-color: var(--color-background);
+  margin-inline: calc(18 / 16 * 1rem);
 }
 
 .c-homebanner__image {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 840px;
+  max-height: 780px;
   object-fit: cover;
 }
 
 .c-homebanner__caption {
-  text-align: end;
+  padding-block: 12px;
+  text-align: right;
+  color: var(--color-text-offset);
   font-size: calc(12 / 16 * 1rem);
-  padding: calc(12 / 16 * 1rem) calc(12 / 16 * 1rem);
-  color: var(--color-gray5);
-
-  @include breakpoint(large) {
-    padding-inline: 0;
-  }
 }

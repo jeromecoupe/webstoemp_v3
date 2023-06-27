@@ -33,36 +33,36 @@ permalink: /index.html
   {% set banner1500 = '/assets/img/homebanners/1500x844/' ~ bannerImg %}
 
   <div class="c-homebanner">
-      <figure class="c-figure">
-        <picture>
-          <source type="image/webp"
-                  media="(min-width: 600px)"
-                  srcset="{{ banner1024|swapExt('webp') }} 1024w,
-                          {{ banner1500|swapExt('webp') }} 1500w"
-                  sizes="100vw"
-                  width="1500"
-                  height="844">
-          <source media="(min-width: 600px)"
-                  srcset="{{ banner1024 }} 1024w,
-                          {{ banner1500 }} 1500w"
-                  sizes="100vw"
-                  width="1500"
-                  height="844">
-          <source type="image/webp"
-                  srcset="{{ banner800|swapExt('webp') }} 800w"
-                  width="800"
-                  height="600">
-          <img src="{{ banner800 }}"
-              width="800"
-              height="600"
-              alt="{{ bannerCaption }}"
-              class="c-homebanner__image">
-        </picture>
-        <figcaption class="c-homebanner__caption">{{ bannerCaption }}</figcaption>
-      </figure>
+    <figure>
+      <picture>
+        <source type="image/webp"
+                media="(min-width: 600px)"
+                srcset="{{ banner1024|swapExt('webp') }} 1024w,
+                        {{ banner1500|swapExt('webp') }} 1500w"
+                sizes="100vw"
+                width="1500"
+                height="844">
+        <source media="(min-width: 600px)"
+                srcset="{{ banner1024 }} 1024w,
+                        {{ banner1500 }} 1500w"
+                sizes="100vw"
+                width="1500"
+                height="844">
+        <source type="image/webp"
+                srcset="{{ banner800|swapExt('webp') }} 800w"
+                width="800"
+                height="600">
+        <img src="{{ banner800 }}"
+            width="800"
+            height="600"
+            alt="{{ bannerCaption }}"
+            class="c-homebanner__image">
+      </picture>
+      <figcaption class="c-homebanner__caption">{{ bannerCaption }}</figcaption>
+    </figure>
   </div>
 
-  <div class="c-pagesection">
+  <div class="c-pagesection" data-theme="light">
     <div class="l-container">
 
       <div class="c-pagesection__block">
@@ -72,7 +72,7 @@ permalink: /index.html
             <h2 class="c-h2">Meet the cook</h2>
           </div>
           <div>
-            <p>When I am not busy designing, coding up a website or warping young minds at school, chances are I am drinking a few Belgian craft beers with friends somewhere in Brussels.</p>
+            <p>Webstoemp is the online kitchen of Jérôme Coupé, belgian designer, developer and teacher. When I am not busy designing, coding up a website or warping young minds at school, chances are I am drinking a few Belgian craft beers with friends somewhere in Brussels.</p>
             <p>Although I work on web apps too, I must confess I have a soft spot for building publishing platforms and content-oriented websites.</p>
             <p><a class="c-ctalink" href="#">More about me</a></p>
           </div>
