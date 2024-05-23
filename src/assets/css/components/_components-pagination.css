@@ -1,0 +1,47 @@
+/* ==========================================
+pagination
+========================================== */
+
+.c-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(18 / 16 * 1rem);
+
+  margin-block-start: calc(32 / 16 * 1rem);
+  border-block-start: 1px solid var(--color-border);
+  padding-block: calc(18 / 16 * 1rem);
+}
+
+.c-pager {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(3 / 16 * 1rem);
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-pager__link {
+  display: block;
+  color: var(--color-icons);
+  transition: color 0.2s ease-out;
+
+  & > svg {
+    display: block;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-icons-hover);
+  }
+}
+
+.c-pagecounter {
+  margin: 0;
+  padding: 0;
+}

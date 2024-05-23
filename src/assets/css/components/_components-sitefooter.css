@@ -1,0 +1,38 @@
+/* ==========================================
+sitefooter
+========================================== */
+
+.c-sitefooter {
+  background-color: var(--color-background-alt);
+  border-top: 1px solid var(--color-border-alt);
+}
+
+.c-sitefooter__main {
+  padding-block-start: calc(42 / 16 * 1rem);
+  padding-block-end: calc(18 / 16 * 1rem);
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: calc(30 / 16 * 1rem);
+
+  @media (width >= 750px) {
+    padding-block-start: calc(60 / 16 * 1rem);
+    padding-block-end: calc(36 / 16 * 1rem);
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--grid-gutter);
+  }
+
+  @media (width >= 1024px) {
+    padding-block-start: calc(90 / 16 * 1rem);
+  }
+}
+
+.c-sitefooter__message {
+  @media (width >= 750px) {
+    grid-column: 1 / span 2;
+  }
+}
+
+.c-sitefooter__end {
+  padding-block: calc(16 / 16 * 1rem);
+}

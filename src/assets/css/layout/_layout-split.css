@@ -1,0 +1,24 @@
+/* ==========================================
+splits
+========================================== */
+
+.l-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+
+  @media (width >= 1024px) {
+    gap: var(--grid-gap);
+  }
+}
+
+.l-split--half {
+  @media (width >= 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.l-split--1fr2fr {
+  @media (width >= 1024px) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+}

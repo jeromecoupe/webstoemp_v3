@@ -1,0 +1,43 @@
+<footer class="c-sitefooter">
+  <div class="l-container">
+    <div class="c-sitefooter__main">
+      <div class="c-sitefooter__message">
+        <div class="c-footermessage">
+          <p class="c-footermessage__ask">Have a project ?</p>
+          <p class="c-footermessage__say">Let's have a coffee.</p>
+        </div>
+      </div>
+      <div class="c-sitefooter__nav">
+        <nav>
+          <h2 class="c-footertitle">Navigation</h2>
+          {% for item in mainnav %}
+            {% if loop.first %}<ul class="c-footernav">{% endif %}
+              
+              {% set currentClass = "" %}
+              {% set currentAria = "" %}
+              {% if currentSection == item.trigger %}
+                {% set currentClass = "is-active" %}
+                {% set currentAria = 'aria-current="page"'|safe %}
+              {% endif %}
+              <li class="c-footernav__item"><a class="c-footernav__link  {{ currentCLass }}" {{ currentAria }} href="{{ item.url }}">{{ item.label }}</a></li>
+
+            {% if loop.last %}</ul>{% endif %}
+          {% endfor %}
+        </nav>
+      </div>
+      <div class="c-sitefooter__social">
+        <nav>
+          <h2 class="c-footertitle">Elsewhere</h2>
+          {% for item in social %}
+            {% if loop.first %}<ul class="c-footernav">{% endif %}
+              <li class="c-footernav__item"><a class="c-footernav__link" href="{{ item.url }}">{{ item.label }}</a></li>
+            {% if loop.last %}</ul>{% endif %}
+          {% endfor %}
+        </nav>
+      </div>
+    </div>
+    <div class="c-sitefooter__end">
+      <p class="c-copyright">Copyright 2012-{{ site.buildTime|dateFormat("yyyy") }} &mdash; &copy; Jérôme Coupé</p>
+    </div>
+  </div>
+</footer>

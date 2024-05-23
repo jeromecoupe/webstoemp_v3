@@ -1,7 +1,7 @@
-const fs = require("fs");
-const path = require("path");
-const { globSync } = require("glob");
-const sharp = require("sharp");
+import fs from "node:fs";
+import path from "node:path";
+import { globSync } from "glob";
+import sharp from "sharp";
 
 const config = {
   allowedFormats: ["jpg", "jpeg", "webp", "avif", "png", "gif"],
@@ -20,9 +20,20 @@ const transforms = [
     },
   },
   {
-    // 800x600 thumbnails for blogposts
+    // 600x600 thumbnails for blogposts
     src: "./src/assets/img/blogposts/",
-    dist: "./dist/assets/img/blogposts/800x600/",
+    dist: "./dist/assets/img/blogposts/600x600/",
+    formats: ["jpg"],
+    options: {
+      width: 600,
+      height: 600,
+      fit: "cover",
+    },
+  },
+  {
+    // 800x600 thumbnails for projects
+    src: "./src/assets/img/projects/",
+    dist: "./dist/assets/img/projects/800x600/",
     formats: ["jpg"],
     options: {
       width: 800,
@@ -30,29 +41,21 @@ const transforms = [
       fit: "cover",
     },
   },
-  {
-    // 600x450 thumbnails for blogposts
-    src: "./src/assets/img/blogposts/",
-    dist: "./dist/assets/img/blogposts/600x450/",
-    formats: ["jpg"],
-    options: {
-      width: 600,
-      height: 450,
-      fit: "cover",
-    },
-  },
-  {
-    // 600x600 thumbnails for blogposts
-    src: "./src/assets/img/blogposts/",
-    dist: "./dist/assets/img/blogposts/600x600/",
-    formats: ["jpg", "webp"],
-    options: {
-      width: 600,
-      height: 600,
-      fit: "cover",
-    },
-  },
 ];
+
+/**
+ * Create Directory recursively from path
+ */
+function createDir(path) {
+  // return if dir already exists
+  if (fs.existsSync(path)) return;
+  // create dir
+  try {
+    fs.mkdirSync(path, { recursive: true });
+  } catch (err) {
+    throw new Error(err);
+  }
+}
 
 /**
  * Generate images based on transforms object
@@ -62,7 +65,7 @@ async function init() {
   let sharpPromises = [];
 
   // loop through transforms
-  transforms.forEach((transform) => {
+  transforms.forEach(async (transform) => {
     let inputDir = transform.src;
     let outputDir = transform.dist;
     let formats = transform.formats;
@@ -89,10 +92,8 @@ async function init() {
     );
     let imagesFiles = globSync(imagesGlob);
 
-    // Create output dir if does not exists
-    if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true });
-    }
+    // Create output dir
+    createDir(outputDir);
 
     // loop through all images and create Sharp promises
     imagesFiles.forEach((file) => {
@@ -124,10 +125,10 @@ async function init() {
   // resolve all promises in parallel
   try {
     await Promise.all(sharpPromises);
-    console.log(`${sharpPromises.length} images resized`);
+    console.log(`${sharpPromises.length} resized images generated`);
   } catch (err) {
     throw new Error(err);
   }
 }
 
-module.export = init();
+export default init();

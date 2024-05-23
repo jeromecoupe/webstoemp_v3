@@ -1,0 +1,56 @@
+---
+pagination: 
+  data: collections.blogposts
+  size: 12
+  alias: blogposts
+permalink: /blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber + 1 }}/{% endif %}index.html
+---
+
+{% extends "layouts/base.njk" %}
+
+{% from "components/blogcard.njk" import blogcard %}
+
+{% set metaTitle = "Blog" %}
+{% set metaDescription = "Thoughts and ramblings from Jérôme Coupé." %}
+{% set metaImage = "" %}
+{% set currentSection = "blog" %}
+
+{% block content %}
+
+  <div class="c-pageintro">
+    <div class="l-container">
+
+      <div class="l-split  l-split--half">
+        <div>
+          <h1 class="c-h1">Blogposts</h1>
+        </div>
+        <div>
+          <p>I write about whatever piques my interest at the moment. I just hope it will help me remember it all when I am old, gray and nodding by the fire. Read on or subscribe to the RSS feed if that's your thing.</p>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+
+  <div class="c-pagesection">
+    <div class="l-container">
+
+      {% for item in blogposts %}
+        {% if loop.first %}<ul class="l-grid  l-grid--rowgap-l  l-grid--2cols@small  l-grid--3cols@medium  l-grid--4cols@large">{% endif %}
+          <li>
+            {{ blogcard({
+              title: item.data.title,
+              url: item.url,
+              image: item.data.image,
+              date: item.date
+            }) }}
+          </li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
+
+      {% include "components/pagination.njk" %}
+
+    </div>
+  </div>
+  
+{% endblock %}

@@ -1,4 +1,4 @@
-const path = require("path");
+import path from "node:path";
 
 /**
  * Swap file extension
@@ -13,4 +13,4 @@ function swapExt(filename, extension) {
   return filename.replace(oldExt, newExt);
 }
 
-module.exports = swapExt;
+export { swapExt };

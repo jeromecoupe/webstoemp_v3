@@ -1,0 +1,26 @@
+{% if pagination.pages|length > 1 %}
+  <div class="c-pagination">
+    <nav aria-label="pagination">
+      <ul class="c-pager">
+        {% if pagination.href.previous %}
+          <li class="c-pager__item">
+            <a class="c-pager__link" href="{{ pagination.href.first }}" title="first page">{% include "svg/icon-page-first.svg" %}</a>
+          </li>
+          <li class="c-pager__item">
+            <a class="c-pager__link" href="{{ pagination.href.previous }}" title="previous page">{% include "svg/icon-page-previous.svg" %}</a>
+          </li>
+        {% endif %}
+
+        {% if pagination.href.next %}
+          <li class="c-pager__item">
+            <a class="c-pager__link" href="{{ pagination.href.next }}" title="next page">{% include "svg/icon-page-next.svg" %}</a>
+          </li>
+          <li class="c-pager__item">
+            <a class="c-pager__link" href="{{ pagination.href.last }}" title="last page">{% include "svg/icon-page-last.svg" %}</a>
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+    <p class="c-pagecounter">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages|length }}</p>
+  </div>
+{% endif %}

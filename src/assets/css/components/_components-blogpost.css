@@ -1,0 +1,65 @@
+/* ==========================================
+blogpost
+========================================== */
+
+.c-blogpost__intro {
+  background-color: var(--color-background-alt);
+  color: var(--color-text-alt);
+
+  padding-block-start: calc(48 / 16 * 1rem);
+  padding-block-end: calc(30 / 16 * 1rem);
+
+  @include breakpoint(small) {
+    padding-block-start: calc(60 / 16 * 1rem);
+    padding-block-end: calc(18 / 16 * 1rem);
+  }
+
+  @include breakpoint(medium) {
+    padding-block-start: calc(90 / 16 * 1rem);
+    padding-block-end: calc(24 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    padding-block-start: calc(120 / 16 * 1rem);
+    padding-block-end: calc(30 / 16 * 1rem);
+  }
+
+  @include breakpoint(xlarge) {
+    padding-block-start: calc(150 / 16 * 1rem);
+    padding-block-end: calc(42 / 16 * 1rem);
+  }
+}
+
+.c-blogpost__date {
+  font-size: calc(16 / 16 * 1rem);
+  color: var(--color-accent-dark);
+  margin-block-end: calc(6 / 16 * 1rem);
+}
+
+.c-blogpost__image {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-background-alt) 0,
+    var(--color-background-alt) 50%,
+    var(--color-background) 50%,
+    var(--color-background) 100%
+  );
+  padding-block-end: calc(30 / 16 * 1rem);
+
+  @include breakpoint(medium) {
+    padding-block-end: calc(48 / 16 * 1rem);
+  }
+
+  @include breakpoint(large) {
+    padding-block-end: calc(60 / 16 * 1rem);
+  }
+
+  @include breakpoint(xlarge) {
+    padding-block-end: calc(90 / 16 * 1rem);
+  }
+}
+
+.c-blogpost__body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}

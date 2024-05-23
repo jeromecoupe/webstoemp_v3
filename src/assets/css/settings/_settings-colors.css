@@ -1,0 +1,39 @@
+/* ==========================================
+colors
+========================================== */
+
+:root {
+  --color-yellow: hsl(50, 100%, 50%);
+  --color-yellow-dark: hsl(50, 100%, 40%);
+  --color-yellow-washed: hsl(50, 100%, 95%);
+
+  --color-gray100: hsl(40, 3%, 3%);
+  --color-gray200: hsl(40, 3%, 18%);
+  --color-gray300: hsl(40, 3%, 25%);
+  --color-gray400: hsl(40, 3%, 45%);
+  --color-gray500: hsl(40, 3%, 60%);
+  --color-gray600: hsl(40, 3%, 70%);
+  --color-gray700: hsl(40, 3%, 85%);
+  --color-gray800: hsl(40, 3%, 97%);
+
+  --color-white: #ffffff;
+
+  // default theme
+  --color-accent: var(--color-yellow);
+  --color-accent-dark: var(--color-yellow-dark);
+  --color-accent-washed: var(--color-yellow-washed);
+
+  --color-background: var(--color-white);
+  --color-background-alt: var(--color-gray100);
+
+  --color-text: var(--color-gray100);
+  --color-text-alt: var(--color-white);
+  --color-text-offset: var(--color-gray400);
+  --color-text-offset-alt: var(--color-gray500);
+
+  --color-icons: var(--color-gray700);
+  --color-icons-hover: var(--color-yellow);
+
+  --color-border: rgba(0, 0, 0, 0.12);
+  --color-border-alt: rgba(255, 255, 255, 0.18);
+}

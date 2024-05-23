@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     label: "Github",
     url: "https://github.com/jeromecoupe",

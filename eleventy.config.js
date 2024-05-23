@@ -1,28 +1,35 @@
 //plugins
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+import syntaxHighlightPlugin from "@11ty/eleventy-plugin-syntaxhighlight";
 
 // collections
-const blogposts = require("./src/_11ty/collections/blogposts.js");
+import { blogposts } from "./src/_11ty/collections/blogposts.js";
+import { projects } from "./src/_11ty/collections/projects.js";
 
 // filters
-const dates = require("./src/_11ty/filters/dates.js");
-const limit = require("./src/_11ty/filters/limit.js");
-const swapExt = require("./src/_11ty/filters/swap-extension.js");
+import {
+  dateFeed,
+  dateFormat,
+  dateFull,
+  dateISO,
+} from "./src/_11ty/filters/dates.js";
+import { limit } from "./src/_11ty/filters/limit.js";
+import { swapExt } from "./src/_11ty/filters/swap-extension.js";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   // collections
   eleventyConfig.addCollection("blogposts", blogposts);
+  eleventyConfig.addCollection("projects", projects);
 
   // filters
-  eleventyConfig.addFilter("dateISO", dates.dateISO);
-  eleventyConfig.addFilter("dateFull", dates.dateFull);
-  eleventyConfig.addFilter("dateFormat", dates.dateFormat);
-  eleventyConfig.addFilter("dateFeed", dates.dateFeed);
+  eleventyConfig.addFilter("dateISO", dateISO);
+  eleventyConfig.addFilter("dateFull", dateFull);
+  eleventyConfig.addFilter("dateFormat", dateFormat);
+  eleventyConfig.addFilter("dateFeed", dateFeed);
   eleventyConfig.addFilter("limit", limit);
   eleventyConfig.addFilter("swapExt", swapExt);
 
   // plugins
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(syntaxHighlightPlugin);
 
   // ignores
   eleventyConfig.ignores.add("src/assets/**/*");
@@ -52,4 +59,4 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
   };
-};
+}

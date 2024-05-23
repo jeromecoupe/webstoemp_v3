@@ -12,4 +12,4 @@ function limit(array, size) {
   return array.slice(0, size);
 }
 
-module.exports = limit;
+export { limit };

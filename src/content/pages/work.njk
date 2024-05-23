@@ -1,0 +1,54 @@
+---
+permalink: /work/index.html
+---
+
+{% extends "layouts/base.njk" %}
+
+{% from "components/projectcard.njk" import projectcard %}
+
+{% set metaTitle = "Selected Work" %}
+{% set metaDescription = "New or older projects." %}
+{% set metaImage = "" %}
+{% set currentSection = "work" %}
+
+{% block content %}
+
+  <div class="c-pageintro">
+    <div class="l-container">
+
+      <div class="l-split  l-split--half">
+        <div>
+          <h1 class="c-h1">Selected Projects</h1>
+        </div>
+        <div class="c-text-md">
+          <p>Projects my clients and I worked on together. Some are fresh out the oven, while others are a bit older. I tried my best to give you a little bit of variety in terms of scopes and functionalities.</p>
+        </div>
+      </div>
+
+        
+    </div>
+  </div>
+
+  <div class="c-pagesection">
+    <div class="l-container">
+
+        {% for item in collections.projects %}
+          {% if loop.first %}<ul class="l-grid  l-grid--rowgap-l">{% endif %}
+          
+          <li>
+            {{ projectcard({
+              image: item.data.image,
+              title: item.data.title,
+              subtitle: item.data.subtitle,
+              text: item.content|safe,
+              tags: item.data.tags,
+              url: item.data.url
+            }) }}
+          </li>
+
+        {% endfor %}
+
+    </div>
+  </div>
+  
+{% endblock %}

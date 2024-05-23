@@ -1,0 +1,159 @@
+/* ==========================================
+margin small
+========================================== */
+
+.u-mbs-s {
+  margin-block-start: 6px !important;
+}
+
+.u-mbe-s {
+  margin-block-end: 6px !important;
+}
+
+.u-mis-s {
+  margin-inline-start: 6px !important;
+}
+
+.u-mie-s {
+  margin-inline-end: 6px !important;
+}
+
+/* ==========================================
+margin base
+========================================== */
+
+.u-mbs-m {
+  margin-block-start: 18px !important;
+}
+
+.u-mbe-m {
+  margin-block-end: 18px !important;
+}
+
+.u-mis-m {
+  margin-inline-start: 18px !important;
+}
+
+.u-mie-m {
+  margin-inline-end: 18px !important;
+}
+
+/* ==========================================
+margin large
+========================================== */
+
+.u-mbs-l {
+  margin-block-start: 24px !important;
+}
+
+.u-mbe-l {
+  margin-block-end: 24px !important;
+}
+
+.u-mis-l {
+  margin-inline-start: 24px !important;
+}
+
+.u-mie-l {
+  margin-inline-end: 24px !important;
+}
+
+/* ==========================================
+margin xl
+========================================== */
+
+.u-mbs-xl {
+  margin-block-start: 30px !important;
+}
+
+.u-mbe-xl {
+  margin-block-end: 30px !important;
+}
+
+.u-mis-xl {
+  margin-inline-start: 30px !important;
+}
+
+.u-mie-xl {
+  margin-inline-end: 30px !important;
+}
+
+// ==========================================
+// padding small
+// ==========================================
+
+.u-pbs-s {
+  padding-block-start: 6px !important;
+}
+
+.u-pbe-s {
+  padding-block-end: 6px !important;
+}
+
+.u-pis-s {
+  padding-inline-start: 6px !important;
+}
+
+.u-pie-s {
+  padding-inline-end: 6px !important;
+}
+
+/* ==========================================
+padding base
+========================================== */
+
+.u-pbs-m {
+  padding-block-start: 18px !important;
+}
+
+.u-pbe-m {
+  padding-block-end: 18px !important;
+}
+
+.u-pis-m {
+  padding-inline-start: 18px !important;
+}
+
+.u-pie-m {
+  padding-inline-end: 18px !important;
+}
+
+/* ==========================================
+padding large
+========================================== */
+
+.u-pbs-l {
+  padding-block-start: 24px !important;
+}
+
+.u-pbe-l {
+  padding-block-end: 24px !important;
+}
+
+.u-pis-l {
+  padding-inline-start: 24px !important;
+}
+
+.u-pie-l {
+  padding-inline-end: 24px !important;
+}
+
+/* ==========================================
+padding xl
+========================================== */
+
+.u-pbs-xl {
+  padding-block-start: 30px !important;
+}
+
+.u-pbe-xl {
+  padding-block-end: 30px !important;
+}
+
+.u-pis-xl {
+  padding-inline-start: 30px !important;
+}
+
+.u-pie-xl {
+  padding-inline-end: 30px !important;
+}

@@ -1,0 +1,35 @@
+{% macro projectcard(params) %}
+
+  {% set roles = params.tags|join(", ") %}
+
+  <div class="c-projectcard">
+    <div class="c-projectcard__image">
+
+      {% set img800 = "/assets/img/projects/800x600/" ~ params.image %}
+      {% set img1024 = "/assets/img/projects/" ~ params.image %}
+      <img src="{{ img800 }}" 
+           srcset="{{ img800 }} 800w,
+                   {{ img1024 }} 1024w"
+           sizes="(min-width: 750px) 50vw,
+                  100vw"
+           class="o-fluidimg"
+           loading="lazy"
+           decoding="async"
+           width="1024"
+           height="768"
+           alt="Girl smiling">
+
+    </div>
+    <div class="c-projectcard__content">
+
+      <h2 class="c-projectcard__title">{{ params.title }}</h2>
+      <h3 class="c-projectcard__subtitle">{{ params.subtitle }}</h3>
+      <p class="c-projectcard__text">{{ params.text }}</p>
+      <p class="c-projectcard__role">Roles: {{ roles }}</p>
+      {% if params.url %}
+        <p><a class="c-ctalink" href="{{ params.url }}">Visit website</a></p>
+      {% endif %}
+
+    </div>
+  </div>
+{% endmacro %}

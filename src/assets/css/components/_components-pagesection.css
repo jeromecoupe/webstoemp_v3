@@ -1,0 +1,53 @@
+/* ==========================================
+section
+========================================== */
+
+.c-pagesection {
+  padding-block: calc(48 / 16 * 1rem);
+
+  @media (width >= 500px) {
+    padding-block: calc(60 / 16 * 1rem);
+  }
+
+  @media (width >= 750px) {
+    padding-block: calc(90 / 16 * 1rem);
+  }
+
+  @media (width >= 1024px) {
+    padding-block: calc(120 / 16 * 1rem);
+  }
+
+  @media (width >= 1500px) {
+    padding-block: calc(150 / 16 * 1rem);
+  }
+}
+
+.c-pagesection--alt {
+  background-color: var(--color-background-alt);
+  color: var(--color-text-alt);
+}
+
+.c-pagesection__block + .c-pagesection__block {
+  margin-block-start: calc(48 / 16 * 1rem);
+
+  @media (width >= 500px) {
+    margin-block-start: calc(60 / 16 * 1rem);
+  }
+
+  @media (width >= 750px) {
+    margin-block-start: calc(90 / 16 * 1rem);
+  }
+
+  @media (width >= 1024px) {
+    margin-block-start: calc(120 / 16 * 1rem);
+  }
+
+  @media (width >= 1500px) {
+    margin-block-start: calc(150 / 16 * 1rem);
+  }
+}
+
+.c-pagesection__block--border {
+  padding-block-start: calc(18 / 16 * 1rem);
+  border-top: 1px solid var(--color-border);
+}

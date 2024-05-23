@@ -1,4 +1,4 @@
-const { DateTime } = require("luxon");
+import { DateTime } from "luxon";
 
 /**
  * Format date: Feeds
@@ -50,4 +50,4 @@ function dateISO(date) {
   return dt.toISO();
 }
 
-module.exports = { dateFeed, dateFormat, dateFull, dateISO };
+export { dateFeed, dateFormat, dateFull, dateISO };
