@@ -1,8 +1,5 @@
-<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="18" cy="18" r="18" fill="var(--color-accent)" />
-  <g fill="var(--color-gray100)">
-    <rect x="10" y="13" width="16" height="2" />
-    <rect x="10" y="17" width="16" height="2" />
-    <rect x="10" y="21" width="16" height="2" />
-  </g>
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="6" y="9" width="18" height="2" fill="#221C06"/>
+<rect x="6" y="14" width="18" height="2" fill="#221C06"/>
+<rect x="6" y="19" width="18" height="2" fill="#221C06"/>
 </svg>

@@ -33,13 +33,13 @@
   {# JS #}
   <script type="module" src="/assets/js/main.bundle.js"></script>
 </head>
-<body data-theme="light">
+<body data-theme="{{ colorTheme|default('default') }}">
   <div class="c-page">
-    {% include "components/header.njk" %}
+    {% include "components/siteheader.njk" %}
     <main>
       {% block content %}{% endblock %}
     </main>
-    {% include "components/footer.njk" %}
+    {% include "components/sitefooter.njk" %}
   </div>
 </body>
 </html>

@@ -1,4 +1,10 @@
-<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="18" cy="18" r="18" fill="var(--color-accent)" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M18 16.5857L13.0503 11.636L11.6361 13.0502L16.5858 17.9999L11.636 22.9497L13.0502 24.3639L18 19.4141L22.9498 24.3639L24.364 22.9497L19.4142 17.9999L24.3639 13.0502L22.9497 11.636L18 16.5857Z" fill="var(--color-gray100)" />
+<svg
+  width="30"
+  height="30"
+  viewBox="0 0 30 30"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M15.2504 13.5848L9.34326 7.67773L7.92905 9.09195L13.8362 14.9991L7.92896 20.9062L9.34317 22.3205L15.2504 16.4133L20.657 21.8199L22.0712 20.4057L16.6646 14.9991L22.0711 9.59254L20.6569 8.17833L15.2504 13.5848Z"
+    fill="white" />
 </svg>

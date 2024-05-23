@@ -3,6 +3,8 @@ mobile nav
 ========================================== */
 
 .c-mobilenav {
+  --anim-duration: 0.2s;
+
   list-style: none;
   margin: 0;
   padding: 0;
@@ -15,21 +17,28 @@ mobile nav
 }
 
 .c-mobilenav__item {
-  animation-delay: calc(0.2s + (var(--delay) * 0.05s));
-  animation-name: slideFromLeft;
-  animation-duration: 0.15s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
+  display: block;
+  overflow: hidden;
 }
 
 .c-mobilenav__link {
+  animation-delay: calc((var(--anim-duration) + (var(--delay)) * 0.06s));
+  animation-name: slideFromBottom;
+  animation-duration: var(--anim-duration);
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+
   display: block;
-  padding-block: calc(6 / 16 * 1rem);
-  font-weight: 350;
-  font-size: calc(31 / 16 * 1rem);
+  padding-block: calc(3 / 16 * 1rem);
+  font-weight: 300;
+  font-size: clamp(
+    calc(32 / 16 * 1rem),
+    calc(1rem + 3vw),
+    calc(41 / 16 * 1rem)
+  );
   line-height: 1;
   font-family: var(--fontstack-main);
-  color: var(--color-text-highlight);
+  color: var(--color-white);
   text-decoration: none;
 
   &:hover,

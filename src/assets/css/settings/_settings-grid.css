@@ -3,5 +3,5 @@ grids
 ========================================== */
 
 :root {
-  --grid-gutter: calc(24 / 16 * 1rem);
+  --grid-gap: calc(18 / 16 * 1rem);
 }

@@ -4,11 +4,10 @@ call to action link
 
 .c-ctalink {
   display: inline-block;
-  padding-block: var(--space-xxs);
-  color: var(--color-text-light);
+  color: var(--color-text-primary);
   text-decoration: none;
   font-weight: 400;
-  border-block-end: 2px solid var(--color-accent);
+  border-block-end: 3px solid var(--color-accent);
 
   transition: border-color 0.2s ease-out;
 }

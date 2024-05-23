@@ -9,22 +9,22 @@ blogpost
   padding-block-start: calc(48 / 16 * 1rem);
   padding-block-end: calc(30 / 16 * 1rem);
 
-  @include breakpoint(small) {
+  @media (width >= 500px) {
     padding-block-start: calc(60 / 16 * 1rem);
     padding-block-end: calc(18 / 16 * 1rem);
   }
 
-  @include breakpoint(medium) {
+  @media (width >= 750px) {
     padding-block-start: calc(90 / 16 * 1rem);
     padding-block-end: calc(24 / 16 * 1rem);
   }
 
-  @include breakpoint(large) {
+  @media (width >= 1024px) {
     padding-block-start: calc(120 / 16 * 1rem);
     padding-block-end: calc(30 / 16 * 1rem);
   }
 
-  @include breakpoint(xlarge) {
+  @media (width >= 1500px) {
     padding-block-start: calc(150 / 16 * 1rem);
     padding-block-end: calc(42 / 16 * 1rem);
   }
@@ -46,15 +46,15 @@ blogpost
   );
   padding-block-end: calc(30 / 16 * 1rem);
 
-  @include breakpoint(medium) {
+  @media (width >= 750px) {
     padding-block-end: calc(48 / 16 * 1rem);
   }
 
-  @include breakpoint(large) {
+  @media (width >= 1024px) {
     padding-block-end: calc(60 / 16 * 1rem);
   }
 
-  @include breakpoint(xlarge) {
+  @media (width >= 1500px) {
     padding-block-end: calc(90 / 16 * 1rem);
   }
 }

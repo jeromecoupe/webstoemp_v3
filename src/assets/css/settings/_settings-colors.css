@@ -3,9 +3,21 @@ colors
 ========================================== */
 
 :root {
-  --color-yellow: hsl(50, 100%, 50%);
-  --color-yellow-dark: hsl(50, 100%, 40%);
-  --color-yellow-washed: hsl(50, 100%, 95%);
+  --color-cyan: hsl(169, 78%, 36%);
+  --color-cyan-dark: hsl(169, 78%, 18%);
+  --color-cyan-washed: hsl(169, 78%, 98%);
+
+  --color-yellow: hsl(47, 82%, 49%);
+  --color-yellow-dark: hsl(47, 82%, 36%);
+  --color-yellow-washed: hsl(47, 82%, 95%);
+
+  --color-red: hsl(19, 68%, 36%);
+  --color-red-dark: hsl(19, 68%, 18%);
+  --color-red-washed: hsl(19, 68%, 93%);
+
+  --color-blue: hsl(169, 78%, 36%);
+  --color-blue-dark: hsl(169, 78%, 18%);
+  --color-blue-washed: hsl(169, 78%, 96%);
 
   --color-gray100: hsl(40, 3%, 3%);
   --color-gray200: hsl(40, 3%, 18%);
@@ -17,23 +29,17 @@ colors
   --color-gray800: hsl(40, 3%, 97%);
 
   --color-white: #ffffff;
+}
 
-  // default theme
-  --color-accent: var(--color-yellow);
-  --color-accent-dark: var(--color-yellow-dark);
-  --color-accent-washed: var(--color-yellow-washed);
+[data-theme="cyan"] {
+  --color-accent: var(--color-cyan);
+  --color-accent-dark: var(--color-cyan-dark);
+  --color-accent-washed: var(--color-cyan-washed);
 
-  --color-background: var(--color-white);
-  --color-background-alt: var(--color-gray100);
-
-  --color-text: var(--color-gray100);
-  --color-text-alt: var(--color-white);
+  --color-text-primary: var(--color-gray100);
   --color-text-offset: var(--color-gray400);
-  --color-text-offset-alt: var(--color-gray500);
 
-  --color-icons: var(--color-gray700);
-  --color-icons-hover: var(--color-yellow);
+  --color-border-primary: rgba(0, 0, 0, 0.12);
 
-  --color-border: rgba(0, 0, 0, 0.12);
-  --color-border-alt: rgba(255, 255, 255, 0.18);
+  --color-background-primary: var(--color-cyan-washed);
 }

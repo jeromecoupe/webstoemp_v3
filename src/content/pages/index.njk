@@ -11,34 +11,71 @@ permalink: /index.html
 {% set metaImage = "" %}
 {% set currentSection = "home" %}
 
+{% set colorTheme="cyan" %}
+
 {% block content %}
 
-  <div class="c-pagesection">
+  <div class="c-pagesection  c-pagesection--highlight">
     <div class="l-container">
 
-        <h1 class="u-hide">Design and code from Brussels, Belgium</h1>
-        <div class="c-manifesto">
-          <h2 class="c-manifesto__title">Manifesto.</h2>
-          <p class="c-manifesto__text">Like all great dishes, websites are made of a few simple, carefully chosen and well prepared ingredients.</p>
-        </div>
+      <div class="c-homeintro">
+        <h1 class="c-homeintro__title">
+          <span>Delicious</span>
+          <span>websites</span>
+        </h1>
+        <h2 class="c-homeintro__subtitle">Design <span>&amp;</span> code from Brussels</h2>
+      </div>
 
     </div>
   </div>
 
-  {% include "components/homebanner.njk" %}
+  {# include "components/homebanner.njk" #}
+
+  <div class="c-homebanner">
+    <div class="l-container">
+
+      <ul class="c-homeimages">
+        <li class="c-homeimages__item">
+          <img src="/assets/img/homeimages/640x640/one.jpg" 
+               class="c-homeimages__img"
+               alt=""
+               width="640"
+               height="640"
+               decoding="async">
+        </li>
+        <li class="c-homeimages__item">
+          <img src="/assets/img/homeimages/640x640/two.jpg" 
+               class="c-homeimages__img" 
+               alt=""
+               width="640"
+               height="640"
+               decoding="async">
+        </li>
+        <li class="c-homeimages__item">
+          <img src="/assets/img/homeimages/640x640/three.jpg" 
+               class="c-homeimages__img" 
+               alt=""
+               width="640"
+               height="640"
+               decoding="async">
+        </li>
+      </ul>
+
+    </div>
+  </div>
 
   <div class="c-pagesection">
     <div class="l-container">
 
       <div class="c-pagesection__block">
 
-        <div class="l-split  l-split--half">
+        <div class="l-grid" style="--gap-md: var(--grid-gap); --columns-md: 2;">
           <div>
-            <h2 class="c-h3">Meet the cook</h2>
+            <h2 class="c-smalltitle">Meet the cook</h2>
           </div>
           <div>
             <p><a href="#">Webstoemp</a> is the online kitchen of Jérôme Coupé, belgian designer, developer and teacher. When I am not busy designing, coding up a website or warping young minds at school, chances are I am drinking a few Belgian craft beers with friends somewhere.</p>
-            <p>Although I work on web apps too, I must confess I have a soft spot for building publishing platforms and content-oriented websites.</p>
+            <p>Although I work on web apps too, I confess having a soft spot for publishing platforms and content-oriented websites.</p>
             <p><a class="c-ctalink" href="#">More about me</a></p>
           </div>
         </div>
@@ -46,10 +83,10 @@ permalink: /index.html
       </div>
       <div class="c-pagesection__block">
         
-        <h2 class="c-h3">Latest blogposts</h2>
+        <h2 class="c-smalltitle">Latest blogposts</h2>
         {% set items = collections.blogposts | limit(4) %}
         {% for item in items %}
-          {% if loop.first %}<ul class="l-grid  l-grid--2cols@small  l-grid--4cols@large">{% endif %}
+          {% if loop.first %}<ul class="l-grid" style="--gap: var(--grid-gap); --columns-md: 2; --columns-lg: 4;">{% endif %}
             <li>
               {{ blogcard({
                 title: item.data.title,
@@ -61,7 +98,7 @@ permalink: /index.html
           {% if loop.last %}</ul>{% endif %}
         {% endfor %}
 
-        <p class="u-mbs-s"><a class="c-ctalink" href="#">More blogposts</a></p>
+        <p class="u-mbs-md"><a class="c-ctalink" href="#">All blogposts</a></p>
 
       </div>
 

@@ -7,11 +7,11 @@
 /* LAYOUT */
 @import "layout/_layout-container.css";
 @import "layout/_layout-grid.css";
-@import "layout/_layout-split.css";
 
 /* BASE */
 @import "base/_base-reset.css";
 @import "base/_base-fonts.css";
+@import "base/_base-animations.css";
 @import "base/_base-html.css";
 @import "base/_base-body.css";
 @import "base/_base-links.css";
@@ -20,7 +20,6 @@
 @import "objects/_objects-fluidimages.css";
 
 /* COMPONENTS */
-@import "components/_components-amperstand.css";
 @import "components/_components-titles.css";
 @import "components/_components-wysiwyg.css";
 @import "components/_components-pagesection.css";
@@ -28,19 +27,20 @@
 @import "components/_components-mainnav.css";
 @import "components/_components-mobilemenu.css";
 @import "components/_components-mobilenav.css";
-@import "components/_components-manifesto.css";
 @import "components/_components-sitefooter.css";
 @import "components/_components-footermessage.css";
 @import "components/_components-footernav.css";
+@import "components/_components-footertitle.css";
 @import "components/_components-copyright.css";
 @import "components/_components-ctalink.css";
 @import "components/_components-blogcard.css";
 @import "components/_components-homebanner.css";
 @import "components/_components-projectcard.css";
-@import "components/_components-pageintro.css";
 @import "components/_components-pagination.css";
 @import "components/_components-blogpost.css";
 @import "components/_components-lead.css";
+@import "components/_components-homeimages.css";
+@import "components/_components-homeintro.css";
 
 /* VENDOR */
 @import "vendor/_vendor-prism.css";

@@ -4,9 +4,9 @@ fonts
 
 @font-face {
   font-family: "Sentient";
-  /* prettier-ignore */
-  src: url("../fonts/sentient-variable.woff2") format("woff2") tech("variations"),
-       url("../fonts/sentient-variable.woff2") format("woff2-variations");
+  src: url("../fonts/sentient-variable.woff2") format("woff2-variations");
+  src: url("../fonts/sentient-variable.woff2") format("woff2")
+    tech("variations");
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -15,6 +15,8 @@ fonts
 @font-face {
   font-family: "Sentient";
   src: url("../fonts/sentient-variableitalic.woff2") format("woff2-variations");
+  src: url("../fonts/sentient-variableitalic.woff2") format("woff2")
+    tech("variations");
   font-style: italic;
   font-weight: 100 900;
   font-display: swap;
@@ -22,9 +24,8 @@ fonts
 
 @font-face {
   font-family: "Switzer";
-  /* prettier-ignore */
-  src: url("../fonts/switzer-variable.woff2") format("woff2") tech("variations"),
-       url("../fonts/switzer-variable.woff2") format("woff2-variations");
+  src: url("../fonts/switzer-variable.woff2") format("woff2-variations");
+  src: url("../fonts/switzer-variable.woff2") format("woff2") tech("variations");
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -32,9 +33,9 @@ fonts
 
 @font-face {
   font-family: "Switzer";
-  /* prettier-ignore */
-  src: url("../fonts/switzer-variableitalic.woff2") format("woff2") tech("variations"),
-       url("../fonts/switzer-variableitalic.woff2") format("woff2-variations");
+  src: url("../fonts/switzer-variableitalic.woff2") format("woff2-variations");
+  src: url("../fonts/switzer-variableitalic.woff2") format("woff2")
+    tech("variations");
   font-style: italic;
   font-weight: 100 900;
   font-display: swap;

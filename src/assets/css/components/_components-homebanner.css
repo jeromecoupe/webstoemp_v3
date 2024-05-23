@@ -3,35 +3,30 @@ Home banner
 ========================================== */
 
 .c-homebanner {
-  background-color: var(--color-background-alt);
-}
-
-.c-homebanner__figure {
-  position: relative;
-
-  @include breakpoint(xlarge) {
-    padding: calc(18 / 16 * 1rem);
-  }
+  background-color: var(--color-background-white);
 }
 
 .c-homebanner__image {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover;
+
+  aspect-ratio: 4 / 3;
+
+  @media (width >= 500px) {
+    aspect-ratio: 16 / 9;
+  }
+
+  @media (width >= 1500px) {
+    aspect-ratio: 16 / 7;
+  }
 }
 
 .c-homebanner__caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  color: var(--color-white);
+  color: var(--color-text-offset);
   font-size: calc(12 / 16 * 1rem);
   padding-block: calc(12 / 16 * 1rem);
-  padding-inline: calc(18 / 16 * 1rem);
-
-  @media (width >= 1500px) {
-    bottom: 18px;
-    left: 18px;
-  }
+  padding-inline: calc(12 / 16 * 1rem);
+  text-align: end;
 }

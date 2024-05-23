@@ -10,16 +10,14 @@ footer nav
 
 .c-footernav__link {
   display: inline-block;
-  padding-block: calc(3 / 16 * 1rem);
 
   font-size: 1rem;
-  color: var(--color-text-offset-alt);
+  color: var(--color-text-primary);
   text-decoration: none;
-  transition: color 0.2s ease-out;
 
   &:hover,
   &:focus {
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-offset: 0.18em;
     text-decoration-color: inherit;
     text-decoration-thickness: 1px;

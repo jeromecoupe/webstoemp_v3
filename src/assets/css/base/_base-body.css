@@ -5,11 +5,13 @@ body
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-background);
-  color: var(--color-text);
-  font-size: calc(18 / 16 * 1rem);
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  font-size: clamp(1rem, 0.66rem + 0.5vw, 18/16 * 1rem);
 }
 
 body.has-menu {
-  overflow-y: hidden;
+  @media (width <= 1024px) {
+    overflow-y: hidden;
+  }
 }

@@ -3,23 +3,27 @@ sitefooter
 ========================================== */
 
 .c-sitefooter {
-  background-color: var(--color-background-alt);
-  border-top: 1px solid var(--color-border-alt);
+  display: block;
 }
 
 .c-sitefooter__main {
+  border-block-start: 1px solid var(--color-border-primary);
   padding-block-start: calc(42 / 16 * 1rem);
   padding-block-end: calc(18 / 16 * 1rem);
 
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: calc(30 / 16 * 1rem);
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+  gap: var(--grid-gap);
 
   @media (width >= 750px) {
     padding-block-start: calc(60 / 16 * 1rem);
     padding-block-end: calc(36 / 16 * 1rem);
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--grid-gutter);
+    grid-template-areas: "a a b c";
   }
 
   @media (width >= 1024px) {
@@ -28,9 +32,15 @@ sitefooter
 }
 
 .c-sitefooter__message {
-  @media (width >= 750px) {
-    grid-column: 1 / span 2;
-  }
+  grid-area: a;
+}
+
+.c-sitefooter__nav {
+  grid-area: b;
+}
+
+.c-sitefooter__social {
+  grid-area: c;
 }
 
 .c-sitefooter__end {

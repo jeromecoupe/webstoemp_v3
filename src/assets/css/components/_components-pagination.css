@@ -10,7 +10,7 @@ pagination
   gap: calc(18 / 16 * 1rem);
 
   margin-block-start: calc(32 / 16 * 1rem);
-  border-block-start: 1px solid var(--color-border);
+  border-block-start: 1px solid var(--color-border-primary);
   padding-block: calc(18 / 16 * 1rem);
 }
 
@@ -28,7 +28,7 @@ pagination
 
 .c-pager__link {
   display: block;
-  color: var(--color-icons);
+  color: var(--color-accent-washed);
   transition: color 0.2s ease-out;
 
   & > svg {
@@ -37,7 +37,7 @@ pagination
 
   &:hover,
   &:focus {
-    color: var(--color-icons-hover);
+    text-decoration: none;
   }
 }
 

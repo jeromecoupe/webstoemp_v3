@@ -5,7 +5,7 @@ links
 a {
   color: var(--color-accent-dark);
   text-decoration: underline;
-  text-underline-offset: 0.18em;
+  text-underline-offset: 0.24em;
 }
 
 a:hover,
