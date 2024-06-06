@@ -12,6 +12,7 @@ permalink: /index.html
 {% set currentSection = "home" %}
 
 {% set colorTheme="cyan" %}
+{% set headerBackground= true %}
 
 {% block content %}
 
@@ -23,46 +24,13 @@ permalink: /index.html
           <span>Delicious</span>
           <span>websites</span>
         </h1>
-        <h2 class="c-homeintro__subtitle">Design <span>&amp;</span> code from Brussels</h2>
+        <h2 class="c-homeintro__subtitle">from pixels to code</h2>
       </div>
 
     </div>
   </div>
 
-  {# include "components/homebanner.njk" #}
-
-  <div class="c-homebanner">
-    <div class="l-container">
-
-      <ul class="c-homeimages">
-        <li class="c-homeimages__item">
-          <img src="/assets/img/homeimages/640x640/one.jpg" 
-               class="c-homeimages__img"
-               alt=""
-               width="640"
-               height="640"
-               decoding="async">
-        </li>
-        <li class="c-homeimages__item">
-          <img src="/assets/img/homeimages/640x640/two.jpg" 
-               class="c-homeimages__img" 
-               alt=""
-               width="640"
-               height="640"
-               decoding="async">
-        </li>
-        <li class="c-homeimages__item">
-          <img src="/assets/img/homeimages/640x640/three.jpg" 
-               class="c-homeimages__img" 
-               alt=""
-               width="640"
-               height="640"
-               decoding="async">
-        </li>
-      </ul>
-
-    </div>
-  </div>
+  {% include "components/homebanner.njk" %}
 
   <div class="c-pagesection">
     <div class="l-container">

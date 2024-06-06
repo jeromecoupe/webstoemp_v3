@@ -45,8 +45,8 @@ small title
 ========================================== */
 
 .c-smalltitle {
-  font-weight: 550;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: calc(14 / 16 * 1rem);
   line-height: 1.2;
   font-family: var(--fontstack-main);
   text-transform: uppercase;

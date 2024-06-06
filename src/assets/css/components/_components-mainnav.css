@@ -17,8 +17,9 @@ mainnav
 .c-mainnav__link {
   display: inline-block;
   padding-block: calc(2 / 16 * 1rem);
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 600;
+  text-transform: uppercase;
 
   color: inherit;
   text-decoration: none;

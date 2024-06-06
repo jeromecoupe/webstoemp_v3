@@ -22,7 +22,7 @@ fonts
   font-display: swap;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Switzer";
   src: url("../fonts/switzer-variable.woff2") format("woff2-variations");
   src: url("../fonts/switzer-variable.woff2") format("woff2") tech("variations");
@@ -35,6 +35,27 @@ fonts
   font-family: "Switzer";
   src: url("../fonts/switzer-variableitalic.woff2") format("woff2-variations");
   src: url("../fonts/switzer-variableitalic.woff2") format("woff2")
+    tech("variations");
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/publicsans-variable.woff2") format("woff2-variations");
+  src: url("../fonts/publicsans-variable.woff2") format("woff2")
+    tech("variations");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("../fonts/publicsans-variableitalic.woff2")
+    format("woff2-variations");
+  src: url("../fonts/publicsans-variableitalic.woff2") format("woff2")
     tech("variations");
   font-style: italic;
   font-weight: 100 900;

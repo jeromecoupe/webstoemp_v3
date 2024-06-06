@@ -1,4 +1,4 @@
-<header class="c-siteheader">
+<header class="c-siteheader" {% if headerBackground %}data-header-bkg{% endif %}>
   <div class="l-container">
     
     <div class="c-siteheader__inner">
@@ -8,9 +8,12 @@
       <div class="c-siteheader__nav">
         {% include "components/mainnav.njk" %}
       </div>
-      <p class="c-siteheader__hamburger">
-        <a href="#footernav" class="js-mobilemenu-trigger" aria-label="Open navigation">{% include "svg/icon-hamburger.svg" %}</a>
+      <p class="c-siteheader__location">
+        Brussels, Belgium
       </p>
+      <div class="c-siteheader__hamburger">
+        <a href="#footernav" class="js-mobilemenu-trigger" aria-label="Open navigation">{% include "svg/icon-hamburger.svg" %}</a>
+      </div>
     </div>
 
   </div>

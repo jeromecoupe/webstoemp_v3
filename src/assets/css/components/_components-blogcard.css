@@ -7,7 +7,7 @@ blog card
 }
 
 .c-blogcard__media {
-  margin-block-end: calc(12 / 16 * 1rem);
+  margin-block-end: calc(18 / 16 * 1rem);
   display: block;
   overflow: hidden;
 }
@@ -33,6 +33,8 @@ blog card
   a:hover &,
   a:focus & {
     text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-color: var(--color-accent);
     text-decoration-thickness: 1px;
   }
 }

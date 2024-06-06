@@ -3,9 +3,12 @@ colors
 ========================================== */
 
 :root {
+  --color-scheme: light dark;
+
+  /* main variables (mostly) not used in CSS */
   --color-cyan: hsl(169, 78%, 36%);
   --color-cyan-dark: hsl(169, 78%, 18%);
-  --color-cyan-washed: hsl(169, 78%, 98%);
+  --color-cyan-washed: hsl(169, 78%, 94%);
 
   --color-yellow: hsl(47, 82%, 49%);
   --color-yellow-dark: hsl(47, 82%, 36%);
@@ -15,9 +18,13 @@ colors
   --color-red-dark: hsl(19, 68%, 18%);
   --color-red-washed: hsl(19, 68%, 93%);
 
-  --color-blue: hsl(169, 78%, 36%);
-  --color-blue-dark: hsl(169, 78%, 18%);
-  --color-blue-washed: hsl(169, 78%, 96%);
+  --color-blue: hsl(190, 78%, 36%);
+  --color-blue-dark: hsl(190, 78%, 18%);
+  --color-blue-washed: hsl(190, 78%, 96%);
+
+  --color-green: hsl(141, 78%, 36%);
+  --color-green-dark: hsl(141, 78%, 18%);
+  --color-green-washed: hsl(141, 78%, 96%);
 
   --color-gray100: hsl(40, 3%, 3%);
   --color-gray200: hsl(40, 3%, 18%);
@@ -29,17 +36,45 @@ colors
   --color-gray800: hsl(40, 3%, 97%);
 
   --color-white: #ffffff;
+
+  /* incident variables */
+  --color-text-primary: light-dark(var(--color-gray100), var(--color-white));
+  --color-text-offset: var(--color-gray400);
+
+  --color-border-primary: rgba(0, 0, 0, 0.12);
+
+  --color-background-primary: light-dark(
+    var(--color-white),
+    var(--color-gray100)
+  );
 }
 
 [data-theme="cyan"] {
   --color-accent: var(--color-cyan);
   --color-accent-dark: var(--color-cyan-dark);
   --color-accent-washed: var(--color-cyan-washed);
+}
 
-  --color-text-primary: var(--color-gray100);
-  --color-text-offset: var(--color-gray400);
+[data-theme="yellow"] {
+  --color-accent: var(--color-yellow);
+  --color-accent-dark: var(--color-yellow-dark);
+  --color-accent-washed: var(--color-yellow-washed);
+}
 
-  --color-border-primary: rgba(0, 0, 0, 0.12);
+[data-theme="red"] {
+  --color-accent: var(--color-red);
+  --color-accent-dark: var(--color-red-dark);
+  --color-accent-washed: light-dark(var(--color-red-washed), red);
+}
 
-  --color-background-primary: var(--color-cyan-washed);
+[data-theme="blue"] {
+  --color-accent: var(--color-blue);
+  --color-accent-dark: var(--color-blue-dark);
+  --color-accent-washed: var(--color-blue-washed);
+}
+
+[data-theme="green"] {
+  --color-accent: var(--color-green);
+  --color-accent-dark: var(--color-green-dark);
+  --color-accent-washed: var(--color-green-washed);
 }

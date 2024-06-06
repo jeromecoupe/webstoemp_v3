@@ -20,6 +20,17 @@ const transforms = [
     },
   },
   {
+    // 600x450 thumbnails for blogposts
+    src: "./src/assets/img/blogposts/",
+    dist: "./dist/assets/img/blogposts/600x450/",
+    formats: ["jpg"],
+    options: {
+      width: 600,
+      height: 450,
+      fit: "cover",
+    },
+  },
+  {
     // 600x600 thumbnails for blogposts
     src: "./src/assets/img/blogposts/",
     dist: "./dist/assets/img/blogposts/600x600/",

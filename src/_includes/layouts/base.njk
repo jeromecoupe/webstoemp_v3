@@ -34,12 +34,10 @@
   <script type="module" src="/assets/js/main.bundle.js"></script>
 </head>
 <body data-theme="{{ colorTheme|default('default') }}">
-  <div class="c-page">
-    {% include "components/siteheader.njk" %}
-    <main>
-      {% block content %}{% endblock %}
-    </main>
-    {% include "components/sitefooter.njk" %}
-  </div>
+  {% include "components/siteheader.njk" %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  {% include "components/sitefooter.njk" %}
 </body>
 </html>

@@ -22,6 +22,18 @@ section
   }
 }
 
+/* ==========================================
+section highlight
+========================================== */
+
+.c-pagesection--highlight {
+  background-color: var(--color-accent-washed);
+}
+
+/* ==========================================
+section block
+========================================== */
+
 .c-pagesection__block + .c-pagesection__block {
   margin-block-start: calc(48 / 16 * 1rem);
 

@@ -3,9 +3,7 @@ footer message
 ========================================== */
 
 .c-footermessage {
+  font-size: 1rem;
   display: block;
-  font-size: calc(18 / 16 * 1rem);
-  font-weight: 450;
-  font-family: var(--fontstack-main);
   max-width: 32ch;
 }

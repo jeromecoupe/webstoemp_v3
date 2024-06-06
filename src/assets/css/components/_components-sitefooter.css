@@ -4,10 +4,10 @@ sitefooter
 
 .c-sitefooter {
   display: block;
+  background-color: var(--color-accent-washed);
 }
 
 .c-sitefooter__main {
-  border-block-start: 1px solid var(--color-border-primary);
   padding-block-start: calc(42 / 16 * 1rem);
   padding-block-end: calc(18 / 16 * 1rem);
 
@@ -27,7 +27,7 @@ sitefooter
   }
 
   @media (width >= 1024px) {
-    padding-block-start: calc(90 / 16 * 1rem);
+    padding-block-start: calc(84 / 16 * 1rem);
   }
 }
 

@@ -4,5 +4,5 @@ copyright
 
 .c-copyright {
   margin: 0;
-  font-size: 1rem;
+  font-size: calc(14 / 16 * 1rem);
 }

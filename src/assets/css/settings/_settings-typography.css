@@ -3,6 +3,7 @@ typography
 ========================================== */
 
 :root {
-  --fontstack-main: "Switzer", "Helvetica Neue", system-ui, sans-serif;
+  --fontstack-main: "Public Sans", "Switzer", "Helvetica Neue", system-ui,
+    sans-serif;
   --fontstack-alt: "Sentient", "Georgia", serif;
 }
