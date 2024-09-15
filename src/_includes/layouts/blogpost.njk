@@ -5,14 +5,17 @@
 {% set metaImage = "" %}
 {% set currentSection = "blog" %}
 
+{% set colorTheme = "yellow" %}
+{% set headerBackground = false %}
+
 {% block content %}
 <div class="c-pagesection  u-pbs-none">
   <article class="c-blogpost">
     
-    <header class="c-blogpost__intro">
-      <div class="l-container  l-container--copy">
+    <header class="c-blogpost__intro u-aligncenter">
+      <div class="l-container">
         <p class="c-blogpost__date">{{ page.date | dateFull }}</p>
-        <h1 class="c-bigtitle">{{ title }}</h1>
+        <h1 class="c-blogpost__title">{{ title }}</h1>
       </div>
     </header>
 

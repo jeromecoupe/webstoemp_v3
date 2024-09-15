@@ -3,11 +3,11 @@ spacing
 ========================================== */
 
 :root {
-  --spacing-2xs: 3px;
-  --spacing-xs: 6px;
-  --spacing-sm: 12px;
-  --spacing-md: 18px;
-  --spacing-lg: 24px;
-  --spacing-xl: 30px;
-  --spacing-2xl: 60px;
+  --space-2xs: 3px;
+  --space-xs: 6px;
+  --space-sm: 12px;
+  --space-md: 18px;
+  --space-lg: 24px;
+  --space-xl: 30px;
+  --space-2xl: 60px;
 }

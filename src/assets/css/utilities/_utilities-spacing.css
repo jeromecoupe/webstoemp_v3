@@ -1,21 +1,41 @@
 /* ==========================================
+margin none
+========================================== */
+
+.u-mbs-none {
+  margin-block-start: 0 !important;
+}
+
+.u-mbe-none {
+  margin-block-end: 0 !important;
+}
+
+.u-mis-none {
+  margin-inline-start: 0 !important;
+}
+
+.u-mie-none {
+  margin-inline-end: 0 !important;
+}
+
+/* ==========================================
 margin 2xs
 ========================================== */
 
 .u-mbs-2xs {
-  margin-block-start: var(--spacing-2xs) !important;
+  margin-block-start: var(--space-2xs) !important;
 }
 
 .u-mbe-2xs {
-  margin-block-end: var(--spacing-2xs) !important;
+  margin-block-end: var(--space-2xs) !important;
 }
 
 .u-mis-2xs {
-  margin-inline-start: var(--spacing-2xs) !important;
+  margin-inline-start: var(--space-2xs) !important;
 }
 
 .u-mie-2xs {
-  margin-inline-end: var(--spacing-2xs) !important;
+  margin-inline-end: var(--space-2xs) !important;
 }
 
 /* ==========================================
@@ -23,19 +43,19 @@ margin xs
 ========================================== */
 
 .u-mbs-xs {
-  margin-block-start: var(--spacing-xs) !important;
+  margin-block-start: var(--space-xs) !important;
 }
 
 .u-mbe-xs {
-  margin-block-end: var(--spacing-xs) !important;
+  margin-block-end: var(--space-xs) !important;
 }
 
 .u-mis-xs {
-  margin-inline-start: var(--spacing-xs) !important;
+  margin-inline-start: var(--space-xs) !important;
 }
 
 .u-mie-xs {
-  margin-inline-end: var(--spacing-xs) !important;
+  margin-inline-end: var(--space-xs) !important;
 }
 
 /* ==========================================
@@ -43,19 +63,19 @@ margin sm
 ========================================== */
 
 .u-mbs-sm {
-  margin-block-start: var(--spacing-sm) !important;
+  margin-block-start: var(--space-sm) !important;
 }
 
 .u-mbe-sm {
-  margin-block-end: var(--spacing-sm) !important;
+  margin-block-end: var(--space-sm) !important;
 }
 
 .u-mis-sm {
-  margin-inline-start: var(--spacing-sm) !important;
+  margin-inline-start: var(--space-sm) !important;
 }
 
 .u-mie-sm {
-  margin-inline-end: var(--spacing-sm) !important;
+  margin-inline-end: var(--space-sm) !important;
 }
 
 /* ==========================================
@@ -63,19 +83,19 @@ margin md
 ========================================== */
 
 .u-mbs-md {
-  margin-block-start: var(--spacing-md) !important;
+  margin-block-start: var(--space-md) !important;
 }
 
 .u-mbe-md {
-  margin-block-end: var(--spacing-md) !important;
+  margin-block-end: var(--space-md) !important;
 }
 
 .u-mis-md {
-  margin-inline-start: var(--spacing-md) !important;
+  margin-inline-start: var(--space-md) !important;
 }
 
 .u-mie-md {
-  margin-inline-end: var(--spacing-md) !important;
+  margin-inline-end: var(--space-md) !important;
 }
 
 /* ==========================================
@@ -83,19 +103,19 @@ margin lg
 ========================================== */
 
 .u-mbs-lg {
-  margin-block-start: var(--spacing-lg) !important;
+  margin-block-start: var(--space-lg) !important;
 }
 
 .u-mbe-lg {
-  margin-block-end: var(--spacing-lg) !important;
+  margin-block-end: var(--space-lg) !important;
 }
 
 .u-mis-lg {
-  margin-inline-start: var(--spacing-lg) !important;
+  margin-inline-start: var(--space-lg) !important;
 }
 
 .u-mie-lg {
-  margin-inline-end: var(--spacing-lg) !important;
+  margin-inline-end: var(--space-lg) !important;
 }
 
 /* ==========================================
@@ -103,19 +123,19 @@ margin xl
 ========================================== */
 
 .u-mbs-xl {
-  margin-block-start: var(--spacing-xl) !important;
+  margin-block-start: var(--space-xl) !important;
 }
 
 .u-mbe-xl {
-  margin-block-end: var(--spacing-xl) !important;
+  margin-block-end: var(--space-xl) !important;
 }
 
 .u-mis-xl {
-  margin-inline-start: var(--spacing-xl) !important;
+  margin-inline-start: var(--space-xl) !important;
 }
 
 .u-mie-xl {
-  margin-inline-end: var(--spacing-xl) !important;
+  margin-inline-end: var(--space-xl) !important;
 }
 
 /* ==========================================
@@ -123,19 +143,39 @@ margin 2xl
 ========================================== */
 
 .u-mbs-2xl {
-  margin-block-start: var(--spacing-2xl) !important;
+  margin-block-start: var(--space-2xl) !important;
 }
 
 .u-mbe-2xl {
-  margin-block-end: var(--spacing-2xl) !important;
+  margin-block-end: var(--space-2xl) !important;
 }
 
 .u-mis-2xl {
-  margin-inline-start: var(--spacing-2xl) !important;
+  margin-inline-start: var(--space-2xl) !important;
 }
 
 .u-mie-2xl {
-  margin-inline-end: var(--spacing-2xl) !important;
+  margin-inline-end: var(--space-2xl) !important;
+}
+
+/* ==========================================
+padding none
+========================================== */
+
+.u-pbs-none {
+  padding-block-start: 0 !important;
+}
+
+.u-pbe-none {
+  padding-block-end: 0 !important;
+}
+
+.u-pis-none {
+  padding-inline-start: 0 !important;
+}
+
+.u-pie-none {
+  padding-inline-end: 0 !important;
 }
 
 /* ==========================================
@@ -143,19 +183,19 @@ padding 2xs
 ========================================== */
 
 .u-pbs-2xs {
-  padding-block-start: var(--spacing-2xs) !important;
+  padding-block-start: var(--space-2xs) !important;
 }
 
 .u-pbe-2xs {
-  padding-block-end: var(--spacing-2xs) !important;
+  padding-block-end: var(--space-2xs) !important;
 }
 
 .u-pis-2xs {
-  padding-inline-start: var(--spacing-2xs) !important;
+  padding-inline-start: var(--space-2xs) !important;
 }
 
 .u-pie-2xs {
-  padding-inline-end: var(--spacing-2xs) !important;
+  padding-inline-end: var(--space-2xs) !important;
 }
 
 /* ==========================================
@@ -163,19 +203,19 @@ padding xs
 ========================================== */
 
 .u-pbs-xs {
-  padding-block-start: var(--spacing-xs) !important;
+  padding-block-start: var(--space-xs) !important;
 }
 
 .u-pbe-xs {
-  padding-block-end: var(--spacing-xs) !important;
+  padding-block-end: var(--space-xs) !important;
 }
 
 .u-pis-xs {
-  padding-inline-start: var(--spacing-xs) !important;
+  padding-inline-start: var(--space-xs) !important;
 }
 
 .u-pie-xs {
-  padding-inline-end: var(--spacing-xs) !important;
+  padding-inline-end: var(--space-xs) !important;
 }
 
 /* ==========================================
@@ -183,19 +223,19 @@ padding sm
 ========================================== */
 
 .u-pbs-sm {
-  padding-block-start: var(--spacing-sm) !important;
+  padding-block-start: var(--space-sm) !important;
 }
 
 .u-pbe-sm {
-  padding-block-end: var(--spacing-sm) !important;
+  padding-block-end: var(--space-sm) !important;
 }
 
 .u-pis-sm {
-  padding-inline-start: var(--spacing-sm) !important;
+  padding-inline-start: var(--space-sm) !important;
 }
 
 .u-pie-sm {
-  padding-inline-end: var(--spacing-sm) !important;
+  padding-inline-end: var(--space-sm) !important;
 }
 
 /* ==========================================
@@ -203,19 +243,19 @@ padding md
 ========================================== */
 
 .u-pbs-md {
-  padding-block-start: var(--spacing-md) !important;
+  padding-block-start: var(--space-md) !important;
 }
 
 .u-pbe-md {
-  padding-block-end: var(--spacing-md) !important;
+  padding-block-end: var(--space-md) !important;
 }
 
 .u-pis-md {
-  padding-inline-start: var(--spacing-md) !important;
+  padding-inline-start: var(--space-md) !important;
 }
 
 .u-pie-md {
-  padding-inline-end: var(--spacing-md) !important;
+  padding-inline-end: var(--space-md) !important;
 }
 
 /* ==========================================
@@ -223,19 +263,19 @@ padding lg
 ========================================== */
 
 .u-pbs-lg {
-  padding-block-start: var(--spacing-lg) !important;
+  padding-block-start: var(--space-lg) !important;
 }
 
 .u-pbe-lg {
-  padding-block-end: var(--spacing-lg) !important;
+  padding-block-end: var(--space-lg) !important;
 }
 
 .u-pis-lg {
-  padding-inline-start: var(--spacing-lg) !important;
+  padding-inline-start: var(--space-lg) !important;
 }
 
 .u-pie-lg {
-  padding-inline-end: var(--spacing-lg) !important;
+  padding-inline-end: var(--space-lg) !important;
 }
 
 /* ==========================================
@@ -243,19 +283,19 @@ padding xl
 ========================================== */
 
 .u-pbs-xl {
-  padding-block-start: var(--spacing-xl) !important;
+  padding-block-start: var(--space-xl) !important;
 }
 
 .u-pbe-xl {
-  padding-block-end: var(--spacing-xl) !important;
+  padding-block-end: var(--space-xl) !important;
 }
 
 .u-pis-xl {
-  padding-inline-start: var(--spacing-xl) !important;
+  padding-inline-start: var(--space-xl) !important;
 }
 
 .u-pie-xl {
-  padding-inline-end: var(--spacing-xl) !important;
+  padding-inline-end: var(--space-xl) !important;
 }
 
 /* ==========================================
@@ -263,17 +303,17 @@ padding 2xl
 ========================================== */
 
 .u-pbs-2xl {
-  padding-block-start: var(--spacing-2xl) !important;
+  padding-block-start: var(--space-2xl) !important;
 }
 
 .u-pbe-2xl {
-  padding-block-end: var(--spacing-2xl) !important;
+  padding-block-end: var(--space-2xl) !important;
 }
 
 .u-pis-2xl {
-  padding-inline-start: var(--spacing-2xl) !important;
+  padding-inline-start: var(--space-2xl) !important;
 }
 
 .u-pie-2xl {
-  padding-inline-end: var(--spacing-2xl) !important;
+  padding-inline-end: var(--space-2xl) !important;
 }

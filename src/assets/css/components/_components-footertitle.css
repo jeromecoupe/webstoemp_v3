@@ -6,7 +6,7 @@ footer titles
   font-weight: 600;
   font-family: var(--fontstack-main);
   line-height: 1.32;
-  color: var(--color-text-primary);
-  margin-bottom: 0.54em;
+  color: inherit;
+  margin-bottom: calc(12 / 16 * 1rem);
   font-size: 1rem;
 }

@@ -1,26 +1,31 @@
 {% if pagination.pages|length > 1 %}
-  <div class="c-pagination">
-    <nav aria-label="pagination">
-      <ul class="c-pager">
-        {% if pagination.href.previous %}
-          <li class="c-pager__item">
-            <a class="c-pager__link" href="{{ pagination.href.first }}" title="first page">{% include "svg/icon-page-first.svg" %}</a>
-          </li>
-          <li class="c-pager__item">
-            <a class="c-pager__link" href="{{ pagination.href.previous }}" title="previous page">{% include "svg/icon-page-previous.svg" %}</a>
-          </li>
-        {% endif %}
-
-        {% if pagination.href.next %}
-          <li class="c-pager__item">
-            <a class="c-pager__link" href="{{ pagination.href.next }}" title="next page">{% include "svg/icon-page-next.svg" %}</a>
-          </li>
-          <li class="c-pager__item">
-            <a class="c-pager__link" href="{{ pagination.href.last }}" title="last page">{% include "svg/icon-page-last.svg" %}</a>
-          </li>
-        {% endif %}
+  <nav aria-label="pagination">
+    <div class="c-pagination">
+      <ul class="c-pagesnav">
+        <li class="c-pagesnav__item">
+          {% if pagination.href.previous %}
+            <a class="c-pagesnav__link  c-pagesnav__link--previous" href="{{ pagination.href.previous }}" aria-label="previous page">
+              {% include "svg/icon-page-previous.svg" %}
+            </a>
+          {% else %}
+            <span a class="c-pagesnav__link  c-pagesnav__link--previous is-disabled">
+              {% include "svg/icon-page-previous.svg" %}
+            </span>
+          {% endif %}
+        </li>
+        <li class="c-pagesnav__item">
+          {% if pagination.href.next %}
+            <a class="c-pagesnav__link  c-pagesnav__link--next" href="{{ pagination.href.next }}" aria-label="previous page">
+              {% include "svg/icon-page-next.svg" %}
+            </a>
+          {% else %}
+            <span a class="c-pagesnav__link  c-pagesnav__link--next is-disabled">
+              {% include "svg/icon-page-next.svg" %}
+            </span>
+          {% endif %}
+        </li>
       </ul>
-    </nav>
-    <p class="c-pagecounter">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages|length }}</p>
-  </div>
+      <p class="c-pagescounter">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages|length }}</p>
+    </div>
+  </nav>
 {% endif %}

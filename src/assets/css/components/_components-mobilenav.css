@@ -22,22 +22,22 @@ mobile nav
 }
 
 .c-mobilenav__link {
-  animation-delay: calc((var(--anim-duration) + (var(--delay)) * 0.06s));
+  animation-delay: calc((var(--anim-duration) + (var(--delay) + 0.2) * 0.06s));
   animation-name: slideFromBottom;
   animation-duration: var(--anim-duration);
   animation-timing-function: ease-out;
   animation-fill-mode: both;
 
   display: block;
-  padding-block: calc(3 / 16 * 1rem);
-  font-weight: 300;
+  font-weight: 450;
   font-size: clamp(
     calc(32 / 16 * 1rem),
     calc(1rem + 3vw),
     calc(41 / 16 * 1rem)
   );
-  line-height: 1;
+  line-height: 1.2;
   font-family: var(--fontstack-main);
+  text-transform: uppercase;
   color: var(--color-white);
   text-decoration: none;
 
@@ -48,5 +48,5 @@ mobile nav
 }
 
 .c-mobilenav__link.is-active {
-  color: var(--color-accent);
+  color: var(--color-accent-bright);
 }

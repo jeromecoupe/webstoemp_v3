@@ -3,7 +3,7 @@ Home banner
 ========================================== */
 
 .c-homebanner {
-  background-color: var(--color-background-white);
+  display: block;
 }
 
 .c-homebanner__image {

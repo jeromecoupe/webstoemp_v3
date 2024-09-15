@@ -8,24 +8,36 @@ grid classes
 
 .l-grid {
   --columns: 1;
-  --columns-md: var(--columns);
+  --columns-sm: var(--columns);
+  --columns-md: var(--columns-sm);
   --columns-lg: var(--columns-md);
+  --columns-xl: var(--columns-lg);
 
   --gap: 0;
-  --gap-md: var(--gap);
+  --gap-sm: var(--gap);
+  --gap-md: var(--gap-sm);
   --gap-lg: var(--gap-md);
+  --gap-xl: var(--gap-lg);
 
-  --align-items: stretch;
+  --block-align: start;
+  --block-align-sm: var(--block-align);
+  --block-align-md: var(--block-align-sm);
+  --block-align-lg: var(--block-align-md);
+  --block-align-xl: var(--block-align-lg);
 
   list-style: none;
   margin: 0;
   padding: 0;
-
   display: grid;
   grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  align-items: var(--block-align);
   gap: var(--gap);
 
-  align-items: var(--align-items);
+  @media (width >= 500px) {
+    grid-template-columns: repeat(var(--columns-sm), minmax(0, 1fr));
+    align-items: var(--block-align-sm);
+    gap: var(--gap-sm);
+  }
 
   @media (width >= 750px) {
     grid-template-columns: repeat(var(--columns-md), minmax(0, 1fr));
@@ -36,19 +48,33 @@ grid classes
     grid-template-columns: repeat(var(--columns-lg), minmax(0, 1fr));
     gap: var(--gap-lg);
   }
+
+  @media (width >= 1500px) {
+    grid-template-columns: repeat(var(--columns-xl), minmax(0, 1fr));
+    gap: var(--gap-xl);
+  }
 }
 
 .l-grid > * {
-  --col: span 1;
-  --col-md: var(--col);
+  --col: auto;
+  --col-sm: var(--col);
+  --col-md: var(--col-sm);
   --col-lg: var(--col-md);
+  --col-xl: var(--col-lg);
 
   --row: auto;
-  --row-md: var(--row);
+  --row-sm: var(--row);
+  --row-md: var(--row-sm);
   --row-lg: var(--row-md);
+  --row-xl: var(--row-lg);
 
   grid-column: var(--col);
   grid-row: var(--row);
+
+  @media (width >= 500px) {
+    grid-column: var(--col-sm);
+    grid-row: var(--row-sm);
+  }
 
   @media (width >= 750px) {
     grid-column: var(--col-md);
@@ -58,6 +84,11 @@ grid classes
   @media (width >= 1024px) {
     grid-column: var(--col-lg);
     grid-row: var(--row-lg);
+  }
+
+  @media (width >= 1500px) {
+    grid-column: var(--col-xl);
+    grid-row: var(--row-xl);
   }
 }
 

@@ -1,11 +1,11 @@
 export default [
   {
-    label: "Github",
-    url: "https://github.com/jeromecoupe",
-  },
-  {
     label: "Mastodon",
     url: "https://mastodon.social/@jeromecoupe",
+  },
+  {
+    label: "Github",
+    url: "https://github.com/jeromecoupe",
   },
   {
     label: "Dribbble",

@@ -1,0 +1,15 @@
+/* ==========================================
+alignment for text
+========================================== */
+
+.u-aligncenter {
+  text-align: center;
+}
+
+.u-alignstart {
+  text-align: start;
+}
+
+.u-alignend {
+  text-align: end;
+}

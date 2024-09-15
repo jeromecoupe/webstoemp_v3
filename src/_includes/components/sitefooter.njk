@@ -2,9 +2,10 @@
   <div class="l-container">
     <div class="c-sitefooter__main">
       <div class="c-sitefooter__message">
-        <h2 class="c-footertitle">Manifesto</h2>
+        <h2 class="c-footertitle">Contact</h2>
         <div class="c-footermessage">
-          <p>Like great dishes, I believe websites are made of a few simple, carefully chosen and well prepared ingredients.</p>
+          <p class="u-mbe-2xs">Great projects start with conversations and coffee.</p> 
+          <p><a href="mailto:hello@webstoemp.com">hello@webstoemp.com</a></p>
         </div>
       </div>
       <div class="c-sitefooter__nav">
@@ -28,7 +29,7 @@
       <div class="c-sitefooter__social">
         <nav>
           <h2 class="c-footertitle">Elsewhere</h2>
-          {% for item in social %}
+          {% for item in socialnav %}
             {% if loop.first %}<ul class="c-footernav">{% endif %}
               <li class="c-footernav__item"><a class="c-footernav__link" href="{{ item.url }}">{{ item.label }}</a></li>
             {% if loop.last %}</ul>{% endif %}
@@ -37,7 +38,8 @@
       </div>
     </div>
     <div class="c-sitefooter__end">
-      <p class="c-copyright">Copyright 2012 &mdash; {{ site.buildTime|dateFormat("yyyy") }} ⋅ Jérôme Coupé </p>
+      <p class="c-copyright">&copy; Jérôme Coupé 2012-{{ site.buildTime|dateFormat("yyyy") }}</p>
+      <p class="c-secondarylinks"><button class="c-themetoggle  js-themetoggle">Current theme: <span class="js-themetoggle-label">light</span></button></li>
     </div>
   </div>
 </footer>

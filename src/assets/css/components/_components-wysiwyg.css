@@ -45,8 +45,4 @@ wysiwyg
     font-size: calc(18 / 16 * 1rem);
     line-height: 1.44;
   }
-
-  code {
-    color: var(--color-text-offset);
-  }
 }

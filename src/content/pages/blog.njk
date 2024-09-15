@@ -11,32 +11,29 @@ permalink: /blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber 
 {% from "components/blogcard.njk" import blogcard %}
 
 {% set metaTitle = "Blog" %}
-{% set metaDescription = "Thoughts and ramblings from Jérôme Coupé." %}
-{% set metaImage = "" %}
+{% set metaDescription = "Blogposts, thoughts and ramblings by Jérôme Coupé." %}
 {% set currentSection = "blog" %}
+
+{% set colorTheme = "yellow" %}
 
 {% block content %}
 
-  <div class="c-pageintro">
+  <div class="c-pagesection">
     <div class="l-container">
 
-      <div class="l-split  l-split--half">
-        <div>
-          <h1 class="c-h1">Blogposts</h1>
-        </div>
-        <div>
-          <p>I write about whatever piques my interest at the moment. I just hope it will help me remember it all when I am old, gray and nodding by the fire. Read on or subscribe to the RSS feed if that's your thing.</p>
-        </div>
+      <div class="c-pageintro">
+        <p class="c-suptitle">Infrequent ramblings</p>
+        <h1 class="c-pageintro__title">A journal of sorts. I hope it will help me remember it all when I am old, gray and nodding by the fire.</h1>
       </div>
         
     </div>
   </div>
 
-  <div class="c-pagesection">
+  <div class="c-pagesection  u-pbs-none">
     <div class="l-container">
 
       {% for item in blogposts %}
-        {% if loop.first %}<ul class="l-grid  l-grid--rowgap-l  l-grid--2cols@small  l-grid--3cols@medium  l-grid--4cols@large">{% endif %}
+        {% if loop.first %}<ul class="l-grid" style="--gap:  var(--space-xl) var(--grid-gap); --columns-sm: 2; --columns-md: 3; --columns-lg: 4;">{% endif %}
           <li>
             {{ blogcard({
               title: item.data.title,

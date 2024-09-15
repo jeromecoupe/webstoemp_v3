@@ -3,31 +3,23 @@ section
 ========================================== */
 
 .c-pagesection {
-  padding-block: calc(48 / 16 * 1rem);
+  padding-block: calc(54 / 16 * 1rem);
 
   @media (width >= 500px) {
     padding-block: calc(60 / 16 * 1rem);
   }
 
   @media (width >= 750px) {
-    padding-block: calc(90 / 16 * 1rem);
+    padding-block: calc(72 / 16 * 1rem);
   }
 
   @media (width >= 1024px) {
-    padding-block: calc(120 / 16 * 1rem);
+    padding-block: calc(90 / 16 * 1rem);
   }
 
   @media (width >= 1500px) {
-    padding-block: calc(150 / 16 * 1rem);
+    padding-block: calc(120 / 16 * 1rem);
   }
-}
-
-/* ==========================================
-section highlight
-========================================== */
-
-.c-pagesection--highlight {
-  background-color: var(--color-accent-washed);
 }
 
 /* ==========================================

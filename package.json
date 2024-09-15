@@ -7,8 +7,8 @@
     "clean": "rimraf \"./dist\"",
     "server": "npx @11ty/eleventy --serve --quiet",
     "images": "node \"./build_tasks/generate-images.js\"",
-    "css:dev": "lightningcss --bundle --browserslist \"./src/assets/css/main.css\" -o \"./dist/assets/css/main.css\"",
-    "css:prod": "lightningcss --bundle --minify --browserslist \"./src/assets/css/main.css\" -o \"./dist/assets/css/main.css\"",
+    "css:dev": "lightningcss --bundle \"./src/assets/css/main.css\" -o \"./dist/assets/css/main.css\"",
+    "css:prod": "lightningcss --bundle --minify \"./src/assets/css/main.css\" -o \"./dist/assets/css/main.css\"",
     "js:dev": "esbuild --bundle --sourcemap=inline \"./src/assets/js/main.js\" --outfile=\"./dist/assets/js/main.bundle.js\"",
     "js:prod": "esbuild --bundle --minify \"./src/assets/js/main.js\" --outfile=\"./dist/assets/js/main.bundle.js\"",
     "eleventy": "npx @11ty/eleventy --quiet",
@@ -18,8 +18,7 @@
     "build": "npm-run-all clean --parallel eleventy images css:prod js:prod"
   },
   "browserslist": [
-    "> 0.5%",
-    "not dead"
+    ">2% and not dead"
   ],
   "keywords": [
     "webstoemp",

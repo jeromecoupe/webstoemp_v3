@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-color="{{ colorTheme|default('default') }}" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ metaTitle }}</title>
+  <title>{{ metaTitle }} - Webstoemp</title>
   <meta name="author" content="{{ site.author }}">
   <meta name="description" content="{{ metaDescription }}">
   <meta name="generator" content="{{ eleventy.generator }}">
@@ -20,7 +20,7 @@
   {# Open Graph #}
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ site.url ~ page.url }}" />
-  <meta property="og:title" content="{{ metaTitle }}" />
+  <meta property="og:title" content="{{ metaTitle }} - Webstoemp" />
   <meta property="og:image" content="{{ metaImage }}" />
   <meta property="og:description" content="{{ metaDescription }}" />
 
@@ -33,7 +33,7 @@
   {# JS #}
   <script type="module" src="/assets/js/main.bundle.js"></script>
 </head>
-<body data-theme="{{ colorTheme|default('default') }}">
+<body>
   {% include "components/siteheader.njk" %}
   <main>
     {% block content %}{% endblock %}

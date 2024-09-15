@@ -1,0 +1,11 @@
+/* ==========================================
+=hamburger icon
+========================================== */
+
+.c-hamburgericon {
+  --color-hamburger-background: light-dark(
+    var(--color-gray800),
+    var(--color-gray300)
+  );
+  --color-hamburger-icon: light-dark(var(--color-gray100), var(--color-white));
+}

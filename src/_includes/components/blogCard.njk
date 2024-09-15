@@ -1,30 +1,31 @@
 {% macro blogcard(params) %}
 
   {% set img600x450 = "/assets/img/blogposts/600x450/" ~ params.image %}
-  {% set img = "/assets/img/blogposts/" ~ params.image %}
 
   <article class="c-blogcard">
-    <a class="c-blogcard__link" href="{{ params.url }}">
-      {% if params.image %}
-        <div class="c-blogcard__media">
-          <img src="{{ img }}"
-               class="c-blogcard__img  o-fluidimg"
-               width="800"
-               height="600"
-               loading="lazy"
-               decoding="async"
-               alt="{{ params.title }}">
-        </div>
-      {% endif %}
-      <div class="c-blogcard__body">
-        <h3 class="c-blogcard__title">
-          {{ params.title }}
-        </h3>
-        <p class="c-blogcard__date">
-          <time datetime="{{ params.date|dateISO }}">{{ params.date|dateFull }}</time>
-        </p>
+    {% if params.image %}
+      <div class="c-blogcard__media">
+        <a href="{{ params.url }}">
+          <img src="{{ img600x450 }}"
+              class="c-blogcard__img  o-fluidimg"
+              width="600"
+              height="450"
+              loading="lazy"
+              decoding="async"
+              alt="">
+        </a>
       </div>
-    </a>
+    {% endif %}
+    <div class="c-blogcard__body">
+      <h3 class="c-blogcard__title">
+        <a href="{{ params.url }}">
+          {{ params.title }}
+        </a>
+      </h3>
+      <p class="c-blogcard__date">
+        <time datetime="{{ params.date|dateISO }}">{{ params.date|dateFull }}</time>
+      </p>
+    </div>
   </article>
 
 {% endmacro %}

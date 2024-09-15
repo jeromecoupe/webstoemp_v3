@@ -1,4 +1,3 @@
-<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <rect width="36" height="36" rx="2" fill="currentColor" />
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.3319 18L15 22.6923L16.4608 24L22 18L16.4608 12L15 13.3077L19.3319 18Z" fill="#060A06" />
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 15L18 9M24 15L18 21M24 15H6" stroke="#46453E" stroke-width="2" stroke-linecap="round"/>
 </svg>

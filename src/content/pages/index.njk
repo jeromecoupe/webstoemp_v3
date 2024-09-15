@@ -6,25 +6,21 @@ permalink: /index.html
 
 {% from "components/blogcard.njk" import blogcard %}
 
-{% set metaTitle = "Webstoemp" %}
-{% set metaDescription = "Webstoemp is the portfolio and blog of Jérôme Coupé, belgian designer, developer and teacher based in Brussels." %}
+{% set metaTitle = "Home" %}
+{% set metaDescription = "Portfolio and blog of Jérôme Coupé, belgian designer, developer and teacher based in Brussels." %}
 {% set metaImage = "" %}
 {% set currentSection = "home" %}
 
-{% set colorTheme="cyan" %}
-{% set headerBackground= true %}
+{% set colorTheme ="cyan" %}
 
 {% block content %}
 
   <div class="c-pagesection  c-pagesection--highlight">
     <div class="l-container">
 
-      <div class="c-homeintro">
-        <h1 class="c-homeintro__title">
-          <span>Delicious</span>
-          <span>websites</span>
-        </h1>
-        <h2 class="c-homeintro__subtitle">from pixels to code</h2>
+      <div class="c-pageintro">
+        <p class="c-suptitle">Manifesto</p>
+        <h1 class="c-pageintro__title">Like great dishes, websites are made of a few simple, carefully chosen, well prepared ingredients.</h1>
       </div>
 
     </div>
@@ -42,19 +38,20 @@ permalink: /index.html
             <h2 class="c-smalltitle">Meet the cook</h2>
           </div>
           <div>
-            <p><a href="#">Webstoemp</a> is the online kitchen of Jérôme Coupé, belgian designer, developer and teacher. When I am not busy designing, coding up a website or warping young minds at school, chances are I am drinking a few Belgian craft beers with friends somewhere.</p>
+            <p><a href="#">Webstoemp</a> is the online kitchen of Jérôme Coupé, belgian designer, developer and teacher. When I am not busy designing, coding up a website or warping young minds at school, chances are I am enjoying a few beers with friends somewhere in Brussels.</p>
             <p>Although I work on web apps too, I confess having a soft spot for publishing platforms and content-oriented websites.</p>
             <p><a class="c-ctalink" href="#">More about me</a></p>
           </div>
         </div>
 
       </div>
+
       <div class="c-pagesection__block">
         
         <h2 class="c-smalltitle">Latest blogposts</h2>
         {% set items = collections.blogposts | limit(4) %}
         {% for item in items %}
-          {% if loop.first %}<ul class="l-grid" style="--gap: var(--grid-gap); --columns-md: 2; --columns-lg: 4;">{% endif %}
+          {% if loop.first %}<ul class="l-grid" style="--gap: var(--grid-gap); --columns-sm: 2; --columns-lg: 4;">{% endif %}
             <li>
               {{ blogcard({
                 title: item.data.title,

@@ -11,14 +11,14 @@ mainnav
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: calc(24 / 16 * 1rem);
+  gap: calc(30 / 16 * 1rem);
 }
 
 .c-mainnav__link {
   display: inline-block;
   padding-block: calc(2 / 16 * 1rem);
+  font-weight: 550;
   font-size: calc(14 / 16 * 1rem);
-  font-weight: 600;
   text-transform: uppercase;
 
   color: inherit;

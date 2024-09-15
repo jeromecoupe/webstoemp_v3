@@ -3,18 +3,18 @@ container
 ========================================== */
 
 .l-container {
-  --container-size: 1680px;
-  --container-padding: calc(18 / 16 * 1rem);
+  --container-max-size: 1680px;
+  --container-padding: 18px;
 
   margin-inline: auto;
   padding-inline: var(--container-padding);
-  max-width: var(--container-size);
+  max-inline-size: var(--container-max-size);
 
   @media (width >= 750px) {
-    --container-padding: calc(24 / 16 * 1rem);
+    --container-padding: 30px;
   }
 }
 
 .l-container--copy {
-  --container-size: 80ch;
+  --container-max-size: 80ch;
 }
