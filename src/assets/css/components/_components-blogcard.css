@@ -46,7 +46,7 @@ blog card
 
 .c-blogcard__date {
   font-size: calc(14 / 16 * 1rem);
-  color: var(--color-text-offset);
+  color: var(--color-text-secondary);
 
   @media (width >= 1024px) {
     font-size: 1rem;

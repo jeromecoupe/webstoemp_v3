@@ -3,9 +3,8 @@ links
 ========================================== */
 
 a {
-  color: var(--color-accent-dark);
+  color: light-dark(var(--color-accent-dark), var(--color-accent));
   text-decoration: underline;
-  text-decoration-color: var(--color-accent-dark);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }

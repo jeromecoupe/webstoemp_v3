@@ -3,34 +3,44 @@ blogpost
 ========================================== */
 
 .c-blogpost__intro {
-  padding-block-start: calc(48 / 16 * 1rem);
   padding-block-end: calc(30 / 16 * 1rem);
 
   @media (width >= 500px) {
-    padding-block-start: calc(60 / 16 * 1rem);
     padding-block-end: calc(18 / 16 * 1rem);
   }
 
   @media (width >= 750px) {
-    padding-block-start: calc(90 / 16 * 1rem);
     padding-block-end: calc(24 / 16 * 1rem);
   }
 
   @media (width >= 1024px) {
-    padding-block-start: calc(120 / 16 * 1rem);
     padding-block-end: calc(30 / 16 * 1rem);
   }
 
   @media (width >= 1500px) {
-    padding-block-start: calc(150 / 16 * 1rem);
     padding-block-end: calc(42 / 16 * 1rem);
   }
 }
 
 .c-blogpost__date {
-  font-size: calc(16 / 16 * 1rem);
-  color: var(--color-accent-dark);
-  margin-block-end: calc(6 / 16 * 1rem);
+  font-weight: 500;
+  font-size: calc(14 / 16 * 1rem);
+  line-height: 1.2;
+  font-family: var(--fontstack-main);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-block-end: calc(12 / 16 * 1rem);
+  letter-spacing: 0.12ch;
+}
+
+.c-blogpost__title {
+  margin-inline: auto;
+  max-width: 900px;
+  font-weight: 400;
+  font-size: clamp(32px, 1rem + 3vw, 58px);
+  line-height: 1.2;
+  font-family: var(--fontstack-alt);
+  text-wrap: balance;
 }
 
 .c-blogpost__image {

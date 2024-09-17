@@ -24,7 +24,7 @@ Home banner
 }
 
 .c-homebanner__caption {
-  color: var(--color-text-offset);
+  color: var(--color-text-secondary);
   font-size: calc(12 / 16 * 1rem);
   padding-block: calc(12 / 16 * 1rem);
   padding-inline: calc(12 / 16 * 1rem);

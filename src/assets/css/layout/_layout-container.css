@@ -3,7 +3,7 @@ container
 ========================================== */
 
 .l-container {
-  --container-max-size: 1680px;
+  --container-max-size: 1500px;
   --container-padding: 18px;
 
   margin-inline: auto;

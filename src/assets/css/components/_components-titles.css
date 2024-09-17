@@ -11,7 +11,7 @@ titles
   font-weight: 400;
   font-family: var(--fontstack-alt);
   line-height: 1.32;
-  color: var(--color-text-primary);
+  color: var(--color-titles);
   margin-bottom: 0.72em;
 }
 
@@ -50,7 +50,7 @@ small title
   line-height: 1.2;
   font-family: var(--fontstack-main);
   text-transform: uppercase;
-  color: var(--color-text-primary);
+  color: var(--color-titles);
   margin-block-end: 2em;
 }
 

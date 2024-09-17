@@ -1,31 +1,44 @@
-{% if pagination.pages|length > 1 %}
+{% set pageIndex = pagination.pageNumber %}
+{% set pageNumber = pagination.pageNumber + 1 %}
+{% set totalPages = pagination.pages|length %}
+
+{% if totalPages > 1 %}
+
   <nav aria-label="pagination">
-    <div class="c-pagination">
-      <ul class="c-pagesnav">
-        <li class="c-pagesnav__item">
-          {% if pagination.href.previous %}
-            <a class="c-pagesnav__link  c-pagesnav__link--previous" href="{{ pagination.href.previous }}" aria-label="previous page">
-              {% include "svg/icon-page-previous.svg" %}
-            </a>
-          {% else %}
-            <span a class="c-pagesnav__link  c-pagesnav__link--previous is-disabled">
-              {% include "svg/icon-page-previous.svg" %}
-            </span>
-          {% endif %}
+    <ul class="c-pagination">
+      {# first #}
+      {% if pagination.href.previous %}
+        <li class="c-pagination__item">
+          <a class="c-pagination__link" href="{{ pagination.href.previous }}">Previous</a>
         </li>
-        <li class="c-pagesnav__item">
-          {% if pagination.href.next %}
-            <a class="c-pagesnav__link  c-pagesnav__link--next" href="{{ pagination.href.next }}" aria-label="previous page">
-              {% include "svg/icon-page-next.svg" %}
-            </a>
-          {% else %}
-            <span a class="c-pagesnav__link  c-pagesnav__link--next is-disabled">
-              {% include "svg/icon-page-next.svg" %}
-            </span>
-          {% endif %}
+      {% endif %}
+
+      {# previous #}
+      {% if pagination.hrefs[pageIndex - 1] %}
+        <li class="c-pagination__item">
+          <a class="c-pagination__link" href="{{ pagination.hrefs[pageIndex - 1] }}">{{ pageNumber - 1 }}</a>
         </li>
-      </ul>
-      <p class="c-pagescounter">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages|length }}</p>
-    </div>
+      {% endif %}
+
+      {# current #}
+      <li class="c-pagination__item">
+        <a class="c-pagination__link  is-current" href="{{ pagination.href[pageIndex] }}" aria-current="page">{{ pageNumber }}</a>
+      </li>
+      {# next #}
+
+      {% if pagination.hrefs[pageIndex + 1] %}
+        <li class="c-pagination__item">
+          <a class="c-pagination__link" href="{{ pagination.hrefs[pageIndex + 1] }}">{{ pageNumber + 1 }}</a>
+        </li>
+      {% endif %}
+
+      {# last #}
+      {% if pagination.href.next %}
+        <li class="c-pagination__item">
+          <a class="c-pagination__link" href="{{ pagination.href.next }}">Next</a>
+        </li>
+      {% endif %}
+    </ul>
   </nav>
+
 {% endif %}

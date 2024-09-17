@@ -11,7 +11,7 @@ colors
   --color-cyan-dark: hsl(169, 78%, 18%);
   --color-cyan-washed: hsl(169, 78%, 98%);
 
-  --color-yellow: hsl(50, 94%, 36%);
+  --color-yellow: hsl(50, 94%, 40%);
   --color-yellow-bright: hsl(50, 94%, 72%);
   --color-yellow-dark: hsl(50, 94%, 24%);
   --color-yellow-washed: hsl(50, 94%, 98%);
@@ -22,10 +22,12 @@ colors
   --color-red-washed: hsl(19, 30%, 98%);
 
   --color-blue: hsl(190, 78%, 36%);
+  --color-blue-bright: hsl(190, 78%, 72%);
   --color-blue-dark: hsl(190, 78%, 18%);
   --color-blue-washed: hsl(190, 78%, 99%);
 
   --color-green: hsl(141, 78%, 36%);
+  --color-green-bright: hsl(141, 78%, 72%);
   --color-green-dark: hsl(141, 78%, 18%);
   --color-green-washed: hsl(141, 78%, 98%);
 
@@ -36,13 +38,17 @@ colors
   --color-gray500: hsl(40, 3%, 60%);
   --color-gray600: hsl(40, 3%, 72%);
   --color-gray700: hsl(40, 3%, 84%);
-  --color-gray800: hsl(40, 3%, 97%);
+  --color-gray800: hsl(40, 3%, 94%);
 
   --color-white: #ffffff;
 
   /* incident variables */
-  --color-text-primary: light-dark(var(--color-gray100), var(--color-white));
-  --color-text-offset: light-dark(var(--color-gray400), var(--color-gray600));
+  --color-titles: light-dark(var(--color-gray100), var(--color-white));
+  --color-text-primary: light-dark(var(--color-gray100), var(--color-gray800));
+  --color-text-secondary: light-dark(
+    var(--color-gray300),
+    var(--color-gray600)
+  );
 
   --color-border-primary: light-dark(
     rgba(0, 0, 0, 0.12),

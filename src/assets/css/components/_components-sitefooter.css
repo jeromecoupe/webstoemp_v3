@@ -47,6 +47,7 @@ sitefooter
 }
 
 .c-sitefooter__end {
+  border-block-start: 1px solid var(--color-border-primary);
   padding-block: calc(16 / 16 * 1rem);
 
   display: flex;

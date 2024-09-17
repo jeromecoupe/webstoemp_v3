@@ -3,6 +3,6 @@ lead
 ========================================== */
 
 .c-lead {
-  color: var(--color-text-primary);
-  font-size: calc(20 / 16 * 1rem);
+  color: var(--color-text-secondary);
+  font-size: clamp(18/16 * 1rem, 0.5rem + 1vw, 20 / 16 * 1rem);
 }
