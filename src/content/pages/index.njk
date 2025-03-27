@@ -15,25 +15,25 @@ permalink: /index.html
 
 {% block content %}
 
-  <div class="c-pagesection  c-pagesection--highlight">
+  <div class="c-pagesection">
     <div class="l-container">
 
-      <div class="c-pageintro">
+      <div class="c-homeintro">
         <p class="c-suptitle">Manifesto</p>
-        <h1 class="c-pageintro__title">Like great dishes, websites are made of a few simple, carefully chosen, well prepared ingredients.</h1>
+        <h1 class="c-homeintro__sentence">Like great dishes, websites are made of <em>simple &amp; well prepared</em> ingredients</h1>
       </div>
 
     </div>
   </div>
 
-  {% include "components/homebanner.njk" %}
+  
+  {% include "components/homecollage.njk" %}
+  
 
   <div class="c-pagesection">
     <div class="l-container">
 
-      <div class="c-pagesection__block">
-
-        <div class="l-grid" style="--gap-md: var(--grid-gap); --columns-md: 2;">
+        <div class="l-split l-split--half@medium">
           <div>
             <h2 class="c-smalltitle">Meet the cook</h2>
           </div>
@@ -43,15 +43,17 @@ permalink: /index.html
             <p><a class="c-ctalink" href="#">More about me</a></p>
           </div>
         </div>
-
-      </div>
-
-      <div class="c-pagesection__block">
         
+      </div>
+    </div>
+
+    <div class="c-pagesection">
+      <div class="l-container">
+
         <h2 class="c-smalltitle">Latest blogposts</h2>
         {% set items = collections.blogposts | limit(4) %}
         {% for item in items %}
-          {% if loop.first %}<ul class="l-grid" style="--gap: var(--grid-gap); --columns-sm: 2; --columns-lg: 4;">{% endif %}
+          {% if loop.first %}<ul class="l-grid l-grid--2cols@small l-grid--4cols@large">{% endif %}
             <li>
               {{ blogcard({
                 title: item.data.title,
@@ -64,8 +66,6 @@ permalink: /index.html
         {% endfor %}
 
         <p class="u-mbs-md"><a class="c-ctalink" href="#">All blogposts</a></p>
-
-      </div>
 
     </div>
   </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-color="{{ colorTheme|default('default') }}" data-theme="light">
+<html lang="en" data-color="{{ colorTheme|default('default') }}" data-mode="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,9 @@
   <meta name="generator" content="{{ eleventy.generator }}">
 
   {# Preload #}
-  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/publicsans-variable.woff2">
-  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/publicsans-variableitalic.woff2">
+  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/switzer-variable.woff2">
+  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/switzer-variableitalic.woff2">
   <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/sentient-variable.woff2">
-  <link rel="preload" as="font" crossorigin type="font/woff2" href="/assets/fonts/sentient-variableitalic.woff2">
 
   {# Rel me #}
   <link rel="me" href="{{ site.me.mastodon }}">
@@ -21,7 +20,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ site.url ~ page.url }}" />
   <meta property="og:title" content="{{ metaTitle }} - Webstoemp" />
-  <meta property="og:image" content="{{ metaImage }}" />
+  <meta property="og:image" content="{{ metaImage|default("/assets/img/metaimage.png") }}" />
   <meta property="og:description" content="{{ metaDescription }}" />
 
   {# Feed #}

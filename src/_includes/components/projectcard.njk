@@ -1,9 +1,7 @@
 {% macro projectcard(params) %}
 
-  {% set roles = params.tags|join(", ") %}
-
   <div class="c-projectcard">
-    <div class="c-projectcard__image">
+    <div class="c-projectcard__media">
 
       {% set img800 = "/assets/img/projects/800x600/" ~ params.image %}
       {% set img1024 = "/assets/img/projects/" ~ params.image %}
@@ -23,12 +21,12 @@
     <div class="c-projectcard__content">
 
       <h2 class="c-projectcard__title">{{ params.title }}</h2>
-      <h3 class="c-projectcard__subtitle">{{ params.subtitle }}</h3>
       <p class="c-projectcard__text">{{ params.text }}</p>
-      <p class="c-projectcard__role">Roles: {{ roles }}</p>
-      {% if params.url %}
-        <p><a class="c-ctalink" href="{{ params.url }}">Visit website</a></p>
-      {% endif %}
+      {% for item in params.tags %}
+        {% if loop.first %}<ul class="c-projectcard__tags">{% endif %}
+          <li class="c-tag">{{ item }}</li>
+        {% if loop.last %}</ul>{% endif %}
+      {% endfor %}
 
     </div>
   </div>

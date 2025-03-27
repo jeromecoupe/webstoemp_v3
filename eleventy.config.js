@@ -15,6 +15,10 @@ import {
 import { limit } from "./src/_11ty/filters/limit.js";
 import { swapExt } from "./src/_11ty/filters/swap-extension.js";
 
+/**
+ * Export 11ty default config function
+ * @param {*} eleventyConfig
+ */
 export default function (eleventyConfig) {
   // collections
   eleventyConfig.addCollection("blogposts", blogposts);
@@ -46,17 +50,17 @@ export default function (eleventyConfig) {
     port: 3000,
     watch: ["./dist/assets/js/**/*", "./dist/assets/css/**/*"],
   });
-
-  // override default config
-  return {
-    dir: {
-      input: "src/",
-      output: "dist/",
-      data: "_data",
-      includes: "_includes",
-    },
-    templateFormats: ["njk", "md", "html"],
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
-  };
 }
+
+// override default config object
+export const config = {
+  dir: {
+    input: "src/",
+    output: "dist/",
+    data: "_data",
+    includes: "_includes",
+  },
+  templateFormats: ["njk", "md", "html"],
+  htmlTemplateEngine: "njk",
+  markdownTemplateEngine: "njk",
+};

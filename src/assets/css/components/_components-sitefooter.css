@@ -5,7 +5,7 @@ sitefooter
 .c-sitefooter {
   --footer-background: light-dark(
     var(--color-accent-bright),
-    var(--color-gray200)
+    var(--color-background-primary)
   );
 
   display: block;
@@ -21,20 +21,23 @@ sitefooter
     "a"
     "b"
     "c";
-  gap: var(--grid-gap);
+  gap: 30px;
 
   @media (width >= 750px) {
     padding-block: calc(60 / 16 * 1rem);
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "a a b c";
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: "a b c";
+    gap: 18px;
   }
 
   @media (width >= 1024px) {
     padding-block-start: calc(84 / 16 * 1rem);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas: "a . b c";
   }
 }
 
-.c-sitefooter__message {
+.c-sitefooter__contact {
   grid-area: a;
 }
 

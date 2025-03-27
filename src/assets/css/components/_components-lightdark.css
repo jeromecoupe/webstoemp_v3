@@ -1,0 +1,17 @@
+/* ==========================================
+=light dark button
+========================================== */
+
+.c-lightdark {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: var(--color-text-primary);
+  line-height: 1;
+
+  & svg {
+    display: block;
+  }
+}

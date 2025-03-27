@@ -4,12 +4,7 @@ siteheader
 
 .c-siteheader {
   color: var(--color-text-primary);
-
-  padding-block: calc(18 / 16 * 1rem);
-
-  @media (width >= 750px) {
-    padding-block: calc(30 / 16 * 1rem);
-  }
+  padding-block-start: clamp(18px, 0.16px + 1vi, 30px);
 }
 
 /* ==========================================
@@ -19,8 +14,8 @@ siteheader inner
 .c-siteheader__inner {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   gap: 18px;
 }
 
@@ -29,7 +24,9 @@ logo
 ------------------------------------------ */
 
 .c-siteheader__logo {
-  color: inherit;
+  --logo-size: 90px;
+
+  color: var(--color-titles);
   margin: 0 auto 0 0;
 
   & > a,
@@ -37,12 +34,33 @@ logo
   & > a:focus {
     display: block;
     text-decoration: none;
-    color: inherit;
   }
 
   & svg {
     display: block;
+    inline-size: var(--logo-size);
+    block-size: auto;
   }
+
+  @media (width >= 750px) {
+    --logo-size: 120px;
+  }
+}
+
+/* ------------------------------------------
+siteheader nav
+------------------------------------------ */
+
+/*
+contains mainnav and utilsnav
+*/
+
+.c-siteheader__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: calc(24 / 16 * 1rem);
 }
 
 /* ------------------------------------------
@@ -63,12 +81,11 @@ hamburger
 toggle visibility
 ------------------------------------------ */
 
-.c-siteheader__nav,
-.c-siteheader__location {
+.c-siteheader__nav {
   display: none;
 
   @media (width >= 750px) {
-    display: block;
+    display: flex;
   }
 }
 

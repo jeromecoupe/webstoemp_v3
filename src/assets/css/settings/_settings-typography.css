@@ -3,7 +3,13 @@ typography
 ========================================== */
 
 :root {
+  /* font stacks */
   --fontstack-main: "Switzer", "Public Sans", "Helvetica Neue", system-ui,
     sans-serif;
   --fontstack-alt: "Sentient", "Georgia", serif;
+
+  /* font sizes */
+  --fontsize-200: calc(11 / 16 * 1rem);
+  --fontsize-300: calc(14 / 16 * 1rem);
+  --fontsize-400: clamp(1rem, 0.75rem + 0.5vw, 18 / 16 * 1rem);
 }

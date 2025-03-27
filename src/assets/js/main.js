@@ -1,5 +1,7 @@
 import { init as nav } from "./modules/navigation.js";
 nav();
 
-import { init as toggleTheme } from "./modules/toggleTheme.js";
-toggleTheme();
+/*
+import { init as lightdark } from "./modules/lightdark.js";
+lightdark();
+*/

@@ -1,67 +1,19 @@
 /* ==========================================
-Home introduction
+Home intro
 ========================================== */
-
-@keyframes parallax {
-  from {
-    translate: 0 0;
-  }
-  to {
-    translate: 0 -0.12em;
-  }
-}
 
 .c-homeintro {
   text-align: center;
 }
 
-.c-homeintro__title {
-  view-timeline-name: --title;
-  view-timeline-axis: block;
-
-  font-size: clamp(48px, 1rem + 8vw, 132px);
-  line-height: 0.6;
-  text-transform: uppercase;
-  letter-spacing: -0.03em;
-
-  margin-block-end: 0.24em;
-
-  & > span {
-    display: block;
-  }
-
-  & > span:nth-child(1) {
-    color: var(--color-accent);
-    font-family: var(--fontstack-alt);
-    font-style: italic;
-    font-weight: 400;
-
-    @media (width > 750px) {
-      font-weight: 350;
-    }
-  }
-
-  & > span:nth-child(2) {
-    @supports (animation-timeline: --title) {
-      animation-timeline: --title;
-      animation-name: parallax;
-      animation-duration: auto;
-      animation-timing-function: linear;
-      animation-fill-mode: both;
-      animation-range: contain 60% exit 80%;
-    }
-
-    color: var(--color-text-primary);
-    font-family: var(--fontstack-main);
-    font-weight: 550;
-  }
-}
-
-.c-homeintro__subtitle {
-  margin: 0;
-  font-size: 1rem;
+.c-homeintro__sentence {
   font-weight: 400;
+  font-size: clamp(23px, calc(0.709rem + 3.644vi), 66px);
   font-family: var(--fontstack-alt);
-  font-style: italic;
-  letter-spacing: 0.12em;
+  max-inline-size: 24ch;
+  line-height: 1.14;
+  color: var(--color-titles);
+  margin-inline: auto;
+  margin-block-end: 0;
+  text-wrap: balance;
 }

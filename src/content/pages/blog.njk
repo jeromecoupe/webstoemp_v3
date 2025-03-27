@@ -21,19 +21,11 @@ permalink: /blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber 
   <div class="c-pagesection">
     <div class="l-container">
 
-      <div class="c-pageintro">
-        <p class="c-suptitle">Infrequent ramblings</p>
-        <h1 class="c-pageintro__title">A journal of sorts. I hope it will help me remember it all when I am old, gray and nodding by the fire.</h1>
-      </div>
-        
-    </div>
-  </div>
-
-  <div class="c-pagesection  u-pbs-none">
-    <div class="l-container">
+      <p class="c-suptitle">Infrequent ramblings</p>
+      <h1 class="c-h1">Blogposts</h1>
 
       {% for item in blogposts %}
-        {% if loop.first %}<ul class="l-grid" style="--gap:  var(--space-xl) var(--grid-gap); --columns-sm: 2; --columns-md: 3; --columns-lg: 4;">{% endif %}
+        {% if loop.first %}<ul class="l-grid l-grid--2cols@small l-grid--3cols@medium  l-grid--4cols@large">{% endif %}
           <li>
             {{ blogcard({
               title: item.data.title,

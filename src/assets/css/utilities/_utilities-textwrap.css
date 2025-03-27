@@ -1,0 +1,11 @@
+/* ==========================================
+=wrap balance
+========================================== */
+
+.u-textwrap-pretty {
+  text-wrap: pretty;
+}
+
+.u-textwrap-balance {
+  text-wrap: balance;
+}

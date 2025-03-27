@@ -3,29 +3,41 @@ mainnav
 ========================================== */
 
 .c-mainnav {
+  --mainnav-color: var(--color-text-primary);
+  --mainnav-color-active: var(--color-text-secondary);
+
   list-style: none;
   margin: 0;
   padding: 0;
 
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: calc(42 / 16 * 1rem);
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.c-mainnav__item {
+  line-height: 1;
 }
 
 .c-mainnav__link {
   display: inline-block;
-  padding-block: calc(2 / 16 * 1rem);
-  font-weight: 550;
-  font-size: calc(14 / 16 * 1rem);
-  text-transform: uppercase;
+  line-height: 1;
+  padding-block: calc(6 / 16 * 1rem);
+  font-weight: 450;
+  font-size: 1rem;
 
-  color: inherit;
+  color: var(--mainnav-color);
   text-decoration: none;
+  transition: color 0.2s ease-out;
 
   &:hover,
   &:focus {
     text-decoration: none;
+    color: var(--mainnav-color-active);
   }
+}
+
+.c-mainnav__link.is-active {
+  color: var(--color-accent);
 }

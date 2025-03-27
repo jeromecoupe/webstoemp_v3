@@ -3,7 +3,7 @@ container
 ========================================== */
 
 .l-container {
-  --container-max-size: 1500px;
+  --container-max-size: 1640px;
   --container-padding: 18px;
 
   margin-inline: auto;
@@ -11,10 +11,18 @@ container
   max-inline-size: var(--container-max-size);
 
   @media (width >= 750px) {
-    --container-padding: 30px;
+    --container-padding: 24px;
   }
 }
 
+.l-container--medium {
+  --container-max-size: 1024px;
+}
+
+.l-container--small {
+  --container-max-size: 840px;
+}
+
 .l-container--copy {
-  --container-max-size: 80ch;
+  --container-max-size: 75ch;
 }

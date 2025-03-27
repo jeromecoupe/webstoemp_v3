@@ -10,7 +10,7 @@ titles
 .c-h6 {
   font-weight: 400;
   font-family: var(--fontstack-alt);
-  line-height: 1.32;
+  line-height: 1.2;
   color: var(--color-titles);
   margin-bottom: 0.72em;
 }
@@ -46,7 +46,7 @@ small title
 
 .c-smalltitle {
   font-weight: 550;
-  font-size: calc(14 / 16 * 1rem);
+  font-size: 1rem;
   line-height: 1.2;
   font-family: var(--fontstack-main);
   text-transform: uppercase;
@@ -65,6 +65,21 @@ suptitle
   font-family: var(--fontstack-main);
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-block-end: calc(12 / 16 * 1rem);
+  margin-block-end: 1em;
   letter-spacing: 0.12ch;
+}
+
+/* ==========================================
+footer titles
+========================================== */
+
+.c-footertitle {
+  font-weight: 550;
+  font-family: var(--fontstack-main);
+  line-height: 1.32;
+  color: inherit;
+  margin-block-end: 1em;
+  font-size: var(--fontsize-300);
+  color: var(--color-titles);
+  text-transform: uppercase;
 }

@@ -3,50 +3,9 @@ blogpost
 ========================================== */
 
 .c-blogpost__intro {
-  padding-block-end: calc(30 / 16 * 1rem);
-
-  @media (width >= 500px) {
-    padding-block-end: calc(18 / 16 * 1rem);
-  }
-
-  @media (width >= 750px) {
-    padding-block-end: calc(24 / 16 * 1rem);
-  }
-
-  @media (width >= 1024px) {
-    padding-block-end: calc(30 / 16 * 1rem);
-  }
-
-  @media (width >= 1500px) {
-    padding-block-end: calc(42 / 16 * 1rem);
-  }
-}
-
-.c-blogpost__date {
-  font-weight: 500;
-  font-size: calc(14 / 16 * 1rem);
-  line-height: 1.2;
-  font-family: var(--fontstack-main);
-  text-transform: uppercase;
-  color: var(--color-accent);
-  margin-block-end: calc(12 / 16 * 1rem);
-  letter-spacing: 0.12ch;
-}
-
-.c-blogpost__title {
-  margin-inline: auto;
-  max-width: 900px;
-  font-weight: 400;
-  font-size: clamp(32px, 1rem + 3vw, 58px);
-  line-height: 1.2;
-  font-family: var(--fontstack-alt);
-  text-wrap: balance;
+  padding-block-end: calc(36 / 16 * 1rem);
 }
 
 .c-blogpost__image {
   margin-block-end: var(--space-xl);
-
-  @media (width >= 1024px) {
-    margin-block-end: var(--space-2xl);
-  }
 }

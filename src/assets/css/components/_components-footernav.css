@@ -28,7 +28,7 @@ footer nav
   &:focus {
     text-decoration: underline;
     text-underline-offset: 0.18em;
-    text-decoration-color: inherit;
+    text-decoration-color: currentColor;
     text-decoration-thickness: 1px;
   }
 }

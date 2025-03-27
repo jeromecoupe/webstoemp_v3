@@ -18,21 +18,21 @@ blog card
 
   a:hover &,
   a:focus & {
-    scale: 1.024;
+    scale: 1.012;
   }
 }
 
 .c-blogcard__title {
   font-weight: 500;
   font-size: clamp(18/16 * 1rem, 0.5rem + 2vw, 20/16 * 1rem);
-  line-height: 1.44;
+  line-height: 1.32;
   font-family: var(--fontstack-alt);
   margin-block-end: calc(6 / 16 * 1rem);
   color: var(--color-text-primary);
 }
 
 .c-blogcard__title > a {
-  color: inherit;
+  color: var(--color-titles);
   text-decoration: none;
 }
 
@@ -40,15 +40,11 @@ blog card
 .c-blogcard__title > a:focus {
   text-decoration: underline;
   text-underline-offset: 0.2em;
-  text-decoration-color: inherit;
+  text-decoration-color: color-mix(in srgb, currentColor, transparent 80%);
   text-decoration-thickness: 1px;
 }
 
 .c-blogcard__date {
-  font-size: calc(14 / 16 * 1rem);
+  font-size: var(--fontsize-300);
   color: var(--color-text-secondary);
-
-  @media (width >= 1024px) {
-    font-size: 1rem;
-  }
 }

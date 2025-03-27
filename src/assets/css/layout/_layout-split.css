@@ -3,30 +3,39 @@ splits
 ========================================== */
 
 .l-split {
+  --split-colgap: 18px;
+
   display: grid;
   grid-template-columns: minmax(0, minmax(0, 1fr));
+  column-gap: var(--split-colgap);
+}
+
+@media (width >= 500px) {
+  .l-split--half\@small {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .l-split--1fr2fr\@small {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
 }
 
 @media (width >= 750px) {
   .l-split--half\@medium {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--grid-gap);
   }
 
   .l-split--1fr2fr\@medium {
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    gap: var(--grid-gap);
   }
 }
 
 @media (width >= 1024px) {
   .l-split--half\@large {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--grid-gap);
   }
 
   .l-split--1fr2fr\@large {
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-    gap: var(--grid-gap);
   }
 }

@@ -1,0 +1,60 @@
+.c-homecollage {
+  padding-block: clamp(30px, 1rem + 5vw, 90px);
+}
+
+.c-homepictures {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(3, 48px) auto;
+
+  @media (width >= 500px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+  }
+}
+
+.c-homepictures__one,
+.c-homepictures__two,
+.c-homepictures__three {
+  grid-column: 1 / 2;
+
+  @media (width >= 500px) {
+    grid-column: span 1;
+  }
+}
+
+.c-homepictures__one {
+  grid-row: 1 / 3;
+  rotate: -3deg;
+
+  @media (width >= 500px) {
+    grid-row: 1 / 2;
+    rotate: -5deg;
+  }
+}
+
+.c-homepictures__two {
+  grid-row: 2 / 4;
+  rotate: 2deg;
+
+  @media (width >= 500px) {
+    grid-row: 1 / 2;
+    rotate: 3deg;
+    translate: 0 1.5vi;
+    z-index: -1;
+  }
+}
+
+.c-homepictures__three {
+  grid-row: 3 / 5;
+  rotate: -2deg;
+
+  @media (width >= 500px) {
+    grid-row: 1 / 2;
+    rotate: -4deg;
+  }
+}

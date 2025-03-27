@@ -3,8 +3,18 @@ links
 ========================================== */
 
 a {
-  color: light-dark(var(--color-accent-dark), var(--color-accent));
+  --links-color: light-dark(var(--color-accent-dark), var(--color-accent));
+  --links-decoration-color: color-mix(in hsl, currentColor, transparent 60%);
+
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
+  text-decoration-color: var(--links-decoration-color);
+
+  color: var(--links-color);
+}
+
+a:hover,
+a:focus {
+  --links-decoration-color: currentColor;
 }
