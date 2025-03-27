@@ -1,8 +1,8 @@
 ---
 title: "Consuming a headless CMS GraphQL API with Eleventy"
 excerpt: "With Eleventy, consuming data coming from a GraphQL API to generate static pages is as straightforward as using Markdown files."
-image: "eleventy-graphql.jpg"
-imageAlt: "Eleventy and GraphQL sitting in a tree"
+image: "lights-network.jpg"
+imageAlt: "Lights forming a network - Photo by Zak"
 tags:
   - GraphQL
   - Eleventy

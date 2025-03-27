@@ -1,7 +1,7 @@
 ---
 title: "Modular code with Nunjucks and Eleventy"
 excerpt: "These days, web development and design are all about modularization and components. Template languages have a lot to offer and Eleventy itself has a few tricks up its sleeve."
-image: "eleventy-components.jpg"
+image: "child-electronic-components.jpg"
 imageAlt: "Child fiddling with electronic components - Photo by Kevin Jarrett on Unspash"
 tags:
   - Front-end

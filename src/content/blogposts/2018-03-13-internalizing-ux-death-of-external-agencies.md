@@ -1,7 +1,7 @@
 ---
 title: "Internalizing UX: the death of external agencies?"
 excerpt: "Quite the contrary, actually. Organizations that have in-house UX designers are often the ones who benefit the most from working with an agency. Here’s why."
-image: "death-agencies.jpg"
+image: "cemetery.jpg"
 imageAlt: "Cemetry - Photo by Neil Thomas"
 tags:
   - UX

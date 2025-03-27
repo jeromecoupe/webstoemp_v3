@@ -1,8 +1,8 @@
 ---
 title: "Notes on using CSS Grid in production"
 excerpt: "For the last 10 months or so, I have been building all new clients projects with CSS grid and flexbox as my main layout tools. Here is a quick rundown of the fallback tactics I use, in case it is useful for someone else."
-image: "cssgrid.jpg"
-imageAlt: "Grid pattern - Photo by Calvin Ma"
+image: "grid.jpg"
+imageAlt: "A fence with a hole in the middel - Photo by Anton Nazaretian"
 tags:
   - CSS Grid
   - CSS
@@ -221,8 +221,7 @@ In your HTML you can just use the following and enjoy good cross-browser support
 
 ```html
 <ul
-  class="l-grid  l-grid--2cols@small  l-grid--3cols@medium  l-grid--4cols@large"
->
+  class="l-grid  l-grid--2cols@small  l-grid--3cols@medium  l-grid--4cols@large">
   <li class="l-grid__unit"><!-- content --></li>
   <!-- [ other list items ] -->
   <li class="l-grid__unit"><!-- content --></li>

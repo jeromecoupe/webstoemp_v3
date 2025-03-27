@@ -9,6 +9,28 @@ const config = {
 
 const transforms = [
   {
+    // 2000x1125 thumbnails for blogposts
+    src: "./src/assets/img/blogposts/",
+    dist: "./dist/assets/img/blogposts/2000x1125/",
+    formats: ["jpg"],
+    options: {
+      width: 2000,
+      height: 1125,
+      fit: "cover",
+    },
+  },
+  {
+    // 1500x844 thumbnails for blogposts
+    src: "./src/assets/img/blogposts/",
+    dist: "./dist/assets/img/blogposts/1500x844/",
+    formats: ["jpg"],
+    options: {
+      width: 1500,
+      height: 844,
+      fit: "cover",
+    },
+  },
+  {
     // 1024x576 thumbnails for blogposts
     src: "./src/assets/img/blogposts/",
     dist: "./dist/assets/img/blogposts/1024x576/",
@@ -20,24 +42,24 @@ const transforms = [
     },
   },
   {
-    // 600x450 thumbnails for blogposts
+    // 800x600 thumbnails for blogposts cards
     src: "./src/assets/img/blogposts/",
-    dist: "./dist/assets/img/blogposts/600x450/",
+    dist: "./dist/assets/img/blogposts/800x600/",
     formats: ["jpg"],
     options: {
-      width: 600,
-      height: 450,
+      width: 800,
+      height: 600,
       fit: "cover",
     },
   },
   {
-    // 600x600 thumbnails for blogposts
+    // 800x800 thumbnails for blogposts social images
     src: "./src/assets/img/blogposts/",
-    dist: "./dist/assets/img/blogposts/600x600/",
+    dist: "./dist/assets/img/blogposts/800x800/",
     formats: ["jpg"],
     options: {
-      width: 600,
-      height: 600,
+      width: 800,
+      height: 800,
       fit: "cover",
     },
   },

@@ -2,7 +2,7 @@
 title: "Minimalist video player"
 excerpt: "For a recent project, I needed a minimalist video player for services like Youtube and Vimeo. The objectives were to wait for user interaction to load videos, have a custom cover image and build a straightforward and maintainable solution."
 image: "videoplayer.jpg"
-imageAlt: "Clap - Photo by Donovan Silva on Unsplash"
+imageAlt: "Old VHS tapes - Photo by Daniel von Appen on Unsplash"
 tags:
   - Front-end
   - Video
@@ -27,21 +27,33 @@ I started with some (hopefully) semantic HTML code:
 - data attributes to store the ID of the video and the video service (used to dynamically create the `iframe` relevant `src` value with JavaScript)
 
 ```html
-<div class="c-videoplayer  js-video-player" data-video-service="vimeo" data-video-id="174919644">
-  <a class="c-videoplayer__link  js-video-link" href="https://vimeo.com/174919644" aria-label="play video: video title">
-    <img src="https://picsum.photos/id/239/600/338"
-         srcset="https://picsum.photos/id/239/600/338 600w,
-                 https://picsum.photos/id/239/800/450 800w"
-         sizes="(min-width: 1440px) 720px,
+<div
+  class="c-videoplayer  js-video-player"
+  data-video-service="vimeo"
+  data-video-id="174919644">
+  <a
+    class="c-videoplayer__link  js-video-link"
+    href="https://vimeo.com/174919644"
+    aria-label="play video: video title">
+    <img
+      src="https://picsum.photos/id/239/600/338"
+      srcset="
+        https://picsum.photos/id/239/600/338 600w,
+        https://picsum.photos/id/239/800/450 800w
+      "
+      sizes="(min-width: 1440px) 720px,
                (min-width: 750px) 50vw,
                100vw"
-         class="c-videoplayer__cover"
-         loading="lazy"
-         decoding="async"
-         alt="">
+      class="c-videoplayer__cover"
+      loading="lazy"
+      decoding="async"
+      alt="" />
   </a>
   <template class="js-video-template">
-    <iframe src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    <iframe
+      src=""
+      allow="autoplay; fullscreen"
+      allowfullscreen></iframe>
   </template>
 </div>
 ```

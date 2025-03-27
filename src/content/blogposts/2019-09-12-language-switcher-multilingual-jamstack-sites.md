@@ -1,8 +1,8 @@
 ---
 title: "Language switcher for multilingual JAMstack sites"
 excerpt: "Following my blogpost on multilingual websites with Eleventy, I had several questions about how to build a language switcher. Here is the approach I generally use."
-image: "languages-choices.jpg"
-imageAlt: "Roadsign with various choices - By Javier Allegue Barros"
+image: "signpost-sunset.jpg"
+imageAlt: "Signpost with various arrows pointing in all directions - By Javier Allegue Barros"
 tags:
   - Eleventy
   - 11ty

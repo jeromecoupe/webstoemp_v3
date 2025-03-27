@@ -1,15 +1,15 @@
 {% macro blogcard(params) %}
 
-  {% set img600x450 = "/assets/img/blogposts/600x450/" ~ params.image %}
+  {% set img800 = "/assets/img/blogposts/800x600/" ~ params.image %}
 
   <article class="c-blogcard">
     {% if params.image %}
       <div class="c-blogcard__media">
         <a href="{{ params.url }}">
-          <img src="{{ img600x450 }}"
+          <img src="{{ img800 }}"
               class="c-blogcard__img  o-fluidimg"
-              width="600"
-              height="450"
+              width="800"
+              height="600"
               loading="lazy"
               decoding="async"
               alt="">

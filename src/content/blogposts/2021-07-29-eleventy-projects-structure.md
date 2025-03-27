@@ -1,5 +1,5 @@
 ---
-title: "Structuring Eleventy projects"
+title: "A common structure for Eleventy projects"
 excerpt: "One of the great things about Eleventy is its flexibility and its lack of assumptions about how your projects should be organized. However, in order to preserve my own sanity, I needed to come up with a default files and folders architecture that made sense to me."
 image: "construction.jpg"
 imageAlt: "Building under construction and cranes - Photo by Danist on Unsplash"

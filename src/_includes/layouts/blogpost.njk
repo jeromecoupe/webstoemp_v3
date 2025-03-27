@@ -2,7 +2,7 @@
 
 {% set metaTitle = title ~ " - Webstoemp Blog" %}
 {% set metaDescription = excerpt %}
-{% set metaImage = "" %}
+{% set metaImage = '/assets/img/blogposts/600x600/' ~ image %}
 {% set currentSection = "blog" %}
 
 {% set colorTheme = "yellow" %}
@@ -13,31 +13,33 @@
   <article class="c-blogpost">
     
     <header class="c-blogpost__intro u-aligncenter">
-      <div class="l-container">
-        <p class="c-blogpost__date">{{ page.date | dateFull }}</p>
-        <h1 class="c-blogpost__title">{{ title }}</h1>
+      <div class="l-container  l-container--small">
+        <p class="c-suptitle">{{ page.date | dateFull }}</p>
+        <h1 class="c-h1 u-textwrap-balance">{{ title }}</h1>
       </div>
     </header>
 
     <div class="c-blogpost__image">
       <div class="l-container">
-        {% set img600 = '/assets/img/blogposts/600x600/' ~ image %}
+        {% set img800 = '/assets/img/blogposts/800x800/' ~ image %}
         {% set img1024 = '/assets/img/blogposts/1024x576/' ~ image %}
-        {% set img1500 = '/assets/img/blogposts/' ~ image %}
-
+        {% set img1500 = '/assets/img/blogposts/1500x844/' ~ image %}
+        {% set img2000 = '/assets/img/blogposts/2000x1125/' ~ image %}
+        
         <picture>
-          <source srcset="{{ img1024 }} 1024w,
-                          {{ img1500 }} 1500w"
-                  width="1500"
-                  height="844"
-                  sizes="100vw"
-                  media="(min-width: 500px)">
-          <img src="{{ img600 }}"
-                width="600"
-                height="600"
-                class="o-fluidimg"
-                alt="{{ imageAlt }}"
-                decoding="async">
+          <source media="(min-width: 500px)"
+                  srcset="{{ img1024 }} 1024w,
+                          {{ img1500 }} 1500w,
+                          {{ img2000 }} 2000w"
+                  width="2000"
+                  height="1125"
+                  sizes="100vw">
+          <img src="{{ img800 }}"
+               width="800"
+               height="800"
+               class="o-fluidimg"
+               alt="{{ imageAlt }}"
+               decoding="async">
         </picture>
       </div>
     </div>

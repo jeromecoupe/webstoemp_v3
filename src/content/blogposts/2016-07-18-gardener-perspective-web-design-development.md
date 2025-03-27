@@ -1,8 +1,8 @@
 ---
 title: "A gardener's perspective on web design and development"
 excerpt: "My brother is a gardener and tree surgeon. We recently had a conversation about our respective works over a beer (or two). Our conclusion was that there were a lot of similarities between his job and mine."
-image: "soil-in-hands.jpg"
-imageAlt: "Soil in your hands - Photo by Kyle Ellefson"
+image: "gardening.jpg"
+imageAlt: "Yound plants in pots - Photo by Markus Spiske"
 tags:
   - Work
   - Front-end
