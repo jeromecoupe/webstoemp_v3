@@ -9,7 +9,7 @@
       {# first #}
       {% if pagination.href.previous %}
         <li class="c-pagination__item">
-          <a class="c-pagination__link" href="{{ pagination.href.previous }}">Previous</a>
+          <a class="c-pagination__previous" href="{{ pagination.href.previous }}">Previous</a>
         </li>
       {% endif %}
 
@@ -35,7 +35,7 @@
       {# last #}
       {% if pagination.href.next %}
         <li class="c-pagination__item">
-          <a class="c-pagination__link" href="{{ pagination.href.next }}">Next</a>
+          <a class="c-pagination__next" href="{{ pagination.href.next }}">Next</a>
         </li>
       {% endif %}
     </ul>

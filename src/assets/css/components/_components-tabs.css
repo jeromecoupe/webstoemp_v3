@@ -1,0 +1,42 @@
+/* ==========================================
+tabs
+========================================== */
+
+.c-tabs {
+  --tabs-gap: 24px;
+  --tabs-padding-block: 6px;
+  --tabs-color: var(--color-text-primary);
+  --tabs-border-color: rgba(0, 0, 0, 0.18);
+  --tabs-icon-spacing: 6px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: var(--tabs-gap);
+
+  margin-block-end: 30px;
+  padding-block-end: 12px;
+  border-block-end: 1px solid var(--tabs-border-color);
+}
+
+.c-tabs__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: var(--tabs-icon-spacing);
+
+  padding-block: var(--tabs-padding-block);
+
+  font-weight: 550;
+  font-size: calc(14 / 16 * 1rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--tabs-color);
+  text-decoration: none;
+}

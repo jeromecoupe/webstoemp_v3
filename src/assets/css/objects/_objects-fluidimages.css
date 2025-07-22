@@ -4,6 +4,10 @@ fluid images
 
 .o-fluidimg {
   display: block;
-  max-width: 100%;
-  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.o-fluidimg--full {
+  inline-size: 100%;
 }

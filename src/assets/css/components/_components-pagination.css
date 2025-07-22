@@ -11,7 +11,7 @@ pagination
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap: calc(18 / 16 * 1rem);
+  gap: 3px;
 
   margin-block-start: calc(30 / 16 * 1rem);
   border-block-start: 1px solid var(--color-border-primary);
@@ -19,14 +19,21 @@ pagination
 }
 
 .c-pagination__link {
+  display: inline-block;
+  padding: 10px;
+  line-height: 1;
+  text-box-trim: trim-both;
   color: var(--color-text-primary);
   text-decoration: none;
 }
 
 .c-pagination__link.is-current {
-  color: var(--color-text-secondary);
+  border: 2px solid var(--color-accent);
+  border-radius: 3px;
 }
 
-.c-pagination__link > svg {
-  display: block;
+.c-pagination__previous,
+.c-pagination__next {
+  color: var(--color-text-primary);
+  text-decoration: none;
 }

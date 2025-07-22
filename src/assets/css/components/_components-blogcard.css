@@ -29,6 +29,7 @@ blog card
   font-family: var(--fontstack-alt);
   margin-block-end: calc(6 / 16 * 1rem);
   color: var(--color-text-primary);
+  text-wrap: balance;
 }
 
 .c-blogcard__title > a {

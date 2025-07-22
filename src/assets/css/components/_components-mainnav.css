@@ -11,13 +11,10 @@ mainnav
   padding: 0;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: end;
-  align-items: end;
-}
-
-.c-mainnav__item {
-  line-height: 1;
+  align-items: center;
+  gap: 30px;
 }
 
 .c-mainnav__link {

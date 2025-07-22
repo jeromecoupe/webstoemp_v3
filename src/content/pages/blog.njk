@@ -18,26 +18,43 @@ permalink: /blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber 
 
 {% block content %}
 
-  <div class="c-pagesection">
+  <div class="c-section">
     <div class="l-container">
 
-      <p class="c-suptitle">Infrequent ramblings</p>
-      <h1 class="c-h1">Blogposts</h1>
+      <div class="c-section__block">
+        <p class="c-suptitle">Infrequent ramblings</p>
+        <h1 class="c-h1 u-mbe-none">Blogposts</h1>
+      </div>
 
-      {% for item in blogposts %}
-        {% if loop.first %}<ul class="l-grid l-grid--2cols@small l-grid--3cols@medium  l-grid--4cols@large">{% endif %}
-          <li>
-            {{ blogcard({
-              title: item.data.title,
-              url: item.url,
-              image: item.data.image,
-              date: item.date
-            }) }}
+      <div class="c-section__block">
+        <ul class="c-tabs">
+          <li class="c-tabs__item">
+            <a class="c-tabs__link" 
+               href="#">
+              List view
+            </a>
           </li>
-        {% if loop.last %}</ul>{% endif %}
-      {% endfor %}
-
-      {% include "components/pagination.njk" %}
+          <li class="c-tabs__item">
+            <a class="c-tabs__link" 
+               href="#">
+              RSS feed
+            </a>
+          </li>
+        </ul>
+        {% for item in blogposts %}
+          {% if loop.first %}<ul class="l-grid l-grid--2cols@small l-grid--3cols@medium  l-grid--4cols@large">{% endif %}
+            <li>
+              {{ blogcard({
+                title: item.data.title,
+                url: item.url,
+                image: item.data.image,
+                date: item.date
+              }) }}
+            </li>
+          {% if loop.last %}</ul>{% endif %}
+        {% endfor %}
+        {% include "components/pagination.njk" %}
+      </div>
 
     </div>
   </div>

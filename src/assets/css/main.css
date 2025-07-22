@@ -24,7 +24,7 @@
 /* COMPONENTS */
 @import "components/_components-titles.css";
 @import "components/_components-wysiwyg.css";
-@import "components/_components-pagesection.css";
+@import "components/_components-section.css";
 @import "components/_components-siteheader.css";
 @import "components/_components-mainnav.css";
 @import "components/_components-mobilemenu.css";
@@ -35,15 +35,19 @@
 @import "components/_components-copyright.css";
 @import "components/_components-ctalink.css";
 @import "components/_components-blogcard.css";
-@import "components/_components-homecollage.css";
+/* @import "components/_components-homecollage.css"; */
 @import "components/_components-projectcard.css";
 @import "components/_components-pagination.css";
 @import "components/_components-blogpost.css";
 @import "components/_components-lead.css";
-@import "components/_components-homeintro.css";
+/* @import "components/_components-homeintro.css"; */
 @import "components/_components-hamburgericon.css";
 @import "components/_components-lightdark.css";
 @import "components/_components-utilsnav.css";
+@import "components/_components-tabs.css";
+/* @import "components/_components-homebanner.css"; */
+@import "components/_components-manifesto.css";
+@import "components/_components-maincontent.css";
 
 /* VENDOR */
 @import "vendor/_vendor-prism.css";
@@ -53,3 +57,4 @@
 @import "utilities/_utilities-spacing.css";
 @import "utilities/_utilities-alignment.css";
 @import "utilities/_utilities-textwrap.css";
+@import "utilities/_utilities-columns.css";

@@ -2,6 +2,6 @@
 section
 ========================================== */
 
-.c-pagesection {
-  padding-block: clamp(30px, 1rem + 5vw, 150px);
+.c-section {
+  padding-block: clamp(30px, 1rem + 5vw, 60px);
 }

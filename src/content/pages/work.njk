@@ -15,7 +15,7 @@ permalink: /work/index.html
 
 {% block content %}
 
-  <div class="c-pagesection  u-pbe-none">
+  <div class="c-section  u-pbe-none">
     <div class="l-container">
 
       <div class="c-pageintro">
@@ -23,27 +23,21 @@ permalink: /work/index.html
         <h1 class="c-h1">Selected Work</h1>
       </div>
 
+
+      {% for item in collections.projects %}
+        {% if loop.first %}<ul class="l-grid  l-grid--2cols">{% endif %}
         
-    </div>
-  </div>
+        <li>
+          {{ projectcard({
+            image: item.data.image,
+            title: item.data.title,
+            text: item.content|safe,
+            tags: item.data.tags,
+            url: item.data.url
+          }) }}
+        </li>
 
-  <div class="c-pagesection">
-    <div class="l-container">
-
-        {% for item in collections.projects %}
-          {% if loop.first %}<ul class="l-grid  l-grid--2cols">{% endif %}
-          
-          <li>
-            {{ projectcard({
-              image: item.data.image,
-              title: item.data.title,
-              text: item.content|safe,
-              tags: item.data.tags,
-              url: item.data.url
-            }) }}
-          </li>
-
-        {% endfor %}
+      {% endfor %}
 
     </div>
   </div>

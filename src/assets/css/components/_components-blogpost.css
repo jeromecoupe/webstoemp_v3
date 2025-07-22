@@ -2,10 +2,10 @@
 blogpost
 ========================================== */
 
-.c-blogpost__intro {
-  padding-block-end: calc(36 / 16 * 1rem);
+.c-blogpost__image {
+  margin-block-end: 90px;
 }
 
-.c-blogpost__image {
-  margin-block-end: var(--space-xl);
+.c-blogpost__intro {
+  padding-block-end: 18px;
 }

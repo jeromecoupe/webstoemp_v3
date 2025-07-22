@@ -11,45 +11,61 @@ permalink: /index.html
 {% set metaImage = "" %}
 {% set currentSection = "home" %}
 
-{% set colorTheme ="cyan" %}
+{% set colorTheme ="green" %}
 
 {% block content %}
 
-  <div class="c-pagesection">
+  {# include "components/homecollage.njk" #}
+  {# include "components/homebanner.njk" #}
+  <div class="c-section">
     <div class="l-container">
 
-      <div class="c-homeintro">
-        <p class="c-suptitle">Manifesto</p>
-        <h1 class="c-homeintro__sentence">Like great dishes, websites are made of <em>simple &amp; well prepared</em> ingredients</h1>
+      <h2 class="c-smalltitle u-mbe-xs">Manifesto</h2>
+      <p class="c-manifesto">Like great dishes, I believe websites should be made of <em>simple &amp; well prepared</em> ingredients.</p>
+
+    </div>
+  </div>
+
+  <div class="c-section">
+    <div class="l-container">
+
+      <div class="l-split l-split--1fr2fr">
+        <div>
+          <img src="/assets/img/homepictures/homepicture-square.jpg" 
+               class="o-fluidimg" 
+               alt="">
+        </div>
+        <div>
+          <img src="/assets/img/homepictures/homepicture-4by3.jpg" 
+               class="o-fluidimg" 
+               alt="">
+        </div>
       </div>
 
     </div>
   </div>
 
-  
-  {% include "components/homecollage.njk" %}
-  
-
-  <div class="c-pagesection">
+  <div class="c-section">
     <div class="l-container">
 
-        <div class="l-split l-split--half@medium">
-          <div>
-            <h2 class="c-smalltitle">Meet the cook</h2>
-          </div>
-          <div>
-            <p><a href="#">Webstoemp</a> is the online kitchen of Jérôme Coupé, belgian designer, developer and teacher. When I am not busy designing, coding up a website or warping young minds at school, chances are I am enjoying a few beers with friends somewhere in Brussels.</p>
-            <p>Although I work on web apps too, I confess having a soft spot for publishing platforms and content-oriented websites.</p>
-            <p><a class="c-ctalink" href="#">More about me</a></p>
-          </div>
+      <div class="l-split l-split--1fr2fr@medium">
+        <div>
+          <h2 class="c-smalltitle">Meet the cook</h2>
         </div>
-        
+        <div>
+          <div class="u-columns-36ch">
+            <p>Webstoemp is the internet home of Jérôme Coupé, designer, front-end developer from Brussels, Belgium. When I am not coding a website or teaching at school, chances are I am enjoying a few local craft beer with friends.</p>
+            <p>Although I work on web apps too, I have a soft spot for building content-oriented websites. To me, Internet will always be a way to share information before being an application runtime.</p>
+          </div>
+          <p><a class="c-ctalink" href="#">More about me</a></p>
+        </div>
       </div>
+
     </div>
-
-    <div class="c-pagesection">
+  </div>
+    
+    <div class="c-section">
       <div class="l-container">
-
         <h2 class="c-smalltitle">Latest blogposts</h2>
         {% set items = collections.blogposts | limit(4) %}
         {% for item in items %}
@@ -64,10 +80,8 @@ permalink: /index.html
             </li>
           {% if loop.last %}</ul>{% endif %}
         {% endfor %}
-
         <p class="u-mbs-md"><a class="c-ctalink" href="#">All blogposts</a></p>
-
+      </div>
     </div>
-  </div>
   
 {% endblock %}

@@ -2,14 +2,14 @@
 alignment for text
 ========================================== */
 
-.u-aligncenter {
+.u-text-center {
   text-align: center;
 }
 
-.u-alignstart {
+.u-text-start {
   text-align: start;
 }
 
-.u-alignend {
+.u-text-end {
   text-align: end;
 }

@@ -8,36 +8,36 @@ titles
 .c-h4,
 .c-h5,
 .c-h6 {
-  font-weight: 400;
+  font-weight: 500;
   font-family: var(--fontstack-alt);
   line-height: 1.2;
   color: var(--color-titles);
-  margin-bottom: 0.72em;
+  margin-bottom: 0.84em;
 }
 
 .c-h1 {
-  font-size: clamp(41 / 16 * 1rem, 1rem + 3vw, 58 / 16 * 1rem);
+  font-weight: 400;
+  font-size: var(--fontsize-900);
 }
 
 .c-h2 {
-  font-size: clamp(29 / 16 * 1rem, 1rem + 2.5vw, 32 / 16 * 1rem);
+  font-size: var(--fontsize-800);
 }
 
 .c-h3 {
-  font-size: clamp(26 / 16 * 1rem, 1rem + 2.5vw, 29 / 16 * 1rem);
+  font-size: var(--fontsize-600);
 }
 
 .c-h4 {
-  font-size: calc(23 / 16 * 1rem);
+  font-size: var(--fontsize-500);
 }
 
 .c-h5 {
-  font-size: calc(20 / 16 * 1rem);
+  font-size: var(--fontsize-400);
 }
 
 .c-h6 {
-  font-size: calc(18 / 16 * 1rem);
-  line-height: 1.44;
+  font-size: var(--fontsize-400);
 }
 
 /* ==========================================
@@ -46,12 +46,12 @@ small title
 
 .c-smalltitle {
   font-weight: 550;
-  font-size: 1rem;
+  font-size: calc(14 / 16 * 1rem);
   line-height: 1.2;
   font-family: var(--fontstack-main);
   text-transform: uppercase;
   color: var(--color-titles);
-  margin-block-end: 2em;
+  margin-block-end: 1.5em;
 }
 
 /* ==========================================
@@ -66,7 +66,6 @@ suptitle
   text-transform: uppercase;
   color: var(--color-accent);
   margin-block-end: 1em;
-  letter-spacing: 0.12ch;
 }
 
 /* ==========================================

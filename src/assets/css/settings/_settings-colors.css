@@ -26,10 +26,10 @@ colors
   --color-blue-dark: hsl(190, 78%, 18%);
   --color-blue-washed: hsl(190, 78%, 99%);
 
-  --color-green: hsl(141, 78%, 36%);
-  --color-green-bright: hsl(141, 78%, 72%);
-  --color-green-dark: hsl(141, 78%, 18%);
-  --color-green-washed: hsl(141, 78%, 98%);
+  --color-green: hsl(76, 82%, 36%);
+  --color-green-bright: hsl(76, 82%, 84%);
+  --color-green-dark: hsl(76, 82%, 18%);
+  --color-green-washed: hsl(76, 82%, 98%);
 
   --color-gray-100: hsl(40, 3%, 3%);
   --color-gray-200: hsl(40, 3%, 6%);
@@ -43,9 +43,9 @@ colors
   --color-white: #ffffff;
 
   /* incident variables */
-  --color-text-primary: light-dark(var(--color-gray-100), var(--color-white));
+  --color-text-primary: light-dark(var(--color-gray-200), var(--color-white));
   --color-text-secondary: light-dark(
-    var(--color-gray-300),
+    var(--color-gray-400),
     var(--color-gray-600)
   );
 
