@@ -31,15 +31,14 @@
   "author": "Jérôme Coupé",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@11ty/eleventy": "v3.0.0-alpha.10",
-    "@11ty/eleventy-img": "^4.0.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "esbuild": "^0.20.2",
-    "lightningcss-cli": "^1.24.1",
-    "luxon": "^3.4.4",
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "esbuild": "^0.25.8",
+    "lightningcss-cli": "^1.30.1",
+    "luxon": "^3.7.1",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "rimraf": "^5.0.5",
-    "sharp": "^0.33.3"
+    "rimraf": "^6.0.1",
+    "sharp": "^0.34.3"
   }
 }
