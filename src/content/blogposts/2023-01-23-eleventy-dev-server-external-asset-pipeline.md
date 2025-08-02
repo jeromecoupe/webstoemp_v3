@@ -15,7 +15,7 @@ As outlined by Max Bock in [his infamous blogpost about asset pipelines](https:/
 1. Use external tools working in parallel with Eleventy
 2. Use Eleventy to manage everything
 
-Here is another [nice blogpost by Vadim Makeev](https://chriskirknielsen.com/blog/eleventy-asset-pipeline-precompiled-assets/) if you would rather like Eleventy to be in charge. As for me, I like the flexibility of an external build pipeline, mainly because I can easily use the same approach in non-Eleventy contexts.
+Here is another [nice blogpost by Vadim Makeev](https://pepelsbey.dev/articles/eleventy-css-js/) if you would rather like Eleventy to be in charge. As for me, I like the flexibility of an external build pipeline, mainly because I can easily use the same approach in non-Eleventy contexts.
 
 My default solution is to use NPM scripts to compile assets directly to my output folder. Meanwhile, using a package like `npm-run-all`, I can have Eleventy do its thing. Running those processes in parallel is quite efficient and the separation of concerns appeals to me.
 
