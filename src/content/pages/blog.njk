@@ -8,7 +8,7 @@ permalink: /blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber 
 
 {% extends "layouts/base.njk" %}
 
-{% from "components/blogcard.njk" import blogcard %}
+{% from "macros/blogcard.njk" import blogcard %}
 
 {% set metaTitle = "Blog" %}
 {% set metaDescription = "Blogposts, thoughts and ramblings by Jérôme Coupé." %}
