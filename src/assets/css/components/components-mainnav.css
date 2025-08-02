@@ -1,0 +1,36 @@
+/* ==========================================
+=mainav
+========================================== */
+
+.c-mainnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.c-mainnav__link {
+  font-weight: 450;
+  line-height: 1;
+  display: block;
+  padding-block: 3px;
+  text-align: end;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.c-mainnav__link.is-active {
+  text-decoration: none;
+  color: var(--color-accent);
+}

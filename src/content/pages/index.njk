@@ -1,5 +1,7 @@
 ---
 permalink: /index.html
+bannerImage: cafe_des_minimes.jpg
+colorTheme: green
 ---
 
 {% extends "layouts/base.njk" %}
@@ -9,72 +11,71 @@ permalink: /index.html
 {% set metaTitle = "Home" %}
 {% set metaDescription = "Portfolio and blog of Jérôme Coupé, belgian designer, developer and teacher based in Brussels." %}
 {% set metaImage = "" %}
-{% set currentSection = "home" %}
 
-{% set colorTheme ="green" %}
+{% set currentSection = "home" %}
 
 {% block content %}
 
-  {# include "components/homecollage.njk" #}
-  {# include "components/homebanner.njk" #}
-  <div class="c-section">
+  <div class="c-section c-section--intro c-section--accent">
     <div class="l-container">
 
-      <h2 class="c-smalltitle u-mbe-xs">Manifesto</h2>
-      <p class="c-manifesto">Like great dishes, I believe websites should be made of <em>simple &amp; well prepared</em> ingredients.</p>
-
-    </div>
-  </div>
-
-  <div class="c-section">
-    <div class="l-container">
-
-      <div class="l-split l-split--1fr2fr">
-        <div>
-          <img src="/assets/img/homepictures/homepicture-square.jpg" 
-               class="o-fluidimg" 
-               alt="">
-        </div>
-        <div>
-          <img src="/assets/img/homepictures/homepicture-4by3.jpg" 
-               class="o-fluidimg" 
-               alt="">
-        </div>
+      <div class="c-pageintro">
+        <h1 class="c-pageintro__suptitle">Design, Code & Ramblings</h1>
+        <p class="c-pageintro__title">
+          Like great dishes, I believe websites are made of a few
+          <span>simple &amp; well prepared</span> ingredients.
+        </p>
       </div>
 
     </div>
   </div>
 
+  <div class="c-homebanner">
+    <div class="c-homebanner__badge">
+      {% include("svg/homebadge.svg") %}
+    </div>
+    <div class="c-homebanner__media">
+      <img 
+        src="/assets/img/homebanners/800x600/{{ bannerImage }}"
+        srcset="/assets/img/homebanners/800x600/{{ bannerImage }} 800w,
+                /assets/img/homebanners/1024x768/{{ bannerImage }} 1024w,
+                /assets/img/homebanners/1500x1125/{{ bannerImage }} 1500w,
+                /assets/img/homebanners/2000x1500/{{ bannerImage }} 2000w"
+        sizes="100vw"
+        class="c-homebanner__image"
+        alt="Café des Minimes, Bruxelles, 2025">
+    </div>
+  </div>
+
   <div class="c-section">
     <div class="l-container">
 
-      <div class="l-split l-split--1fr2fr@medium">
-        <div>
-          <h2 class="c-smalltitle">Meet the cook</h2>
-        </div>
-        <div>
-          <div class="u-columns-36ch">
-            <p>Webstoemp is the internet home of Jérôme Coupé, designer, front-end developer from Brussels, Belgium. When I am not coding a website or teaching at school, chances are I am enjoying a few local craft beer with friends.</p>
-            <p>Although I work on web apps too, I have a soft spot for building content-oriented websites. To me, Internet will always be a way to share information before being an application runtime.</p>
+      <div class="c-section__block">
+        <div class="l-split l-split--colgap l-split--half@md">
+          <div>
+            <h2 class="c-smalltitle">Meet the cook</h2>
           </div>
-          <p><a class="c-ctalink" href="#">More about me</a></p>
+          <div>
+              <p>Webstoemp is the web home of Jérôme Coupé, designer, front-end developer and teacher from Brussels, Belgium. When not coding a website or teaching, chances are I am enjoying a few beers with friends or a gravel ride in the nearby woods.</p>
+              <p>Although I work on web apps too, I have a soft spot for building content-oriented websites. To me, Internet will always be a way to share content before being an application runtime.</p>
+              <p>
+                <a class="c-ctalink" href="#">More about me</a>
+              </p>
+          </div>
         </div>
       </div>
 
-    </div>
-  </div>
-    
-    <div class="c-section">
-      <div class="l-container">
+      <div class="c-section__block">
         <h2 class="c-smalltitle">Latest blogposts</h2>
         {% set items = collections.blogposts | limit(4) %}
         {% for item in items %}
-          {% if loop.first %}<ul class="l-grid l-grid--2cols@small l-grid--4cols@large">{% endif %}
+          {% if loop.first %}<ul class="l-grid l-grid--gap l-grid--2cols@sm l-grid--4cols@lg">{% endif %}
             <li>
               {{ blogcard({
                 title: item.data.title,
                 url: item.url,
                 image: item.data.image,
+                imageAlt: item.data.imageAlt,
                 date: item.date
               }) }}
             </li>
@@ -82,6 +83,8 @@ permalink: /index.html
         {% endfor %}
         <p class="u-mbs-md"><a class="c-ctalink" href="#">All blogposts</a></p>
       </div>
+
     </div>
+  </div>
   
 {% endblock %}

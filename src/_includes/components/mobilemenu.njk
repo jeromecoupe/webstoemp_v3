@@ -1,24 +1,25 @@
 <div class="c-mobilemenu js-mobilemenu">
-  <div class="c-mobilemenu__inner  l-container">
-    <div class="c-mobilemenu__actions">
-      <button class="c-mobilemenu__close  js-mobilemenu-trigger">{% include "svg/icon-close.svg" %}</button>
-    </div>
-    <div class="c-mobilemenu__content">
-      <nav>
-        <ul class="c-mobilenav">
-          {% for item in mainnav %}
-            <li class="c-mobilenav__item" style="--delay: {{ loop.index }};">
-              {% set currentClass = "" %}
-              {% set currentAria = "" %}
-              {% if currentSection == item.trigger %}
-                {% set currentClass = "is-active" %}
-                {% set currentAria = 'aria-current="page"'|safe %}
-              {% endif %}
-              <a class="c-mobilenav__link  {{ currentClass }}" {{ currentAria }} href="{{ item.url }}">{{ item.label }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
+  <div class="c-mobilemenu__header">
+    <button class="c-mobilemenu__close  js-navtrigger">{% include "svg/icon_close.svg" %}</button>
+  </div>
+  <div class="c-mobilemenu__main">
+    <nav>
+      <ul class="c-mobilenav">
+        {% for item in mainnav %}
+          <li class="c-mobilenav__item" style="--delay: {{ loop.index }};">
+            {% set currentClass = "" %}
+            {% set currentAria = "" %}
+            {% if currentSection == item.trigger %}
+              {% set currentClass = "is-active" %}
+              {% set currentAria = 'aria-current="page"'|safe %}
+            {% endif %}
+            <a class="c-mobilenav__link  {{ currentClass }}" {{ currentAria }} href="{{ item.url }}">{{ item.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="c-mobilemenu__footer">
+    {% include "components/modeswitcher.njk" %}
   </div>
 </div>

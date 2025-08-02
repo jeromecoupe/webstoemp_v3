@@ -1,0 +1,39 @@
+/* ==========================================
+=tabs
+========================================== */
+
+.c-tabs {
+  list-style: none;
+  margin: 0 0 36px;
+  padding: 12px 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 18px;
+
+  border-block-end: 1px solid var(--color-border-primary);
+}
+
+.c-tabs__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 3px;
+
+  text-transform: uppercase;
+  font-size: calc(14 / 16 * 1rem);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.c-tabs__link > svg {
+  display: block;
+}
+
+.c-tabs__link > span {
+  line-height: 1;
+  text-box-trim: trim-both;
+}

@@ -1,0 +1,44 @@
+/* ==========================================
+=text columns
+========================================== */
+
+.c-coltext {
+  --coltext-gap: 18px;
+
+  column-gap: var(--coltext-gap);
+}
+
+.c-coltext > * {
+  break-inside: avoid;
+}
+
+.c-coltext--fluid {
+  column-width: 35ch;
+}
+
+.c-coltext--2cols {
+  column-count: 2;
+}
+
+@media (width >= 500px) {
+  .c-coltext--2cols\@sm {
+    column-count: 2;
+  }
+}
+
+@media (width >= 750px) {
+  .c-coltext--2cols\@md {
+    column-count: 2;
+  }
+}
+
+@media (width >= 1024px) {
+  .c-coltext--2cols\@lg {
+    column-count: 2;
+  }
+}
+@media (width >= 1440px) {
+  .c-coltext--2cols\@xl {
+    column-count: 2;
+  }
+}

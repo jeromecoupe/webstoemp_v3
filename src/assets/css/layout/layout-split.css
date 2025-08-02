@@ -1,0 +1,138 @@
+/* ==========================================
+=split
+========================================== */
+
+.l-split {
+  --split-gap: var(--grid-gutter);
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* ==========================================
+=gaps
+========================================== */
+
+.l-split--gap {
+  gap: var(--split-gap);
+}
+
+.l-split--colgap {
+  column-gap: var(--split-gap);
+}
+
+.l-split--rowgap {
+  row-gap: var(--split-gap);
+}
+
+/* ==========================================
+=ratios
+========================================== */
+
+.l-split--half {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.l-split--1fr2fr {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+}
+
+.l-split--1fr3fr {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+}
+
+.l-split--2fr1fr {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
+}
+
+.l-split--3fr1fr {
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+}
+
+@media (width >= 500px) {
+  .l-split--half\@sm {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .l-split--1fr2fr\@sm {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+
+  .l-split--1fr3fr\@sm {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  }
+
+  .l-split--2fr1fr\@sm {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
+  }
+
+  .l-split--3fr1fr\@sm {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  }
+}
+
+@media (width >= 750px) {
+  .l-split--half\@md {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .l-split--1fr2fr\@md {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+
+  .l-split--1fr3fr\@md {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  }
+
+  .l-split--2fr1fr\@md {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
+  }
+
+  .l-split--3fr1fr\@md {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  }
+}
+
+@media (width >= 1024px) {
+  .l-split--half\@lg {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .l-split--1fr2fr\@lg {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+
+  .l-split--1fr3fr\@lg {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  }
+
+  .l-split--2fr1fr\@lg {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
+  }
+
+  .l-split--3fr1fr\@lg {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  }
+}
+
+@media (width >= 1440px) {
+  .l-split--half\@xl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .l-split--1fr2fr\@xl {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  }
+
+  .l-split--1fr3fr\@xl {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  }
+
+  .l-split--2fr1fr\@xl {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 2fr);
+  }
+
+  .l-split--3fr1fr\@xl {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  }
+}

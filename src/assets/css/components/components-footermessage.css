@@ -1,0 +1,12 @@
+/* ==========================================
+=footer message
+========================================== */
+
+.c-footermessage {
+  max-inline-size: 36ch;
+  text-wrap: balance;
+}
+
+.c-footermessage a {
+  color: inherit;
+}

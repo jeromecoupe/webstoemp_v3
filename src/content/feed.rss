@@ -1,0 +1,31 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <language>en</language>
+    <title>{{ site.title }} - Blogposts Feed</title>
+    <description>{{ site.description }}</description>
+    <link>{{ site.url }}</link>
+    <managingEditor>{{ site.email }} ({{ site.author }})</managingEditor>
+    <webMaster>{{ site.email }} ({{ site.author }})</webMaster>
+    <pubDate>{{ site.buildTime | dateFeed }}</pubDate>
+    <lastBuildDate>{{ site.buildTime | dateFeed }}</lastBuildDate>
+    <generator>Eleventy</generator>
+    {% for post in collections.blogposts | limit(10) %}
+      <item>
+        <title>{{ post.data.title }}</title>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <pubDate>{{ post.date | dateFeed }}</pubDate>
+        <guid>{{ site.url }}{{ post.url }}</guid>
+        <description>
+        <![CDATA[
+          <p>{{ post.data.excerpt }}</p>
+        ]]>
+        </description>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

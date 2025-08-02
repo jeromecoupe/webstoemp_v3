@@ -1,0 +1,27 @@
+/* ==========================================
+=section
+========================================== */
+
+.c-section {
+  --section-background: transparent;
+
+  padding-block: clamp(60px, 2.679rem + 5.357vi, 120px);
+  background-color: var(--section-background);
+}
+
+.c-section--intro {
+  position: relative;
+  padding-block-start: clamp(60px, 1.769rem + 8.451vi, 150px);
+  padding-block-end: clamp(48px, 1.415rem + 6.761vi, 120px);
+}
+
+.c-section--accent {
+  --section-background: light-dark(
+    var(--color-accent-light),
+    var(--color-surface-primary)
+  );
+}
+
+.c-section__block + .c-section__block {
+  margin-block-start: clamp(48px, 2.25rem + 3.75vi, 90px);
+}

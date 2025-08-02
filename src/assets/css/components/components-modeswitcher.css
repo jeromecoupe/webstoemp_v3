@@ -1,0 +1,34 @@
+/* ==========================================
+=mode switcher
+========================================== */
+
+.c-modeswitcher {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3px;
+}
+
+.c-modeswitcher__button {
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.c-modeswitcher__button:not([aria-pressed]) {
+  opacity: 0.42;
+}
+
+.c-modeswitcher__button > svg {
+  display: block;
+}
+
+.c-modeswitcher--end {
+  justify-content: flex-end;
+}

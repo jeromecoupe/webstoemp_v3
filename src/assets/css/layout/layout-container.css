@@ -1,0 +1,20 @@
+/* ==========================================
+=container
+========================================== */
+
+.l-container {
+  --container-padding: 18px;
+  --container-max-size: 1500px;
+
+  margin: 0 auto;
+  padding-inline: var(--container-padding);
+  max-inline-size: var(--container-max-size);
+  
+  @media (width >= 750px) {
+    --container-padding: 30px;
+  }
+}
+
+.l-container--full {
+  --container-max-size: unset;
+}

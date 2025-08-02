@@ -1,0 +1,11 @@
+/* ==========================================
+=small titles
+========================================== */
+
+.c-smalltitle {
+  font-family: var(--fontstack-main);
+  font-weight: 550;
+  font-size: var(--fontsize-300);
+  text-transform: uppercase;
+  margin-block-end: 1.5em;
+}

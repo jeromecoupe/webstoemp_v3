@@ -1,0 +1,21 @@
+/* ==========================================
+=mobile navigation
+========================================== */
+
+.c-mobilenav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  gap: 3px;
+}
+
+.c-mobilenav__link {
+  display: block;
+  font-size: clamp(20px, 1.08rem + 0.852vi, 26px);
+  text-decoration: none;
+}

@@ -1,4 +1,4 @@
-export default [
+const social = [
   {
     label: "Mastodon",
     url: "https://mastodon.social/@jeromecoupe",
@@ -16,3 +16,7 @@ export default [
     url: "https://www.linkedin.com/in/jcoupe/",
   },
 ];
+
+export default social.sort((a, b) =>
+  a.label.localeCompare(b.label, "en", { sensitivity: "base" })
+);

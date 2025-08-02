@@ -1,16 +1,23 @@
-<header class="c-siteheader" {% if headerBackground %}data-header-bkg{% endif %}>
+{% set headerClass = "" %}
+{% if currentSection == "home" %}
+  {% set headerClass = "c-siteheader--accent" %}
+{% endif %}
+
+<header class="c-siteheader {{ headerClass }}">
   <div class="l-container">
     
-    <div class="c-siteheader__inner">
+    <div class="c-siteheader__content">
       <p class="c-siteheader__logo">
-        <a href="/">{% include "svg/logo.svg" %}</a>
+        <a href="/">{% include "svg/logo-script.svg" %}</a>
       </p>
       <div class="c-siteheader__nav">
         {% include "components/mainnav.njk" %}
-        {# include "components/utilsnav.njk" #}
-      </div>
+      </div>  
+      <div class="c-siteheader__modes">
+        {% include "components/modeswitcher.njk" %}
+      </div> 
       <div class="c-siteheader__hamburger">
-        <a href="#footernav" class="js-mobilemenu-trigger" aria-label="Navigation menu">{% include "svg/icon-hamburger.svg" %}</a>
+        <a href="#footernav" class="js-navtrigger" aria-label="Navigation menu">{% include "svg/icon_hamburger.svg" %}</a>
       </div>
     </div>
 

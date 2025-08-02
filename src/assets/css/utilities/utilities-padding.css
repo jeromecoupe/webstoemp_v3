@@ -1,0 +1,159 @@
+/* ==========================================
+padding none
+========================================== */
+
+.u-pbs-none {
+  padding-block-start: 0;
+}
+
+.u-pbe-none {
+  padding-block-end: 0;
+}
+
+.u-pis-none {
+  padding-inline-start: 0;
+}
+
+.u-pie-none {
+  padding-inline-end: 0;
+}
+
+/* ==========================================
+padding 2xs
+========================================== */
+
+.u-pbs-2xs {
+  padding-block-start: var(--space-2xs);
+}
+
+.u-pbe-2xs {
+  padding-block-end: var(--space-2xs);
+}
+
+.u-pis-2xs {
+  padding-inline-start: var(--space-2xs);
+}
+
+.u-pie-2xs {
+  padding-inline-end: var(--space-2xs);
+}
+
+/* ==========================================
+padding xs
+========================================== */
+
+.u-pbs-xs {
+  padding-block-start: var(--space-xs);
+}
+
+.u-pbe-xs {
+  padding-block-end: var(--space-xs);
+}
+
+.u-pis-xs {
+  padding-inline-start: var(--space-xs);
+}
+
+.u-pie-xs {
+  padding-inline-end: var(--space-xs);
+}
+
+/* ==========================================
+padding sm
+========================================== */
+
+.u-pbs-sm {
+  padding-block-start: var(--space-sm);
+}
+
+.u-pbe-sm {
+  padding-block-end: var(--space-sm);
+}
+
+.u-pis-sm {
+  padding-inline-start: var(--space-sm);
+}
+
+.u-pie-sm {
+  padding-inline-end: var(--space-sm);
+}
+
+/* ==========================================
+padding md
+========================================== */
+
+.u-pbs-md {
+  padding-block-start: var(--space-md);
+}
+
+.u-pbe-md {
+  padding-block-end: var(--space-md);
+}
+
+.u-pis-md {
+  padding-inline-start: var(--space-md);
+}
+
+.u-pie-md {
+  padding-inline-end: var(--space-md);
+}
+
+/* ==========================================
+padding lg
+========================================== */
+
+.u-pbs-lg {
+  padding-block-start: var(--space-lg);
+}
+
+.u-pbe-lg {
+  padding-block-end: var(--space-lg);
+}
+
+.u-pis-lg {
+  padding-inline-start: var(--space-lg);
+}
+
+.u-pie-lg {
+  padding-inline-end: var(--space-lg);
+}
+
+/* ==========================================
+padding xl
+========================================== */
+
+.u-pbs-xl {
+  padding-block-start: var(--space-xl);
+}
+
+.u-pbe-xl {
+  padding-block-end: var(--space-xl);
+}
+
+.u-pis-xl {
+  padding-inline-start: var(--space-xl);
+}
+
+.u-pie-xl {
+  padding-inline-end: var(--space-xl);
+}
+
+/* ==========================================
+padding 2xl
+========================================== */
+
+.u-pbs-2xl {
+  padding-block-start: var(--space-2xl);
+}
+
+.u-pbe-2xl {
+  padding-block-end: var(--space-2xl);
+}
+
+.u-pis-2xl {
+  padding-inline-start: var(--space-2xl);
+}
+
+.u-pie-2xl {
+  padding-inline-end: var(--space-2xl);
+}

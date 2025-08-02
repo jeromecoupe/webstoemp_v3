@@ -141,7 +141,7 @@ async function init() {
         // bail out if image output path exists
         if (fs.existsSync(outputPath)) return;
 
-        // create sharp promises
+        // create sharp promises and push to promises array
         try {
           // resize promise
           let sharpPromise = sharp(file).resize(options).toFile(outputPath);

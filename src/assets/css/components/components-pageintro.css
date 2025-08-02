@@ -1,0 +1,33 @@
+/* ==========================================
+=page intro
+========================================== */
+
+.c-pageintro {
+  --pageintro-title-fontsize: clamp(24px, 0.813rem + 2.933vi, 58px);
+}
+
+.c-pageintro__suptitle {
+  font-family: var(--fontstack-main);
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: var(--fontsize-200);
+  text-transform: uppercase;
+  letter-spacing: 0.12ex;
+  color: var(--color-text-secondary);
+  margin-block-end: var(--space-sm);
+}
+
+.c-pageintro__title {
+  font-family: var(--fontstack-alt);
+  line-height: 1.2;
+  font-weight: 380;
+  font-size: var(--pageintro-title-fontsize);
+  margin-block-end: 0;
+  max-inline-size: 26ch;
+  text-wrap: pretty;
+
+  & > span {
+    font-style: italic;
+    color: var(--color-accent);
+  }
+}

@@ -1,0 +1,91 @@
+/* ==========================================
+=homebanner
+========================================== */
+
+@keyframes parralax {
+  from {
+    translate: 0 -15vb;
+  }
+}
+
+@keyframes rotate {
+  to {
+    rotate: 360deg;
+  }
+}
+
+.c-homebanner {
+  --homebadge-color: white;
+  --homebadge-size: clamp(108px, 10vi, 180px);
+  --homebadge-position-end: 18px;
+
+  position: relative;
+
+  @media (width>=750px) {
+    --homebadge-position-end: 30px;
+  }
+}
+
+.c-homebanner__media {
+  inline-size: 100%;
+  block-size: 100%;
+  overflow: hidden;
+
+  aspect-ratio: 4 / 3;
+
+  @media (width >= 500px) {
+    aspect-ratio: 16 / 9;
+  }
+
+  @media (width >= 1440px) {
+    aspect-ratio: 16 / 7;
+  }
+}
+
+.c-homebanner__image {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+
+  @supports (animation-timeline: scroll(root)) {
+    @media (prefers-reduced-motion: no-preference) {
+      block-size: calc(100% + 15vb);
+      animation-timeline: scroll(root);
+      animation-name: parralax;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+.c-homebanner__badge {
+  position: absolute;
+  z-index: 1;
+
+  inset-block-start: calc(var(--homebadge-size) / 2 * -1);
+  inset-inline-end: var(--homebadge-position-end);
+  inline-size: var(--homebadge-size);
+  block-size: var(--homebadge-size);
+  mix-blend-mode: difference;
+  overflow: clip;
+
+  @media (width >= 750px) {
+    --homebadge-position-end: 30px;
+  }
+
+  @media (width >= 1560px) {
+    --homebadge-position-end: calc(50% - 1500px / 2);
+  }
+}
+
+.c-homebanner__badge > svg {
+  color: var(--homebadge-color);
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: rotate 60s infinite linear;
+  }
+}

@@ -1,0 +1,118 @@
+/* ==========================================
+=grid
+========================================== */
+
+.l-grid {
+  --grid-gap: var(--grid-gutter);
+  --grid-columns: 1;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+}
+
+/* ==========================================
+=gaps
+========================================== */
+
+.l-grid--gap {
+  gap: var(--grid-gap);
+}
+
+.l-grid--colgap {
+  column-gap: var(--grid-gap);
+}
+
+.l-grid--rowgap {
+  row-gap: var(--grid-gap);
+}
+
+/* =============================================
+=vertical alignment
+============================================= */
+
+.l-grid--alignstart {
+  align-items: start;
+}
+
+.l-grid--aligncenter {
+  align-items: center;
+}
+
+.l-grid--alignend {
+  align-items: end;
+}
+
+/* ==========================================
+=columns
+========================================== */
+
+.l-grid--2cols {
+  --grid-columns: 2;
+}
+
+.l-grid--3cols {
+  --grid-columns: 3;
+}
+
+.l-grid--4cols {
+  --grid-columns: 4;
+}
+
+@media (width >= 500px) {
+  .l-grid--2cols\@sm {
+    --grid-columns: 2;
+  }
+
+  .l-grid--3cols\@sm {
+    --grid-columns: 3;
+  }
+
+  .l-grid--4cols\@sm {
+    --grid-columns: 4;
+  }
+}
+
+@media (width >= 750px) {
+  .l-grid--2cols\@md {
+    --grid-columns: 2;
+  }
+
+  .l-grid--3cols\@md {
+    --grid-columns: 3;
+  }
+
+  .l-grid--4cols\@md {
+    --grid-columns: 4;
+  }
+}
+
+@media (width >= 1024px) {
+  .l-grid--2cols\@lg {
+    --grid-columns: 2;
+  }
+
+  .l-grid--3cols\@lg {
+    --grid-columns: 3;
+  }
+
+  .l-grid--4cols\@lg {
+    --grid-columns: 4;
+  }
+}
+
+@media (width >= 1440px) {
+  .l-grid--2cols\@xl {
+    --grid-columns: 2;
+  }
+
+  .l-grid--3cols\@xl {
+    --grid-columns: 3;
+  }
+
+  .l-grid--4cols\@xl {
+    --grid-columns: 4;
+  }
+}

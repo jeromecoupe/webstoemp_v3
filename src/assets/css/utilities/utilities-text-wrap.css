@@ -1,0 +1,11 @@
+/* ==========================================
+text wrap
+========================================== */
+
+.u-text-balance {
+  text-wrap: balance;
+}
+
+.u-text-pretty {
+  text-wrap: pretty;
+}

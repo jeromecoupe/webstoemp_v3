@@ -1,6 +1,16 @@
 <div class="c-homebanner">
-  <img 
-    src="/assets/img/homebanners/1500x844/fontainas.jpg" 
-    alt="The fontainas bar in downtown Brussels with people outside."
-    class="c-homebanner__image">
+  <div class="c-homebanner__badge">
+    {% include("svg/homebadge.svg") %}
+  </div>
+  <div class="c-homebanner__media">
+    <img 
+      src="/assets/img/homebanners/800x600/{{ bannerImage }}"
+      srcset="/assets/img/homebanners/800x600/{{ bannerImage }} 800w,
+              /assets/img/homebanners/1024x768/{{ bannerImage }} 1024w,
+              /assets/img/homebanners/1500x1125/{{ bannerImage }} 1500w,
+              /assets/img/homebanners/2000x1500/{{ bannerImage }} 2000w"
+      sizes="100vw"
+      class="c-homebanner__image"
+      alt="Café des Minimes, Bruxelles, 2025">
+  </div>
 </div>

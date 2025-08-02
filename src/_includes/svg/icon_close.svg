@@ -1,0 +1,14 @@
+<svg
+  width="30"
+  height="30"
+  viewBox="0 0 30 30"
+  fill="none"
+  aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg">
+  <g fill="currentColor">
+    <path
+      d="M8.63296 7.22266L22.7751 21.3648L21.3609 22.779L7.21875 8.63687L8.63296 7.22266Z" />
+    <path
+      d="M7.21875 21.3648L21.3609 7.22266L22.7751 8.63687L8.63296 22.779L7.21875 21.3648Z" />
+  </g>
+</svg>

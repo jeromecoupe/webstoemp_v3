@@ -1,0 +1,21 @@
+/* ==========================================
+=typography
+========================================== */
+
+:root {
+  /* font stacks */
+  --fontstack-main: "Public Sans", "Helvetica Neue", system-ui, sans-serif;
+  --fontstack-alt: "Sentient", "Georgia", serif;
+
+  /* font sizes */
+  /* https://www.modularscale.com/?18&px&1.125 */
+  --fontsize-100: calc(11 / 16 * 1rem);
+  --fontsize-200: calc(14 / 16 * 1rem);
+  --fontsize-300: 1rem;
+  --fontsize-400: clamp(18 / 16 * 1rem, 1.081rem + 0.188vi, 20 / 16 * 1rem);
+  --fontsize-500: clamp(20 / 16 * 1rem, 1.089rem + 0.179vi, 23 / 16 * 1rem);
+  --fontsize-600: clamp(23 / 16 * 1rem, 1.384rem + 0.268vi, 26 / 16 * 1rem);
+  --fontsize-700: clamp(26 / 16 * 1rem, 1.571rem + 0.268vi, 29 / 16 * 1rem);
+  --fontsize-800: clamp(29 / 16 * 1rem, 1.759rem + 0.268vi, 32 / 16 * 1rem);
+  --fontsize-900: clamp(32 / 16 * 1rem, 1.714rem + 1.429vi, 48 / 16 * 1rem);
+}

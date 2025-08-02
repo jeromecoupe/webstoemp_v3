@@ -1,0 +1,49 @@
+/* ==========================================
+=sitefooter
+========================================== */
+
+.c-sitefooter {
+  --sitefooter-background: light-dark(
+    var(--color-accent-light),
+    var(--color-gray-100)
+  );
+  --sitefooter-gap: var(--grid-gutter);
+
+  background-color: var(--sitefooter-background);
+  border-block-start: 1px solid var(--color-border-secondary);
+}
+
+.c-sitefooter__main {
+  padding-block: clamp(48px, 1rem + 6vi, 90px);
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "contact"
+    "nav"
+    "social";
+  gap: calc(var(--sitefooter-gap) * 1.5);
+
+  @media (width >= 750px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas: "contact contact nav social";
+    gap: var(--sitefooter-gap);
+  }
+}
+
+.c-sitefooter__contact {
+  grid-area: contact;
+}
+
+.c-sitefooter__nav {
+  grid-area: nav;
+}
+
+.c-sitefooter__social {
+  grid-area: social;
+}
+
+.c-sitefooter__end {
+  border-block-start: 1px solid var(--color-border-primary);
+  padding-block: 18px;
+}

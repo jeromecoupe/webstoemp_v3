@@ -1,0 +1,33 @@
+/* ==========================================
+=footer navigation
+========================================== */
+
+.c-footernav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: stretch;
+  gap: 3px;
+}
+
+.c-footernav__link {
+  --footernav-link-underline: color-mix(
+    in hsl,
+    var(--color-text-primary),
+    transparent 72%
+  );
+
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: var(--footernav-link-underline);
+    text-decoration-thickness: 1px;
+  }
+}

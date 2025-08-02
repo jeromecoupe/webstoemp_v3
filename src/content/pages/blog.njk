@@ -18,31 +18,39 @@ permalink: /blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber 
 
 {% block content %}
 
-  <div class="c-section">
+  <div class="c-section c-section--intro">
     <div class="l-container">
 
-      <div class="c-section__block">
-        <p class="c-suptitle">Infrequent ramblings</p>
-        <h1 class="c-h1 u-mbe-none">Blogposts</h1>
+      <div class="c-pageintro">
+        <h1 class="c-pageintro__title">Blogposts</h1>
       </div>
 
-      <div class="c-section__block">
+    </div>
+  </div>
+  <div class="c-section u-pbs-none">
+    <div class="l-container">
+
         <ul class="c-tabs">
           <li class="c-tabs__item">
-            <a class="c-tabs__link" 
-               href="#">
-              List view
+            <a 
+              class="c-tabs__link" 
+              href="#">
+              {% include "svg/icon_list.svg" %}
+              <span aria-hidden="true">List view</span>
             </a>
           </li>
           <li class="c-tabs__item">
-            <a class="c-tabs__link" 
-               href="#">
-              RSS feed
+            <a
+              class="c-tabs__link" 
+              href="/feed.xml">
+              {% include "svg/icon_rss.svg" %}
+              <span aria-hidden="true">RSS feed</span>
             </a>
           </li>
         </ul>
+
         {% for item in blogposts %}
-          {% if loop.first %}<ul class="l-grid l-grid--2cols@small l-grid--3cols@medium  l-grid--4cols@large">{% endif %}
+          {% if loop.first %}<ul class="l-grid l-grid--gap l-grid--2cols@sm l-grid--3cols@md  l-grid--4cols@lg">{% endif %}
             <li>
               {{ blogcard({
                 title: item.data.title,

@@ -1,0 +1,33 @@
+/* ==========================================
+=social media
+========================================== */
+
+.c-socialmedia {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2px;
+}
+
+.c-socialmedia__link {
+  display: block;
+}
+
+.c-socialmedia__link svg {
+  --socialicon-border: var(--color-border-primary);
+  --socialicon-main: var(--color-text-primary);
+
+  circle {
+    transition: stroke 0.2s ease-out;
+  }
+
+  a:hover &,
+  a:focus & {
+    --socialicon-border: var(--color-accent);
+  }
+}
