@@ -9,4 +9,13 @@
 
 .c-footermessage a {
   color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.5ex;
+  text-decoration-color: hsl(from var(--color-accent) h s l / 30%);
+
+  &:hover,
+  &:focus {
+    text-decoration-color: var(--color-accent);
+  }
 }
