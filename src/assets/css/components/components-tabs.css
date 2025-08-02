@@ -17,6 +17,7 @@
 }
 
 .c-tabs__link {
+  color: var(--color-text-primary);
   display: flex;
   flex-direction: row;
   justify-content: start;
