@@ -1,7 +1,5 @@
 ---
 permalink: /index.html
-bannerImage: cafe_des_minimes.jpg
-colorTheme: green
 ---
 
 {% extends "layouts/base.njk" %}
@@ -10,9 +8,11 @@ colorTheme: green
 
 {% set metaTitle = "Home" %}
 {% set metaDescription = "Portfolio and blog of Jérôme Coupé, belgian designer, developer and teacher based in Brussels." %}
-{% set metaImage = "" %}
+{% set metaImage = "/assets/img/metaimage.png" %}
 
+{% set colorTheme = "green" %}
 {% set currentSection = "home" %}
+{% set bannerImage = "cafe_des_minimes.jpg" %}
 
 {% block content %}
 

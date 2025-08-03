@@ -4,6 +4,7 @@ pagination:
   size: 12
   alias: blogposts
 permalink: /blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber + 1 }}/{% endif %}index.html
+colorTheme: yellow
 ---
 
 {% extends "layouts/base.njk" %}
@@ -12,9 +13,10 @@ permalink: /blog/{% if pagination.pageNumber > 0 %}page{{ pagination.pageNumber 
 
 {% set metaTitle = "Blog" %}
 {% set metaDescription = "Blogposts, thoughts and ramblings by Jérôme Coupé." %}
-{% set currentSection = "blog" %}
+{% set metaImage = "/assets/img/metaimage.png" %}
 
 {% set colorTheme = "yellow" %}
+{% set currentSection = "blog" %}
 
 {% block content %}
 
