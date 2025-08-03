@@ -2,7 +2,7 @@ export default {
   title: "Webstoemp",
   description:
     "Webstoemp is the portfolio and blog of Jérôme Coupé, a designer and front-end developer from Brussels, Belgium.",
-  url: "https://www.webstoemp.com",
+  url: "https://webstoempv3.netlify.app",
   baseUrl: "/",
   author: "Jerôme Coupé",
   email: "jerome.coupe@webstoemp.com",
