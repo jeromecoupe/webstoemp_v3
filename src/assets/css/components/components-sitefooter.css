@@ -5,7 +5,7 @@
 .c-sitefooter {
   --sitefooter-background: light-dark(
     var(--color-accent-light),
-    var(--color-gray-100)
+    var(--color-gray-200)
   );
   --sitefooter-gap: var(--grid-gutter);
 

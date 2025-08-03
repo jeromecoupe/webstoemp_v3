@@ -18,7 +18,7 @@
 .c-siteheader--accent {
   --siteheader-background: light-dark(
     var(--color-accent-light),
-    var(--color-surface-primary)
+    var(--color-gray-200)
   );
 }
 

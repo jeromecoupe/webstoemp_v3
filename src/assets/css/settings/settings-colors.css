@@ -15,15 +15,15 @@
   --color-gray-800: hsl(12, 6%, 98%);
 
   --color-green: hsl(67, 90%, 30%);
-  --color-green-dark: hsl(from var(--color-green) h s 18%);
+  --color-green-dark: hsl(from var(--color-green) h s 8%);
   --color-green-light: hsl(from var(--color-green) h s 92%);
 
   --color-teal: hsl(181, 90%, 30%);
-  --color-teal-dark: hsl(from var(--color-teal) h s 18%);
+  --color-teal-dark: hsl(from var(--color-teal) h s 8%);
   --color-teal-light: hsl(from var(--color-teal) h s 92%);
 
   --color-brown: hsl(35, 90%, 30%);
-  --color-brown-dark: hsl(from var(--color-brown) h s 18%);
+  --color-brown-dark: hsl(from var(--color-brown) h s 8%);
   --color-brown-light: hsl(from var(--color-brown) h s 92%);
 
   /* accent colors (defaults to green) */
@@ -45,12 +45,12 @@
   );
 
   /* surface colors */
-  --color-surface-primary: light-dark(white, var(--color-gray-200));
+  --color-surface-primary: light-dark(white, var(--color-gray-100));
 
   /* border colors */
   --color-border-primary: light-dark(
     rgba(0, 0, 0, 0.12),
-    rgba(255, 255, 255, 0.12)
+    rgba(255, 255, 255, 0.18)
   );
   --color-border-secondary: light-dark(
     rgba(0, 0, 0, 0.06),
