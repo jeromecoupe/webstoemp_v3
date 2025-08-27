@@ -4,6 +4,7 @@ client: "Central Design"
 url: "https://v4.central.team/"
 image: central.jpg
 tags: ["Front-end", "Jekyll"]
+archived: true
 ---
 
 The talented team of UX/UI designers at Central asked me to help them build their agency website. Using a static site generator like Jekyll allowed us to quickly iterate on the design, while also being able to work collaboratively on the content of the website. Words and code are equally version controlled using Git.

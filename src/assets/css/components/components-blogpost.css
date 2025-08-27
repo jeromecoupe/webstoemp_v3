@@ -1,0 +1,38 @@
+/* ==========================================
+=blogpost
+========================================== */
+
+.c-blogpost {
+  --blogpost-blocks-mbe: clamp(48px, 2.157rem + 3.853vi, 90px);
+  display: block;
+}
+
+.c-blogpost__header {
+  margin-block-end: var(--blogpost-blocks-mbe);
+}
+
+.c-blogpost__date {
+  font-size: var(--fontsize-300);
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-block-end: var(--space-sm);
+}
+
+.c-blogpost__title {
+  font-family: var(--fontstack-alt);
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: clamp(26px, 1.231rem + 2.661vi, 58px);
+  letter-spacing: -0.025ch;
+}
+
+.c-blogpost__image {
+  margin-block-end: var(--blogpost-blocks-mbe);
+}
+
+.c-blogpost__lead {
+  font-size: calc(20 / 16 * 1rem);
+  text-wrap: pretty;
+}

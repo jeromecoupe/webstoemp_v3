@@ -1,0 +1,29 @@
+/* ==========================================
+=tag list
+========================================== */
+
+.c-taglist {
+  --taglist-gap: 12px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--taglist-gap);
+}
+
+.c-taglist__tag {
+  font-size: var(--fontsize-300);
+  color: var(--color-text-primary);
+}
+
+.c-taglist__tag::before {
+  content: "#";
+  display: inline-block;
+  color: var(--color-accent);
+  margin-inline-end: 0.5ex;
+}

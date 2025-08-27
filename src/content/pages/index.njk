@@ -12,40 +12,25 @@ permalink: /index.html
 
 {% set colorTheme = "green" %}
 {% set currentSection = "home" %}
-{% set bannerImage = "cafe_des_minimes.jpg" %}
+{% set bannerImage = "resist.jpg" %}
 
 {% block content %}
 
-  <div class="c-section c-section--intro c-section--accent">
-    <div class="l-container">
-
-      <div class="c-pageintro">
-        <h1 class="c-pageintro__suptitle">Design, Code & Ramblings</h1>
-        <p class="c-pageintro__title">
-          Like great dishes, I believe websites are made of a few
-          <span>simple &amp; well prepared</span> ingredients.
-        </p>
+      <div class="c-homeintro">
+        <div class="c-homeintro__text">
+          <h1 class="c-homeintro__suptitle">Design, Code & Ramblings</h1>
+          <p class="c-homeintro__manifesto">
+            Frontend designer resisting the trend to <span>use divs for everything</span> since 1998.
+          </p>
+        </div>
+        <div class="c-homeintro__media">
+          <img src="/assets/img/homebanners/1024x768/{{ bannerImage }}"
+               class="c-homeintro__img"
+               width="1024"
+               height="768"
+               alt="Guys protesting with megaphones on a green and yellow smoke background">
+        </div>
       </div>
-
-    </div>
-  </div>
-
-  <div class="c-homebanner">
-    <div class="c-homebanner__badge">
-      {% include("svg/homebadge.svg") %}
-    </div>
-    <div class="c-homebanner__media">
-      <img 
-        src="/assets/img/homebanners/800x600/{{ bannerImage }}"
-        srcset="/assets/img/homebanners/800x600/{{ bannerImage }} 800w,
-                /assets/img/homebanners/1024x768/{{ bannerImage }} 1024w,
-                /assets/img/homebanners/1500x1125/{{ bannerImage }} 1500w,
-                /assets/img/homebanners/2000x1500/{{ bannerImage }} 2000w"
-        sizes="100vw"
-        class="c-homebanner__image"
-        alt="Café des Minimes, Bruxelles, 2025">
-    </div>
-  </div>
 
   <div class="c-section">
     <div class="l-container">
@@ -53,11 +38,11 @@ permalink: /index.html
       <div class="c-section__block">
         <div class="l-split l-split--colgap l-split--half@md">
           <div>
-            <h2 class="c-smalltitle">Who's this again ?</h2>
+            <h2 class="c-smalltitle">Who's this ?</h2>
           </div>
           <div>
               <p>Webstoemp is the web home of Jérôme Coupé, designer, front-end developer and teacher from Brussels, Belgium. When not coding a website or teaching, chances are I am enjoying a few beers with friends or a gravel ride in the nearby woods.</p>
-              <p>Although I work on web apps too, I have a soft spot for building content-oriented websites. To me, Internet will always be a way to share content before being an application runtime.</p>
+              <p>Although I work on web apps too, I have a soft spot for building content-oriented websites. To me, Internet will always be a way to share information before being an application runtime.</p>
               <p>
                 <a class="c-ctalink" href="#">More about me</a>
               </p>

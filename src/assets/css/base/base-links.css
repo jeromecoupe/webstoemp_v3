@@ -3,15 +3,15 @@
 ========================================== */
 
 a {
-  color: inherit;
+  color: var(--color-accent);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.36ex;
-  text-decoration-color: inherit;
+  text-decoration-color: var(--color-accent);
   text-decoration-skip-ink: all;
 
   &:hover,
   &:focus {
-    text-decoration-color: inherit;
+    text-decoration-color: var(--color-accent);
   }
 }

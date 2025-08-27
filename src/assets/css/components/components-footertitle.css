@@ -4,7 +4,9 @@
 
 .c-footertitle {
   font-family: var(--fontstack-main);
-  font-weight: 600;
-  font-size: var(--fontsize-400);
-  margin-block-end: 0.75em;
+  font-weight: 550;
+  font-size: var(--fontsize-300);
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  margin-block-end: 1em;
 }

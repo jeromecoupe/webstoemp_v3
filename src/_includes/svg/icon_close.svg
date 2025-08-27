@@ -1,14 +1,15 @@
 <svg
-  width="30"
-  height="30"
-  viewBox="0 0 30 30"
+  width="36"
+  height="36"
+  viewBox="0 0 36 36"
   fill="none"
-  aria-hidden="true"
   xmlns="http://www.w3.org/2000/svg">
-  <g fill="currentColor">
-    <path
-      d="M8.63296 7.22266L22.7751 21.3648L21.3609 22.779L7.21875 8.63687L8.63296 7.22266Z" />
-    <path
-      d="M7.21875 21.3648L21.3609 7.22266L22.7751 8.63687L8.63296 22.779L7.21875 21.3648Z" />
-  </g>
+  <circle
+    cx="18"
+    cy="18"
+    r="18"
+    fill="var(--closehenuicon-bkg)" />
+  <path
+    d="M17.998 16.584L22.9463 11.6357L24.3604 13.0498L19.4121 17.998L24.3604 22.9463L22.9463 24.3604L17.998 19.4121L13.0469 24.3633L11.6328 22.9492L16.584 17.998L11.6328 13.0469L13.0469 11.6328L17.998 16.584Z"
+    fill="var(--closehenuicon-content)" />
 </svg>

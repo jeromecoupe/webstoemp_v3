@@ -10,5 +10,23 @@
 .c-h4 {
   font-family: var(--fontstack-alt);
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 450;
+  color: var(--color-text-primary);
+  margin-block-end: 0.75em;
+}
+
+.c-h1 {
+  font-size: var(--fontsize-700);
+}
+
+.c-h2 {
+  font-size: var(--fontsize-600);
+}
+
+.c-h3 {
+  font-size: var(--fontsize-500);
+}
+
+.c-h4 {
+  font-size: var(--fontsize-400);
 }

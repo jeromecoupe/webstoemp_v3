@@ -4,4 +4,5 @@
 
 :root {
   --grid-gutter: 18px;
+  --grid-gutter-md: 24px;
 }

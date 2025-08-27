@@ -6,8 +6,11 @@ body {
   margin: 0;
   padding: 0;
 
-  background-color: var(--color-surface-primary);
-  color: var(--color-text-primary);
+  background-color: var(--color-bkg-primary);
+  color: light-dark(
+    var(--color-text-primary),
+    hsl(from var(--color-text-primary) h s l / 84%)
+  );
   font-size: var(--fontsize-400);
 }
 

@@ -1,5 +1,5 @@
 ---
-title: "School website: Institut des Arts de Diffusion"
+title: "Institut des Arts de Diffusion"
 client: "Institut des Arts de Diffusion"
 url: "https://www.iad-arts.be"
 image: "iadarts.jpg"

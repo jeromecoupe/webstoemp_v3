@@ -32,4 +32,5 @@
 
 .c-mainnav__link.is-active {
   text-decoration: none;
+  color: var(--color-accent);
 }

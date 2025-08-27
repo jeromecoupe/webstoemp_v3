@@ -20,18 +20,11 @@ colorTheme: yellow
 
 {% block content %}
 
-  <div class="c-section c-section--intro">
+  <div class="c-section">
     <div class="l-container">
 
-      <div class="c-pageintro">
-        <h1 class="c-pageintro__title">Blogposts</h1>
-      </div>
-
-    </div>
-  </div>
-  <div class="c-section u-pbs-none">
-    <div class="l-container">
-
+      <h1 class="c-pagetitle">Blogposts</h1>
+      {#
         <ul class="c-tabs">
           <li class="c-tabs__item">
             <a 
@@ -50,6 +43,7 @@ colorTheme: yellow
             </a>
           </li>
         </ul>
+        #}
 
         {% for item in blogposts %}
           {% if loop.first %}<ul class="l-grid l-grid--gap l-grid--2cols@sm l-grid--3cols@md  l-grid--4cols@lg">{% endif %}

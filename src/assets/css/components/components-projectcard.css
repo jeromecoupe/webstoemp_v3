@@ -1,0 +1,41 @@
+/* ==========================================
+=project card
+========================================== */
+
+.c-projectcard {
+  --projectcard-titlelink-underline: light-dark(
+    rgba(0, 0, 0, 0.3),
+    rgba(255, 255, 255, 0.5)
+  );
+
+  margin-block-end: 30px;
+}
+
+.c-projectcard__media {
+  margin-block-end: 36px;
+}
+
+.c-projectcard__title {
+  font-weight: 500;
+  font-size: var(--fontsize-600);
+  font-family: var(--fontstack-alt);
+  line-height: 1.32;
+  color: var(--color-text-primary);
+  margin-block-end: 0.75em;
+
+  & > a {
+    text-decoration: none;
+  }
+
+  & > a:hover,
+  & > a:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.3ex;
+    text-decoration-color: var(--projectcard-titlelink-underline);
+  }
+}
+
+.c-projectcard__text {
+  font-size: var(--fontsize-400);
+}

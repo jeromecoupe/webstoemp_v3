@@ -15,17 +15,13 @@ permalink: /work/index.html
 
 {% block content %}
 
-  <div class="c-section  u-pbe-none">
+  <div class="c-section">
     <div class="l-container">
 
-      <div class="c-pageintro">
-        <p class="c-suptitle">Projects old and new</p>
-        <h1 class="c-h1">Selected Work</h1>
-      </div>
-
+      <h1 class="c-pagetitle">Selected Work</h1>
 
       {% for item in collections.projects %}
-        {% if loop.first %}<ul class="l-grid  l-grid--2cols">{% endif %}
+        {% if loop.first %}<ul class="l-grid l-grid--gap-md l-grid--2cols@sm">{% endif %}
         
         <li>
           {{ projectcard({

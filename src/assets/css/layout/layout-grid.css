@@ -29,6 +29,18 @@
   row-gap: var(--grid-gap);
 }
 
+.l-grid--gap-md {
+  gap: var(--grid-gutter-md);
+}
+
+.l-grid--colgap-md {
+  column-gap: var(--grid-gutter-md);
+}
+
+.l-grid--rowgap-md {
+  row-gap: var(--grid-gutter-md);
+}
+
 /* =============================================
 =vertical alignment
 ============================================= */

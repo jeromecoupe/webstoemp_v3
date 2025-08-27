@@ -41,7 +41,7 @@
       <div class="c-sitefooter__social">
         <nav aria-label="Social links">
           <h2 class="c-footertitle">Elsewhere</h2>
-          {% for item in socialnav %}
+          {% for item in elsewherenav %}
             {% if loop.first %}<ul class="c-footernav">{% endif %}
               <li class="c-footernav__item"><a class="c-footernav__link" href="{{ item.url }}">{{ item.label }}</a></li>
             {% if loop.last %}</ul>{% endif %}

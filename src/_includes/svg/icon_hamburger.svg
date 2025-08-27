@@ -1,25 +1,29 @@
 <svg
-  width="30"
-  height="30"
-  viewBox="0 0 30 30"
+  width="36"
+  height="36"
+  viewBox="0 0 36 36"
   fill="none"
-  aria-hidden="true"
   xmlns="http://www.w3.org/2000/svg">
-  <g fill="currentColor">
+  <circle
+    cx="18"
+    cy="18"
+    r="18"
+    fill="var(--hamburger-bkg)" />
+  <g fill="var(--hamburger-icon)">
     <rect
-      x="5"
-      y="8"
-      width="20"
+      x="10"
+      y="13"
+      width="16"
       height="2" />
     <rect
-      x="5"
-      y="14"
-      width="18"
+      x="10"
+      y="17"
+      width="14"
       height="2" />
     <rect
-      x="5"
-      y="20"
-      width="20"
+      x="10"
+      y="21"
+      width="16"
       height="2" />
   </g>
 </svg>

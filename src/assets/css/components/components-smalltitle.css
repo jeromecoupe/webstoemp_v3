@@ -4,8 +4,8 @@
 
 .c-smalltitle {
   font-family: var(--fontstack-main);
-  font-weight: 550;
-  font-size: var(--fontsize-300);
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: calc(20 / 16 * 1rem);
+  color: var(--color-text-primary);
   margin-block-end: 1.5em;
 }

@@ -1,0 +1,14 @@
+/* ==========================================
+=page title
+========================================== */
+
+.c-pagetitle {
+  --pagetitle-fontsize: clamp(41px, 2rem + 3vi, 58px);
+
+  font-weight: 400;
+  font-size: var(--pagetitle-fontsize);
+  font-family: var(--fontstack-alt);
+  line-height: 1.2;
+  margin-block-end: 1.2em;
+  letter-spacing: -0.02ch;
+}

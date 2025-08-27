@@ -42,7 +42,7 @@ const transforms = [
     },
   },
   {
-    // 800x600 thumbnails for blogposts cards
+    // 800x600 thumbnails for blogposts
     src: "./src/assets/img/blogposts/",
     dist: "./dist/assets/img/blogposts/800x600/",
     formats: ["jpg"],
@@ -53,7 +53,7 @@ const transforms = [
     },
   },
   {
-    // 800x800 thumbnails for blogposts social images
+    // 800x800 thumbnails for blogposts cards and social images
     src: "./src/assets/img/blogposts/",
     dist: "./dist/assets/img/blogposts/800x800/",
     formats: ["jpg"],
@@ -64,13 +64,13 @@ const transforms = [
     },
   },
   {
-    // 800x600 thumbnails for projects
+    // 800x800 thumbnails for projects
     src: "./src/assets/img/projects/",
-    dist: "./dist/assets/img/projects/800x600/",
+    dist: "./dist/assets/img/projects/800x800/",
     formats: ["jpg"],
     options: {
       width: 800,
-      height: 600,
+      height: 800,
       fit: "cover",
     },
   },
@@ -112,17 +112,12 @@ async function init() {
     // check formats are of allowed types
     formats.forEach((el) => {
       if (!config.allowedFormats.includes(el)) {
-        throw new Error(
-          `Unknown format: "${el}". Allowed formats are: ${config.allowedFormats.toString()}`
-        );
+        throw new Error(`Unknown format: "${el}". Allowed formats are: ${config.allowedFormats.toString()}`);
       }
     });
 
     // Get image files in input directory
-    let imagesGlob = path.join(
-      inputDir,
-      `*.{${config.allowedFormats.toString()}}`
-    );
+    let imagesGlob = path.join(inputDir, `*.{${config.allowedFormats.toString()}}`);
     let imagesFiles = globSync(imagesGlob);
 
     // Create output dir

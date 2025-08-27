@@ -2,6 +2,14 @@
 =mobile navigation
 ========================================== */
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    translate: 0 100%;
+    rotate: -3deg;
+  }
+}
+
 .c-mobilenav {
   list-style: none;
   margin: 0;
@@ -14,8 +22,18 @@
   gap: 3px;
 }
 
-.c-mobilenav__link {
+.c-mobilenav__item {
   display: block;
-  font-size: clamp(20px, 1.08rem + 0.852vi, 26px);
+  overflow: clip;
+}
+
+.c-mobilenav__link {
+  color: inherit;
+  display: block;
+  font-size: var(--fontsize-700);
   text-decoration: none;
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: slideUp var(--delay) 0.2s ease-out both;
+  }
 }

@@ -12,43 +12,44 @@
 <div class="c-section">
   <article class="c-blogpost">
 
-    <header>
-      <div class="c-blogpost__intro u-text-center">
-        <div class="l-container  l-container--small">
-          <p class="c-suptitle u-mbe-xs">{{ page.date | dateFull }}</p>
-          <h1 class="c-h1 u-textwrap-balance">{{ title }}</h1>
-        </div>
-      </div>
-      <div class="c-blogpost__image">
-        <div class="l-container l-container--large">
-          {% set img800 = '/assets/img/blogposts/800x800/' ~ image %}
-          {% set img1024 = '/assets/img/blogposts/1024x576/' ~ image %}
-          {% set img1500 = '/assets/img/blogposts/1500x844/' ~ image %}
-          {% set img2000 = '/assets/img/blogposts/2000x1125/' ~ image %}
-      
-          <picture>
-            <source media="(min-width: 500px)"
-                    srcset="{{ img1024 }} 1024w,
-                            {{ img1500 }} 1500w,
-                            {{ img2000 }} 2000w"
-                    width="2000"
-                    height="1125"
-                    sizes="100vw">
-            <img src="{{ img800 }}"
-                 width="800"
-                 height="800"
-                 class="o-fluidimg"
-                 alt="{{ imageAlt }}"
-                 decoding="async">
-          </picture>
+    <header class="c-blogpost__header">
+      <div class="u-text-center">
+        <div class="l-container l-container--md">
+          <p class="c-blogpost__date">{{ page.date | dateFull }}</p>
+          <h1 class="c-blogpost__title">{{ title }}</h1>
         </div>
       </div>
     </header>
 
+    <div class="c-blogpost__image">
+      <div class="l-container">
+        {% set img800 = '/assets/img/blogposts/800x800/' ~ image %}
+        {% set img1024 = '/assets/img/blogposts/1024x576/' ~ image %}
+        {% set img1500 = '/assets/img/blogposts/1500x844/' ~ image %}
+        {% set img2000 = '/assets/img/blogposts/2000x1125/' ~ image %}
+    
+        <picture>
+          <source media="(min-width: 500px)"
+                  srcset="{{ img1024 }} 1024w,
+                          {{ img1500 }} 1500w,
+                          {{ img2000 }} 2000w"
+                  width="2000"
+                  height="1125"
+                  sizes="100vw">
+          <img src="{{ img800 }}"
+                width="800"
+                height="800"
+                class="o-fluidimg"
+                alt="{{ imageAlt }}"
+                decoding="async">
+        </picture>
+      </div>
+    </div>
+
     <div class="c-blogpost__body">
       <div class="l-container  l-container--copy  c-wysiwyg">
         <div>
-          <p class="c-lead">{{ excerpt }}</p>
+          <p class="c-blogpost__lead">{{ excerpt }}</p>
         </div>
         {{ content | safe }}
       </div>

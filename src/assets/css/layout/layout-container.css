@@ -9,12 +9,28 @@
   margin: 0 auto;
   padding-inline: var(--container-padding);
   max-inline-size: var(--container-max-size);
-  
+
   @media (width >= 750px) {
-    --container-padding: 30px;
+    --container-padding: 24px;
+  }
+
+  @media (width >= 1024px) {
+    --container-padding: 36px;
   }
 }
 
 .l-container--full {
   --container-max-size: unset;
+}
+
+.l-container--md {
+  --container-max-size: 900px;
+}
+
+.l-container--sm {
+  --container-max-size: 660px;
+}
+
+.l-container--copy {
+  --container-max-size: 70ch;
 }

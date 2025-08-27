@@ -6,7 +6,7 @@
     <nav>
       <ul class="c-mobilenav">
         {% for item in mainnav %}
-          <li class="c-mobilenav__item" style="--delay: {{ loop.index }};">
+          <li class="c-mobilenav__item" style="--delay: {{ loop.index * 0.1 ~ "s" }};">
             {% set currentClass = "" %}
             {% set currentAria = "" %}
             {% if currentSection == item.trigger %}

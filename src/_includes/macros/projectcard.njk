@@ -3,28 +3,35 @@
   <div class="c-projectcard">
     <div class="c-projectcard__media">
 
-      {% set img800 = "/assets/img/projects/800x600/" ~ params.image %}
+      {% set img800 = "/assets/img/projects/800x800/" ~ params.image %}
       {% set img1024 = "/assets/img/projects/" ~ params.image %}
-      <img src="{{ img800 }}" 
-           srcset="{{ img800 }} 800w,
-                   {{ img1024 }} 1024w"
-           sizes="(min-width: 750px) 50vw,
-                  100vw"
-           class="o-fluidimg"
-           loading="lazy"
-           decoding="async"
-           width="1024"
-           height="768"
-           alt="Girl smiling">
+
+      <a href="{{ params.url }}">
+        <img src="{{ img800 }}"
+            srcset="{{ img800 }} 800w,
+                    {{ img1024 }} 1024w"
+            sizes="(min-width: 500px) 50vw,
+                    100vw"
+            class="o-fluidimg"
+            loading="lazy"
+            decoding="async"
+            width="1024"
+            height="1024"
+            alt="Screenshots of the project">
+      </a>
 
     </div>
     <div class="c-projectcard__content">
 
-      <h2 class="c-projectcard__title">{{ params.title }}</h2>
-      <p class="c-projectcard__text">{{ params.text }}</p>
+      <h2 class="c-projectcard__title">
+        <a href="{{ params.url }}">{{ params.title }}</a>
+      </h2>
+      <div class="c-projectcard__text">
+        {{ params.text }}
+      </div>
       {% for item in params.tags %}
-        {% if loop.first %}<ul class="c-projectcard__tags">{% endif %}
-          <li class="c-tag">{{ item }}</li>
+        {% if loop.first %}<ul class="c-taglist">{% endif %}
+          <li class="c-taglist__tag">{{ item }}</li>
         {% if loop.last %}</ul>{% endif %}
       {% endfor %}
 
