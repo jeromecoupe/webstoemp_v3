@@ -4,7 +4,7 @@
 
 :root {
   /* font stacks */
-  --fontstack-main: "Inter Variable", "Helvetica Neue", system-ui, sans-serif;
+  --fontstack-main: "Public Sans", "Helvetica Neue", system-ui, sans-serif;
   --fontstack-alt: "Sentient", "Georgia", serif;
 
   /* font sizes */

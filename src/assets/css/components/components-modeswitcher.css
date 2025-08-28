@@ -19,6 +19,7 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  color: var(--color-text-primary);
 }
 
 .c-modeswitcher__button:not([aria-pressed]) {

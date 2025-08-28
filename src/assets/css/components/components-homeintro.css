@@ -86,7 +86,6 @@
   font-weight: 500;
   font-size: var(--fontsize-200);
   text-transform: uppercase;
-  letter-spacing: 0.12ex;
   color: var(--homeintro-suptitle-color);
   margin-block-end: var(--space-sm);
 }

@@ -12,8 +12,8 @@
 }
 
 .c-blogpost__date {
-  font-size: var(--fontsize-300);
-  font-weight: 600;
+  font-size: var(--fontsize-200);
+  font-weight: 500;
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--color-accent);
