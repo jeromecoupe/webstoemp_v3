@@ -31,9 +31,9 @@
 @import "./components/components-mainnav.css" layer(components);
 @import "./components/components-section.css" layer(components);
 @import "./components/components-titles.css" layer(components);
+@import "./components/components-pagebanner.css" layer(components);
 @import "./components/components-smalltitle.css" layer(components);
 @import "./components/components-footertitle.css" layer(components);
-@import "./components/components-homeintro.css" layer(components);
 @import "./components/components-coltext.css" layer(components);
 @import "./components/components-blogcard.css" layer(components);
 @import "./components/components-socialmedia.css" layer(components);

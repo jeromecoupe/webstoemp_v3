@@ -10,35 +10,35 @@ permalink: /index.html
 {% set metaDescription = "Portfolio and blog of Jérôme Coupé, belgian designer, developer and teacher based in Brussels." %}
 {% set metaImage = "/assets/img/metaimage.png" %}
 
-{% set colorTheme = "green" %}
+{% set colorTheme = "teal" %}
 {% set currentSection = "home" %}
-{% set bannerImage = "resist.jpg" %}
+{% set bannerImage = "banner_home.jpg" %}
 
 {% block content %}
 
-      <div class="c-homeintro">
-        <div class="c-homeintro__text">
-          <h1 class="c-homeintro__suptitle">Design, Code & Ramblings</h1>
-          <p class="c-homeintro__manifesto">
-            Frontend designer resisting the trend to <span>use divs for everything</span> since 1998.
-          </p>
-        </div>
-        <div class="c-homeintro__media">
-          <img src="/assets/img/homebanners/1024x768/{{ bannerImage }}"
-               class="c-homeintro__img"
-               width="1024"
-               height="768"
-               alt="Guys protesting with megaphones on a green and yellow smoke background">
-        </div>
-      </div>
+  <div class="c-section u-text-center">
+    <div class="l-container l-container--md">
+      <h1 class="c-smalltitle u-mbe-md">Design, Code <span class="amperstand">&amp;</span> Ramblings</h1>
+      <p class="c-pagetitle">
+        Like great dishes, websites are made of a few <span>simple, well prepared</span> ingredients.
+      </p>
+    </div>
+  </div>
+  <div class="c-pagebanner">
+    <img
+      src="/assets/img/pagebanners/3000x2250/{{ bannerImage }}"
+      class="c-pagebanner__img"
+      width="2000"
+      height="1500"
+      alt="Guys protesting with megaphones on a green and yellow smoke background">
+  </div>
 
   <div class="c-section">
     <div class="l-container">
 
-      <div class="c-section__block">
         <div class="l-split l-split--colgap l-split--half@md">
           <div>
-            <h2 class="c-smalltitle">Who's this ?</h2>
+            <h2 class="c-smalltitle">Who's this guy, anyway ?</h2>
           </div>
           <div>
               <p>Webstoemp is the web home of Jérôme Coupé, designer, front-end developer and teacher from Brussels, Belgium. When not coding a website or teaching, chances are I am enjoying a few beers with friends or a gravel ride in the nearby woods.</p>
@@ -48,9 +48,9 @@ permalink: /index.html
               </p>
           </div>
         </div>
-      </div>
 
-      <div class="c-section__block">
+        <hr class="separator">
+
         <h2 class="c-smalltitle">Latest blogposts</h2>
         {% set items = collections.blogposts | limit(4) %}
         {% for item in items %}
@@ -67,9 +67,7 @@ permalink: /index.html
           {% if loop.last %}</ul>{% endif %}
         {% endfor %}
         <p class="u-mbs-md"><a class="c-ctalink" href="#">All blogposts</a></p>
-      </div>
-
     </div>
   </div>
-  
+
 {% endblock %}

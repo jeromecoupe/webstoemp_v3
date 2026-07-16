@@ -3,7 +3,10 @@
 ========================================== */
 
 .c-mobilemenu {
-  --mobilemenu-bkg: light-dark(var(--color-accent-light), var(--color-gray-100));
+  --mobilemenu-bkg: light-dark(
+    var(--color-accent-light),
+    var(--color-gray-100)
+  );
   --mobilemenu-padding-inline: 18px;
   --mobilemenu-padding-block: 24px;
   --closehenuicon-bkg: light-dark(var(--color-gray-100), var(--color-gray-300));

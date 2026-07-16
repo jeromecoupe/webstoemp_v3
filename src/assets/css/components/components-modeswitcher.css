@@ -3,14 +3,17 @@
 ========================================== */
 
 .c-modeswitcher {
+  --modeswitcher-gap: 3px;
+
   list-style: none;
   margin: 0;
   padding: 0;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 3px;
+  gap: var(--modeswitcher-gap);
 }
 
 .c-modeswitcher__button {
@@ -28,8 +31,4 @@
 
 .c-modeswitcher__button > svg {
   display: block;
-}
-
-.c-modeswitcher--end {
-  justify-content: flex-end;
 }

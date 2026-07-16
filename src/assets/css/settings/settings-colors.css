@@ -14,11 +14,7 @@
   --color-gray-700: hsl(12, 6%, 84%);
   --color-gray-800: hsl(12, 6%, 98%);
 
-  --color-green: hsl(116, 90%, 24%);
-  --color-green-dark: hsl(from var(--color-green) h s 8%);
-  --color-green-light: hsl(from var(--color-green) h s 92%);
-
-  --color-teal: hsl(181, 90%, 24%);
+  --color-teal: #1eb88b;
   --color-teal-dark: hsl(from var(--color-teal) h s 8%);
   --color-teal-light: hsl(from var(--color-teal) h s 92%);
 
@@ -27,20 +23,35 @@
   --color-brown-light: hsl(from var(--color-brown) h s 92%);
 
   /* accent colors (defaults to green) */
-  --color-accent: light-dark(var(--color-green), hsl(from var(--color-green) h s calc(l + 8)));
+  --color-accent: light-dark(
+    var(--color-green),
+    hsl(from var(--color-green) h s calc(l + 8))
+  );
   --color-accent-dark: var(--color-green-dark);
   --color-accent-light: var(--color-green-light);
 
   /* text colors */
-  --color-text-primary: light-dark(var(--color-gray-100), var(--color-gray-800));
-  --color-text-secondary: light-dark(var(--color-gray-300), var(--color-gray-500));
+  --color-text-primary: light-dark(
+    var(--color-gray-100),
+    var(--color-gray-800)
+  );
+  --color-text-secondary: light-dark(
+    var(--color-gray-300),
+    var(--color-gray-500)
+  );
 
   /* background colors */
   --color-bkg-primary: light-dark(white, var(--color-gray-100));
 
   /* border colors */
-  --color-border-primary: light-dark(rgba(0, 0, 0, 0.12), rgba(255, 255, 255, 0.18));
-  --color-border-secondary: light-dark(rgba(0, 0, 0, 0.06), rgba(255, 255, 255, 0.06));
+  --color-border-primary: light-dark(
+    rgba(0, 0, 0, 0.12),
+    rgba(255, 255, 255, 0.18)
+  );
+  --color-border-secondary: light-dark(
+    rgba(0, 0, 0, 0.018),
+    rgba(255, 255, 255, 0.06)
+  );
 }
 
 [data-mode="dark"] {
@@ -52,19 +63,28 @@
 }
 
 [data-theme="green"] {
-  --color-accent: light-dark(var(--color-green), hsl(from var(--color-green) h s calc(l + 8)));
+  --color-accent: light-dark(
+    var(--color-green),
+    hsl(from var(--color-green) h s calc(l + 8))
+  );
   --color-accent-dark: var(--color-green-dark);
   --color-accent-light: var(--color-green-light);
 }
 
 [data-theme="teal"] {
-  --color-accent: light-dark(var(--color-teal), hsl(from var(--color-teal) h s calc(l + 8)));
+  --color-accent: light-dark(
+    var(--color-teal),
+    hsl(from var(--color-teal) h s calc(l + 8))
+  );
   --color-accent-dark: var(--color-teal-dark);
   --color-accent-light: var(--color-teal-light);
 }
 
 [data-theme="brown"] {
-  --color-accent: light-dark(var(--color-brown), hsl(from var(--color-brown) h s calc(l + 8)));
+  --color-accent: light-dark(
+    var(--color-brown),
+    hsl(from var(--color-brown) h s calc(l + 8))
+  );
   --color-accent-dark: var(--color-brown-dark);
   --color-accent-light: var(--color-brown-light);
 }

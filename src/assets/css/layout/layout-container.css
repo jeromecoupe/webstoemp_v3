@@ -3,20 +3,12 @@
 ========================================== */
 
 .l-container {
-  --container-padding: 18px;
-  --container-max-size: 1500px;
+  --container-padding: max(18px, 3vi);
+  --container-max-size: 1640px;
 
   margin: 0 auto;
   padding-inline: var(--container-padding);
   max-inline-size: var(--container-max-size);
-
-  @media (width >= 750px) {
-    --container-padding: 24px;
-  }
-
-  @media (width >= 1024px) {
-    --container-padding: 36px;
-  }
 }
 
 .l-container--full {

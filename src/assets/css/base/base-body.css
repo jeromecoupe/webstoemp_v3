@@ -11,7 +11,7 @@ body {
     var(--color-text-primary),
     hsl(from var(--color-text-primary) h s l / 84%)
   );
-  font-size: var(--fontsize-400);
+  font-size: var(--fontsize-base);
 }
 
 body.has-menu {

@@ -15,11 +15,11 @@
 }
 
 .c-mainnav__link {
-  font-weight: 450;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 1;
   display: block;
   padding-block: 3px;
-  text-align: end;
   text-decoration: none;
   color: inherit;
 

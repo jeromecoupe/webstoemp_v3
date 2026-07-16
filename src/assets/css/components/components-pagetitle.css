@@ -3,12 +3,19 @@
 ========================================== */
 
 .c-pagetitle {
-  --pagetitle-fontsize: clamp(41px, 2rem + 3vi, 58px);
+  --pagetitle-fontsize: clamp(26px, 0.125rem + 5.333vi, 66px);
 
-  font-weight: 400;
-  font-size: var(--pagetitle-fontsize);
+  color: var(--color-text-primary);
   font-family: var(--fontstack-alt);
-  line-height: 1.2;
-  margin-block-end: 1.2em;
-  letter-spacing: -0.02ch;
+  line-height: 1.08;
+  font-weight: 250;
+  font-size: var(--pagetitle-fontsize);
+  margin-block-end: 0;
+  text-wrap: pretty;
+  letter-spacing: -0.024em;
+
+  & > span {
+    font-style: italic;
+    color: var(--color-accent);
+  }
 }

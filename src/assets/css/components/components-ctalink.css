@@ -3,7 +3,7 @@
 ========================================== */
 
 .c-ctalink {
-  color: inherit;
+  color: var(--color-text-primary);
   display: inline-block;
   padding-block-end: 1px;
   border-bottom: 3px solid var(--color-accent);

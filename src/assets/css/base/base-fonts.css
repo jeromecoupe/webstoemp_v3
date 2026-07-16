@@ -14,8 +14,7 @@ fonts
 
 @font-face {
   font-family: "Sentient";
-  src: url("../fonts/sentient-variableitalic.woff2")
-    format("woff2-variations");
+  src: url("../fonts/sentient-variableitalic.woff2") format("woff2-variations");
   src: url("../fonts/sentient-variableitalic.woff2") format("woff2")
     tech("variations");
   font-style: italic;

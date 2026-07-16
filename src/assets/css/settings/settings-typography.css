@@ -9,13 +9,14 @@
 
   /* font sizes */
   /* https://www.modularscale.com/?18&px&1.125 */
-  --fontsize-100: calc(11 / 16 * 1rem);
-  --fontsize-200: calc(14 / 16 * 1rem);
-  --fontsize-300: 1rem;
-  --fontsize-400: calc(18 / 16 * 1rem);
-  --fontsize-500: clamp(23 / 16 * 1rem, 1.384rem + 0.268vi, 26 / 16 * 1rem);
-  --fontsize-600: clamp(26 / 16 * 1rem, 1.571rem + 0.268vi, 29 / 16 * 1rem);
-  --fontsize-700: clamp(29 / 16 * 1rem, 1.759rem + 0.268vi, 32 / 16 * 1rem);
-  --fontsize-800: clamp(32 / 16 * 1rem, 1.714rem + 1.429vi, 36 / 16 * 1rem);
-  --fontsize-900: clamp(36 / 16 * 1rem, 2.15rem + 0.459vi, 41 / 16 * 1rem);
+  --fontsize-2xs: calc(11 / 16 * 1rem);
+  --fontsize-xs: calc(13 / 16 * 1rem);
+  --fontsize-sm: calc(14 / 16 * 1rem);
+  --fontsize-base: clamp(1rem, 0.925rem + 0.267vi, 18 / 16 * 1rem);
+  --fontsize-lg: clamp(18 / 16 * 1rem, 0.925rem + 0.267vi, 20 / 16 * 1rem);
+
+  --fontsize-h1: clamp(36 / 16 * 1rem, 2.15rem + 0.459vi, 41 / 16 * 1rem);
+  --fontsize-h2: clamp(32 / 16 * 1rem, 1.714rem + 1.429vi, 36 / 16 * 1rem);
+  --fontsize-h3: clamp(29 / 16 * 1rem, 1.759rem + 0.268vi, 32 / 16 * 1rem);
+  --fontsize-h4: clamp(26 / 16 * 1rem, 1.571rem + 0.268vi, 29 / 16 * 1rem);
 }
