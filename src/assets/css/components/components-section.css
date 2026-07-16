@@ -4,15 +4,15 @@
 
 .c-section {
   --section-background: transparent;
+  --section-padding: clamp(48px, 10vi, 120px);
 
-  padding-block: clamp(60px, 3rem + 6vi, 150px);
+  padding-block: var(--section-padding);
   background-color: var(--section-background);
 }
 
 .c-section--accent {
-  --section-background: light-dark(var(--color-accent-light), var(--color-gray-200));
-}
-
-.c-section__block + .c-section__block {
-  margin-block-start: clamp(48px, 2.25rem + 3.75vi, 90px);
+  --section-background: light-dark(
+    var(--color-accent-light),
+    var(--color-gray-200)
+  );
 }

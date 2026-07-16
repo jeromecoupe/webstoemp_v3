@@ -4,8 +4,20 @@
 
 .c-smalltitle {
   font-family: var(--fontstack-main);
-  font-weight: 500;
-  font-size: calc(20 / 16 * 1rem);
+  font-weight: 600;
+  font-size: var(--fontsize-xs);
   color: var(--color-text-primary);
-  margin-block-end: 1.5em;
+  text-transform: uppercase;
+  margin-block-end: 1.8em;
+
+  & > .amperstand {
+    line-height: 1;
+    text-box-trim: trim-both;
+    font-family: var(--fontstack-alt);
+    font-size: 2em;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-accent);
+    vertical-align: center;
+  }
 }

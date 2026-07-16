@@ -15,12 +15,9 @@
 }
 
 .c-footernav__link {
-  --footernav-link-underline: color-mix(
-    in hsl,
-    var(--color-text-primary),
-    transparent 72%
-  );
+  --footernav-link-underline: hsl(from var(--color-text-primary) h s l / 25%);
 
+  font-size: var(--fontsize-base);
   color: inherit;
   text-decoration: none;
 

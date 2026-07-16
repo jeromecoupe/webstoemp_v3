@@ -1,0 +1,37 @@
+/* ==========================================
+=page banner
+========================================== */
+
+@keyframes bannerAnim {
+  from {
+    translate: 0 calc(var(--distance) * -1);
+  }
+}
+
+.c-pagebanner {
+  view-timeline-name: --banner;
+
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  @media (width >= 1200px) {
+    aspect-ratio: 16 / 7;
+  }
+}
+
+.c-pagebanner__img {
+  --distance: 12vw;
+
+  display: block;
+  inline-size: 100%;
+  object-fit: cover;
+
+  animation-timeline: --banner;
+  animation-name: bannerAnim;
+  block-size: calc(100% + var(--distance));
+  animation-timing-function: linear;
+  animation-range: entry 0% exit 100%;
+  animation-fill-mode: both;
+}

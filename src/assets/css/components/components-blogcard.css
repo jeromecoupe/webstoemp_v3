@@ -3,29 +3,26 @@
 ========================================== */
 
 .c-blogcard {
-  --blogcard-title-underline: light-dark(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.5));
-
   display: block;
 }
 
 .c-blogcard__media {
-  overflow: clip;
   margin-block-end: 18px;
 }
 
-.c-blogcard__date {
-  font-size: var(--fontsize-300);
-  color: var(--color-text-secondary);
-}
-
 .c-blogcard__title {
-  font-size: clamp(20 / 16 * 1rem, 1.19rem + 0.275vi, 23 / 16 * 1rem);
-  font-weight: 500;
-  line-height: 1.32;
+  font-size: calc(20 / 16 * 1rem);
+  font-weight: 450;
+  line-height: 1.38;
   font-family: var(--fontstack-alt);
   color: var(--color-text-primary);
   text-wrap: balance;
   margin-block-end: 0.36em;
+}
+
+.c-blogcard__date {
+  font-size: var(--fontsize-sm);
+  color: var(--color-text-secondary);
 }
 
 .c-blogcard__title > a {
@@ -40,17 +37,27 @@
 
 .c-blogcard__medialink {
   display: block;
+  position: relative;
+}
+
+.c-blogcard__medialink::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.18);
+  position: absolute;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  opacity: 0;
+
+  transition: opacity 0.3s ease-out;
+}
+
+.c-blogcard__medialink:hover::before {
+  opacity: 1;
 }
 
 .c-blogcard__image {
   display: block;
   max-inline-size: 100%;
   block-size: auto;
-  scale: 1;
-
-  transition: scale 0.2s ease-out;
-}
-
-.c-blogcard:hover .c-blogcard__image {
-  scale: 1.012;
 }
